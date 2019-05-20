@@ -1,0 +1,438 @@
+body {
+    margin: 0;
+    /* background: radial-gradient silver skyblue springgreen wheat; */
+    max-width: 100%;
+    font-family: 'Marcellus', serif;
+}
+
+.mainheader {
+    background-color:rgb(2, 121, 27);
+    color:rgb(214, 213, 213);
+    text-align: center;
+    padding: 0.8rem 0rem 0.5rem 1rem;
+    font-size: large;
+    font-family: 'Lemon', cursive;
+}
+
+.mainfooter {
+    background-color:rgb(214, 213, 213);
+    color: rgb(2, 121, 27);
+    text-align: center;
+    padding: 1rem; /* Da "Aire" a la página */
+}
+
+.mainfooter aside{
+    background-color:rgb(214, 213, 213);
+    color: rgb(2, 121, 27);
+    text-align: center;
+    padding: 1rem; /* Da "Aire" a la página */
+}
+
+.mainfooter aside ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0rem; /* Da "Aire" a la página */
+ }  
+
+.mainfooter aside li{
+    display: inline;
+}
+
+.mainfooter aside a {
+    color: inherit;
+    text-decoration: none;
+    text-align:center;
+    display: inline;
+    padding: 1rem 1rem; /* Da "Aire" a la página */
+}
+.content_wrapper {
+    margin: 1rem 5rem 1rem 1rem;
+}
+
+.mainheader nav {
+    margin-left: -1rem;
+
+}
+.mainheader nav ul {
+    list-style-type: none;
+
+}
+.noresp {
+    max-width: 100%;
+}
+
+.mainheader nav li {
+    display: inline-block;
+}
+
+.main_section_footer {
+    text-align: right;
+    color: rgb(1, 173, 38);
+
+}
+
+.imagen_normal {
+    width: 600px;
+    margin: 0 auto 0 auto;
+    padding: 5px;
+    background-color: #000000;
+    color: #fff;
+} /* Copiado de internet, se supone que te escala la imagen a más pequeña pero no da resultado */
+
+.seccion_imagenes img {
+    max-width: 25%; 
+    /* width: 100%: Para que la imagen ocupe toda la pantalla, tiene el inconveniente de que la imagen se pixele*/
+    /* display: inline-block; */
+    margin-left: -4px; /* 4px es aprox el espacio entre palabras, es una opción para juntas las imágenes */
+    display:block; /*las juntaría de manera vertical */
+    float: left; /*hace que se coloquen de manera lineal */
+    /* ATENCIÓN; DESPUÉS DE UN FLOAT CLEARFIX -> CLEAR:BOTH; */
+    /* height: 20vh; */ /* Sirve para "alargar las imágenes. Hay que tener cuidado porque las imágenes se deforman. En el cambio de formato en el móvil se verán más */
+    background-color: bisque;
+} 
+
+
+.image_wrapper_50 {
+    width: 50%;
+}
+.image_wrapper_25 {
+    width: 25%;
+}
+.image_wrapper_75 {
+    width: 75%;
+}
+
+.web_externa {
+    width: 100%;
+    height: 60vh;;
+}
+
+.mainheader nav a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 1rem; /* Para poner un padding en línea tenemos que hacer un block */
+    font-size: 1cm;
+}
+
+.video {
+    max-width: 100%;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; /* El valor sale de que los videos normales de youtube tienen un ratio (relación de tamaño) de 16:9 corresponde ese valor. Si el video tiene otra relación tienes que hacer una regla de 3, para más info: https://cybmeta.com/como-hacer-un-iframe-responsive */
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} /* Copiado y pegado de internet */
+
+.imagenCentrada {
+    text-align: center;
+    max-width: 100%; /* Hace que una imagen sea responsive y puedes cambiar el tamaño de la imagen */
+} 
+
+video, embed {
+    max-width: 100%;
+}
+
+.iframe_footer {
+    width: 100%;
+    background-color: rgb(214, 213, 213);
+    color:rgb(1, 173, 38);
+
+}
+/* .ctre{
+    text-align: center;
+    align-content: center;
+    align-self: auto; */
+}
+
+p {
+    text-align: justify; /* No se debe justificar por el tema de anchos en móviles y ordenadores */
+}
+
+.figcapt {
+    text-align: center;
+
+}
+
+.conjuntoSections {
+    margin: 1rem 1rem 1rem 12rem;
+
+ }
+ .tamañoImagen {
+    size: 50px;
+ }
+
+ blockquote {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-style: italic; 
+    border-left: 2px solid rgb(2, 221, 75);
+    padding-left: 10px;
+}
+
+blockquote footer {
+    margin-top: 0.5rem ;
+    border-top: 1px solid darkkhaki;
+    margin-bottom: 0.5rem;
+    width: fit-content;    
+    padding-left: 1px;
+
+}
+.quitar ul {
+    list-style-type: none;
+}
+
+/*ol {
+    list-style-type: none;
+}*/
+.verde{
+    color: forestgreen;
+    font-weight: bold;
+}
+
+.palabra_rota {
+    overflow: break-word;
+} /* El bloque tiene que tener un ancho establecido para que sepa por dónde romper la palabra */
+
+.newdl{
+  clear: both;
+;
+}
+
+.dt {
+    float: left;
+    clear: right;
+    padding-left: 50px;
+    padding-right: 10px; 
+    text-align: center;
+    align-content: center;
+}  
+.clearfix {
+
+    clear: both;
+}
+
+.dd {
+    text-align: center;
+    align-content: center;
+    align-self: auto;
+    float: left;
+    clear: right;
+
+} 
+
+footer a {  /* De esta forma coger todos los enlaces que haya dentro de footer */
+    color: inherit;
+    
+} 
+
+s {
+    text-decoration: line-through red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.sinborde {
+    border: 0rem;
+}
+.cntr {
+     margin: 1rem 1rem 1rem 12rem;
+}
+.maintable{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+.maintable>tbody>tr:nth-of-type(even){ /* impares */
+    width: 100%;
+    background-color: lightgreen;
+    text-align: center;
+    
+}
+.maintable>tbody>tr:nth-of-type(odd){/* pares */
+    width: 100%;
+    background-color: lightgrey;
+    text-align: center;
+}
+.amarillo {
+    background-color: lightgreen;
+}
+fieldset {
+    margin-bottom: 1rem;
+    border-color:lightgreen;
+}
+:-ms-input-placeholder {
+    color: lightgreen; /* Sólo es válido cambiar el color para algunos navegadores */
+}
+
+::-ms-input-placeholder {
+    color: lightgreen;}
+    
+.newfield {
+    border-bottom:1px solid black;
+    background-color:  rgba(144, 218, 137, 0.527);
+    width: 100%;
+    padding-bottom: 0.5rem; 
+    margin-bottom: 0.7rem;
+   padding-top: 1rem;
+   
+}
+.form_label {display: block;
+margin-top:1rem; }
+/* label {
+    display: block;
+    padding-top: 1.5rem;
+    color:; 
+} */
+.radio_control{
+        margin-top: 0.3cm
+}
+.form_control {
+    display: block;
+    width: 100%;
+    border:none;
+    border:rgb(1, 173, 38);;
+    border-bottom:1px solid rgb(212, 212, 212);
+    padding-bottom: 0.5rem; 
+    margin-bottom: 0.7rem;
+   padding-top: 1rem;
+   background-color:rgb(160, 238, 187);    
+}
+.form_control2 {
+    display: block;
+    padding-bottom: 0.5rem; 
+    margin-bottom: 0.7rem;
+   padding-top: 1rem;
+    
+}
+.borderboton {
+    border-bottom:1px solid black;
+}
+.option {
+width: 100% 
+
+}
+.new{
+    padding-left: 6cm;
+}
+
+
+
+.placeholder{
+    color:rgb(160, 238, 187); 
+}
+
+button { 
+    display: block;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+.Botton {
+    
+	-moz-box-shadow:inset 0px 1px 0px 0px #2ac42a;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #2ac42a;
+	box-shadow:inset 0px 1px 0px 0px #2ac42a;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #76f013), color-stop(1, #106103) );
+	background:-moz-linear-gradient( center top, #76f013 5%, #106103 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#76f013', endColorstr='#106103');
+	background-color:#76f013;
+	-webkit-border-top-left-radius:37px;
+	-moz-border-radius-topleft:37px;
+	border-top-left-radius:37px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:37px;
+	-moz-border-radius-bottomright:37px;
+	border-bottom-right-radius:37px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	border:1px solid #a6ff00;
+	display:inline-block;
+	color:#575352;
+	font-family:Comic Sans MS;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #4cdbbe;
+}
+.Botton:hover {
+   
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #106103), color-stop(1, #76f013) );
+	background:-moz-linear-gradient( center top, #106103 5%, #76f013 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#106103', endColorstr='#76f013');
+	background-color:#106103;
+}.Botton:active {
+   
+	position:absolute;
+	top:1px;
+}
+
+ optgroup {
+     color: #106103;
+ }
+.botonderecho {
+    padding right: 90%;
+    display: block
+
+}
+.botonizquierdo{
+    display: block;
+    padding-left: 85%;
+}
+/* .ger {
+    display: none;
+} */
+  /*#section {
+
+    
+ }
+
+ #sections_Elements {
+
+ }
+
+ #header {
+
+ }
+
+ #article {
+
+ }
+
+ #aside {
+
+
+ }
+
+ #nav {
+
+ }
+
+ #footer {
+
+
+ }*/
+

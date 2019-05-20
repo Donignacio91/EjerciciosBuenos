@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Para meter fuentes -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+    <!-- Para meter iconos online -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Inicio - Elementos de la web</title>
+</head>
+
+<body id="inicio">
+    <header class="mainheader">
+            <h1><i class="fab fa-html5"></i> ETIQUETAS DE HTML <i class="fab fa-html5"></i></h1>
+            <p>Clasificación de las etiquetas según el estándar HTML5.2</p>
+            <nav>
+                <ul>
+                    <li><a href="./index.html#inicio" rel="tag"></a>Inicio</li>
+                    <li><a href="./index.html#sections_Elements" rel="tag">Sections</a></li>
+                    <li><a href="./index.html#grouping" rel="tag">Grouping</a></li>
+                    <li><a href="./index.html#text-level" rel="tag">Text-level</a></li>
+                    <li><a href="./mmedia.html#mmedia">Multimedia</a></li> <!-- Relativo al origen: me voy a la carpeta origen del sitio web y a partir de ahí empieza a "contar". 
+                    Relativo al documento: otro es que vayas a la carpeta desde el localhost y vea el navegador qué carpeta está activa. Puede ser que la carpeta de origen no sea la carpeta donde aparece el index -->
+                    <!-- <a href="/07_ElementosWeb/mmedia.html">Multimedia</a> "Busca desde la carpeta de origen"
+                    <a href="./mmedia.html"></a> Relativa a la carpeta que está el index "Busca desde dónde yo estoy" Sólo me sale directamente si estoy dentro de la carpeta en donde aparece el index que quiero -->
+                    <!-- PARA MÁS INFO. DIBUJO DE NACHO DE CAJITAS  -->
+                    <li><a href="#tablas"> Tablas</a></li>
+                    <li><a href="#formularios"> Formularios</a></li>
+                </ul>
+            </nav>
+    </header>
+    <div class="content_wrapper">
+        <main>
+            <section id="tablas">
+                <header>
+                    <h2>Tablas</h2>
+                    <p>En cada celda hay un dato que corresponde a la intersección del valor de la columna con la celda. No se utilizan para maquetar</p>
+                </header>
+                <p>Ejemplo de tabla del uso de los navegadores</p>
+                <p>TH- Cabeceras Header / TD- Las normales esto también mejora accesibilidad para mejorar accesibiliada th poner un head y un footer pero poco
+            </p>
+            <p><b> OLVIDATE DE </b> <a href="https://www.tablesgenerator.com/html_tables">TABLES</a>
+                </p>
+                <p>a todos los th deberiamos ponerle scope (ambito) col(columna) row(fila) scope:"col" scope:"row" </p>
+                <caption> % uso navegadores web
+
+                </caption>
+                
+                <style type="text/css">
+                    .tg  {border-collapse:collapse;border-spacing:0;}
+                    .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                    .tg .tg-s268{text-align:left}
+                    .tg .tg-0lax{text-align:left;vertical-align:top}
+                    </style>
+                    <table class="tg">
+                      <tr>
+                        <th class="tg-s268" colspan="5">Auto tabla</th>
+                      </tr>
+                      <tr>
+                        <td class="tg-s268">a</td>
+                        <td class="tg-s268"></td>
+                        <td class="tg-s268"></td>
+                        <td class="tg-s268"></td>
+                        <td class="tg-0lax"></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-s268">b</td>
+                        <td class="tg-s268"></td>
+                        <td class="tg-s268"></td>
+                        <td class="tg-s268"></td>
+                        <td class="tg-0lax"></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-s268">c</td>
+                        <td class="tg-s268"></td>
+                        <td class="tg-s268"></td>
+                        <td class="tg-s268"></td>
+                        <td class="tg-0lax"></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-s268">d</td>
+                        <td class="tg-s268"></td>
+                        <td class="tg-s268"></td>
+                        <td class="tg-s268"></td>
+                        <td class="tg-0lax"></td>
+                      </tr>
+                    </table>
+                    <caption> % uso navegadores web
+
+                        </caption>
+                        <table class="maintable">
+                            <tr> 
+                                <th scope="col"></th>>% uso navegadores </th>
+                                <th>2017</th>
+                                <th>2018</th>
+                                <th>2019</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Google Chrome</th>
+                                <td></td>
+                                <td>65.55%</td>
+                                <td>
+                                        <table class="maintable">
+                                                <tr>
+                                                    <th> Chrome 66 -</th>
+                                                    <td>2,44% </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Chrome 59 -</th>
+                                                    <td>2,30% </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Chrome 49 -</th>
+                                                    <td>2,18% </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Chrome 64 - </th>
+                                                    <td>1,91% </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Chrome 67 -</th>
+                                                    <td>5.66%</td>
+                                                </tr>
+                                            </table>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">Safari</th>
+                                <td></td>
+                                <td>15.13%</td>
+                                <td> 
+                                <table class="maintable">
+                                        <tr>
+                                            <th> Safari-11</th>
+                                            <td>10.79</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                                <th> Safari-10</th>
+                                                <td>1.74%</td>
+                                        </tr>  
+                             </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                    <th scope="row">Mozilla Firefox</th>
+                                <td></td>
+                                <td>5.02%%</td>
+                                <td>2.65%</td>
+                                
+                            </tr>
+                            <tr>
+                                    <th scope="row">UC Browser</th>
+                                 <td></td>
+                                 <td>4.41%</td>
+                                <td>6.16%</td>
+                               
+                            </tr>
+                            <tr>
+                                    <th scope="row">Internet Explorer</th>
+                                <td></td>
+                                <td>2.88%</td>
+                                <td>2.44%</td>
+                                
+                            </tr>
+                            <tr>
+                                    <th scope="row">Opera</th>
+                                <td></td>
+                                <td></td>
+                                <td>3.16%</td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">Otros</th>
+                                <td></td>
+                                <td></td>
+                                <td>7.85%</td>
+                                
+                            </tr>                        
+                </table>
+                <p>El atributo scope (su ámbito) solo se utiliza en los th. Pueden tener 4 (col,row,rowspan,colspan) valores que sirven para especificar qué tipo de cabecera es: si es un th de columna, de fila... Caption también se puede utilizar para incluir el texto de manera que se vea como un título. Sólo tiene que haber un caption en cada tabla.</p>                 
+            </section>
+            <section> 
+                    <p>Para generar imágenes directamente: <a href="https://cloudinary.com/">Cloudinary</a> o digital ocean para que tu página web "funcione" </p>
+                    <p>Ejemplo de tabla asimetrica</p>
+                    <table class="maintable">
+                            <tr>
+                              <th colspan="2" rowspan="2">Preferencias de viajes</th>
+                              <th colspan="3">Destinos</th>
+                            </tr>
+                            <tr>
+                              <td scope="col">Caribe</td  >
+                            <td scope="col">Europa</td  >
+                            <td scope="col">Oriente</td>
+                            </tr>
+                            <tr>
+                              <th rowspan="3" class="amarillo"> Rangos de edad</th>
+                              <td> &gt;18</td>
+                              <td>38%</td>
+                              <td>25%</td>
+                              <td>37%</td>
+                            </tr>
+                            <tr>
+                              <td>18 / 30</td>
+                              <td>32%</td>
+                              <td>37%</td>
+                              <td>31%</td>
+                            </tr>
+                            <tr>
+                              <td> &lt;30</td>
+                              <td>30%</td>
+                              <td>38%</td>
+                              <td>32%</td>
+                            </tr>
+                          </table>
+
+          
+            </section>
+
+            <section id="formularios">
+                <header>
+                     <h2>Formulario</h2>
+                </header>
+                <p>Los formularios se incluyen dentro de la etiqueta form. En ellos se utlizan los siguientes controles (elementos del formulario que son activos; con los que el usuario puede interactuar). </p>
+            <ul>
+                <li> Input text</li>
+                <li> Text ares </li>
+                <li> Checkbox</li>
+                <li> Radio buttons</li>
+                <li> Select / options</li>
+                <li> Botones</li>
+            </ul>
+                 <p> La etiqueta form tiene dos atributos importantes</p>
+            <ul>
+                <li> Action</li>
+                <li> Method</li>
+            </ul>
+            <p>Los datos por get aparecen en la petición, en la url cuando envíes lo datos</p>            
+            <section class="cntr">
+                <h3>Formulario mínimo </h3>
+                <p> Ejemplo de los elementos minimos de un formulario y uso de los distintos metodos: GET y POST</p>
+                <p>Get y post sirven para especificar de qué manera se van a enviar los datos que envíe el usuario: En el caso de GET la información se ve reflejada en la URL de la página una vez que se envíe la información, en cambio, usamos POST   para cuando la información que recopilamos es secreta <mark> POST  (información sensible)</mark>, o no queremos que se descifre desde la URL (Como cuentas bancarias o contraseñas).</p>
+
+                <h4>Uso de GET</h4>
+                
+                <form action="https://jsonplaceholder.typicode.com/users" method="GET" name="basic_get">
+                    <input type="text" name="userName" id="" placeholder="nombre">
+                    <input type="password" name="userPassword" placeholder="Contraseña">
+                    <button type="submit">Enviar</button>
+
+                <h4>Uso de POST</h4>
+               <form action="https://jsonplaceholder.typicode.com/users" name="Basic POSH" method="POST"> <!-- siempre post que get se ve todo y menos seguro La info importante en post-->
+                   <input type="text" name="userName" placeholder="Nombre usuario">
+                   <input type="password" name="userPasswprd" placeholder="Contraseña">
+                   <button type="submit"></button>Enviar</button>
+               </form>
+               <h3>Formulario completo </h3>
+               <p>Usamos en un mismo foermulario los principales controles</p>
+               <p>El id del input sirve para decir que label for coincide con el nombre del id.</p>
+                <p> Si das salto de línea no saldrá el placeholder porque saldrá por defecto un espacio entre los picoparéntesis. Se pueden dar valor por defecto escribiendo</p>
+                <p>El atributo value dentro de un input sirve para obligr al usuario tener una cuenta (en nuestro caso en @tajamar365com) y validarse con él</p>
+               <form action="https://jsonplaceholder.typicode.com/users" name="completopost" method="POST" name="form_completo"> <!-- siempre post que get se ve todo y menos seguro La info importante en post-->
+                <fieldset>
+                <p>Un fiel hace que estéticamente tenga un reborde, pero hacen como "div" . Legend pone títulos a los fieldset.</p>
+                </fieldset>
+            <fieldset>
+                    <legend>Datos personales </legend>
+                     <label class="form_label" for="userName">Nombre usuario</label>
+                         <input class="form_control" type="text" name="userName" id="userName" placeholder="Nombre y apellidos" required>
+                     <label class="form_label" for="Password">Password</label>
+                        <input class="form_control" type="password" name="userPassword" id="Password"  placeholder="Contraseña" required minlength="5" required maxlength="16"><label class="form_label" for="mail">Correo electronico</label>
+                      <input class="form_control" type="email" class="form_control" name="mail" id="mail" placeholder="...@gmail.com" value="@gmail.com"required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})"required></fieldset>
+                    <fieldset> <label class="form_label" for="">Formación</label>
+                        <input class="form_control" type="text" name="CV" id="CV" placeholder="Selecciona o indica tus estudios" required>
+                            <datalist id="Formación"><!-- Son lista de datos  -->
+                            <option>Graduado</option>
+                            <option>Licenciado</option>
+                            <option>Doctorado</option>
+                            </datalist></fieldset>
+                    <fieldset>
+                     <label class="form_label" for="birthday" name="birthday">Fecha de nacimiento</label>
+                            <input class="form_control" type="date" name="Birthday" id="Birthday">
+                        </fieldset>
+                        <fieldset>
+                            <p>Observaciones</p>
+                      <textarea class="form_control" name="Info" id="Info"  rows="6" placeholder="Escriba aquí sus dudas."></textarea>
+                    </fieldset>
+                     <fieldset >
+                        <legend>Terminos y condiciones</legend>
+                        <textarea class="form_control" name="" id="" cols="30" rows="10">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea obcaecati doloremque cumque et totam dolorum alias quidem consequuntur enim porro sit mollitia velit voluptatibus ad dolor ex quia, quo aliquid.</p></textarea>
+                            <input type="checkbox" name="isOK" id="isOK">
+                            <label for="isOK">He leido y acepto</label>
+                        </fieldset>
+                        <fieldset >
+                            <legend>Datos del curso</legend>
+                            <label for="datos_curso" class="form_label">Curso:</label>
+                            <select name="datos_curso" id="datos_curso" class="form_control" >
+                             <optgroup label="Desarrollo en front">
+                                <option value="" class="placeholder" selected>Selecciona</option> 
+                                <option value="html_01">Confección y diseño de páginas web</option>
+                                <option value="Angular_03">Desarrollo en plataforma Angular</option>
+                                <option value="other">Otro</option>
+                             </optgroup>
+                             <optgroup label="Desarrollo en back">
+                                    <option value="" class="placeholder" selected>Selecciona</option> 
+                                    <option value="html_01">Java</option>
+                                    <option value=".net_02">.net</option>
+                                    <option value="Angular_03">JavaScript</option>
+                                    <option value="other">Otro</option>
+                             </optgroup>
+                                </select>
+                        <p>Localidades disponibles</p> <!-- No se pueden poner dos legend por muy lógico que sea ponerlo aquí, ya que ya que dentro del fieldset ya está la del "datos del curso" -->
+                        <div class="form_control">
+                        <input  type="radio" name="sitio" id="Madrid" value="Madrid" ><!-- sE PONE EN EL CASO DE LOS INPUT RADIO EL MISMO NOMBRE PARA PODER AGRUPARLOS -->
+                        <label for="Madrid">Madrid</label>
+                        <input type="radio" name="sitio" id="" value="Sevilla">
+                        <label for="Sevilla">Sevilla</label>
+                        <input type="radio" name="sitio" id="Barcelona" value="Barcelona">
+                        <label for="Barcelona">Barcelona</label></div>
+                         <!-- Cuando el value no tiene valor se envía el valor por defecto. Por eso se pone el valor por defecto en blanco en cambio si le pones valor se enviará ese valor. si no pongo value se envía el contenido (lo que ve el usuario)-->
+                         <!-- PREGUNTAS: Para obligar o no al usuario a que se valide? Cuando selecciona la opción otro y quiero que me salga un input para que me diga en que otro curso esta? -->
+                </fieldset>
+                <fieldset>
+                <samp class="botonizquierdo">
+                    <input name="borrar" Borra type="reset" value="Delete"></samp>
+                <samp class="botonderecho">
+                    <button   type="submit"> Enviar <i class="fab fa-html5"> </i> </button></samp>
+               </fieldset>
+             
+               </form>
+            <!-- Puede tener value pero da lo mismo, lo único que haces es cambiar el nombre (en vez de llamarse button se llama el valor que hayas puesto en el value) EJEMPLO: <input type=submit"" value=Enviar""> -->
+            <!-- <input type="reset" value="delete" > -->
+            <!-- METER UNA IMAGEN DENTRO DE UN BOTóN -->
+            <!-- <button type="button"></button> Botón ue no tiene funcionalidad -->
+            <div class="clearfix"></div>
+            <p>El atributo multiple en un selected sirve para que el usuario elija tantas opciones como haya pulsado Ctrl+click y le pone size por defecto. En cambio size hace que tenga tamaño la tabla y no sea el desplegable. Si le pones un número sale una barrita para subir y bajar y ver todas las opciones. </p>
+
+            <p>Existen otros controles de fomularios</p>
+            
+            <div class="clearfix"></div>
+            
+           <dl>
+
+                <dt class="dt">Imput color</dt>
+                
+                <dd class="dd"> color <input type="color" > </dd>
+                
+                <dd class="dd"> Doc <input type="file" > </dd>
+                
+                <dd class="dd"> Nº <input type="number" > </dd>
+                
+                <dd class="dd"> Range <input type="range" maxlength="100" ></dd>
+                
+                <dd class="dd"> Buscar <input type="search"></dd>
+                
+                <dd class="dd"> Telefono <input type="tel"> </dd>
+                
+                <dd class="dd"> Url <input type="url"> </dd></dl>
+                
+            
+            <div class="clearfix"></div>
+        </main>
+                <aside>
+                        <h2>Publicidad</h2>
+                        <img src="./assets/vanlife.jpg" alt="Publicidad">
+                </aside>
+                <aside class="ctre">
+                    <a class="weatherwidget-io" href="https://forecast7.com/es/40d71n74d01/new-york/" data-label_1="Madrid" data-label_2="WEATHER" data-theme="original" >Madrid WEATHER</a>
+                    <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                    </script>
+            </aside>
+            </div>
+            <iframe class="iframe_footer" src="./footer.html" ></iframe>
+    </body>    
+</html>

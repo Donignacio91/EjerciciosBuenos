@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Multimedia - Elementos de la web</title>
+</head>
+
+<body id="inicio">
+    <header class="mainheader">
+            <h1>ETIQUETAS DE HTML5</h1>
+            <p>Clasificación de las etiquetas según el estándar HTML5.2</p>
+            <nav>
+                <ul>
+                    <li><a href="./index.html#inicio" rel="tag"></a>Inicio</li>
+                    <li><a href="./index.html#sections_Elements" rel="tag">Sections</a></li>
+                    <li><a href="./index.html#grouping" rel="tag">Grouping</a></li>
+                    <li><a href="./index.html#text-level" rel="tag">Text-level</a></li>
+                    <li><a href="#">Multimedia</a></li> <!-- Relativo al origen: me voy a la carpeta origen del sitio web y a partir de ahí empieza a "contar". 
+                    Relativo al documento: otro es que vayas a la carpeta desde el localhost y vea el navegador qué carpeta está activa. Puede ser que la carpeta de origen no sea la carpeta donde aparece el index -->
+                    <!-- <a href="/07_ElementosWeb/mmedia.html">Multimedia</a> "Busca desde la carpeta de origen"
+                    <a href="./mmedia.html"></a> Relativa a la carpeta que está el index "Busca desde dónde yo estoy" Sólo me sale directamente si estoy dentro de la carpeta en donde aparece el index que quiero -->
+                    <!-- PARA MÁS INFO. DIBUJO DE NACHO DE CAJITAS  -->
+                    
+                    <li><a href="./datos.html#tablas"> Tablas</a></li>
+                    <li><a href="./datos.html#formularios"> Formularios</a></li>
+                </ul>
+            </nav>
+    </header>
+    <div class="content_wrapper">
+        <main>
+            <section id="mmedia">
+                <h2>MULTIMEDIA</h2>
+                <p>Entre los elementos embebidos y multimedia veremos como utilizar:</p> 
+                <ul>
+                    <li>Imágenes
+                        <ul>
+                            <li>jpg</li>
+                            <li>gif</li>
+                            <li>png</li>
+                            <li>svg</li>
+                            <li>webp</li>
+                        </ul>
+                    </li>
+                    <li>Vídeo y audio
+                        <ul>
+                            <li>mp4</li>
+                            <li>ogg</li>
+                            <li>webm</li>
+                        </ul>
+                    </li>
+                    <li>Elementos de navegación gráficos</li>
+                </ul>
+                <section class="seccion_imagenes">
+                    <h3>Imágenes</h3>
+                            <p>Para HTML todas las imágenes son "iguales" a la hora de representarlas</p>
+                            <h4>Imagen JPG:</h4>
+                           <!--  <img src="./assets/komodo.jpg" alt="Varano o dragón de komodo, isla de Indonesia, que nos muestra su lengua bífida"> --> <!-- Alt mejora el SEO (Aparece la imagen en imágenes), accesibilidad (Para una persona ciega, le "dejas ver la foto" a través de la descripción), usabilidad (cuando la imagen está "rota" aparece la descripción y porque no te deja "validar" la página si no hay una descripción de la foto) aunque un alt solo vaya vacío, pero tiene que estar -->
+                            <!-- <h4>Imagen PNG</h4> -->
+                            <img  src="./assets/varanococodrilo1.png" alt="Varano cocodrilo">
+                            <!-- Ejemplo pepe y juan con el salto de linea, html lo coge como un espacio, la única forma de quitarlo es como hemos puesto arriba, las imágenes juntas. También se podría jugar con los márgenes con CSS pero es más chapuza -->
+                            <!-- Las imágenes son inline-block, entre dos palabras siempre habrá un espacio aunque haya un salto de línea -->
+                            <!-- <h4>Imagen GIF</h4> -->
+                            <img src="./assets/ardilla.gif" alt="Dibujo Ardilla">
+                            <img srcset="./assets/3boats.webp" src="./assets/3boats.jpg" alt="Barcas"> <!-- Permite definir una fuente con alternativas, si el sistema se encuentra con ambos intenta cargar la altenativa srcset sino, carga src --> <!-- Desde el punto de vista HTML estamos siendo responsive ya que la imagen pesa menos -->
+                            <!-- Mejora el seo al cargar las imágenes en un tiempo record (ya que se adapta a móviles, por el uso de datos), una es el formato (si nos evitamos imágenes de jpg porque pesan mucho mejor)-->
+                            <img src="./assets/005.gif" alt="">
+                            <img src="./assets/WoodElf.png" alt="Elfo"><img src="./assets/logo.png" alt="logo svg" srcset="./assets/logo.svg">
+                            <!-- Las imágenes svg (Estandar vectorial graphics) es un formato de tipo vectorial (guarda la información en una serie de fórmulas vectoriales, esa información se reconstruyen cada vez que se carga. "Pinta" las fotos) a diferencia de las demás que son matriciales (las guarda las imágenes punto a punto) -->
+                            
+                            <div class="clearfix"></div>
+                    </section>
+                    <section>
+                    <p>Uso de imágenes responsive en HTML</p>
+                                <p>Imagen no responsiva</p>
+                                <img src="./assets/komodo.jpg" alt="" id="noresp">
+                                <!-- Dependiendo del tamaño de la pantalla, abrirá una imagen para ahorrar datos -->
+                            <div class="clearfix"></div>
+                    <p>Imagen responsiva</p>
+                    <div> <!-- Le das tres espacios de carga y dependiendo del rango donde se encuentre cargará una imagen-->
+                                    <img srcset="./assets/komodo.300.jpg 300w,
+                                                ./assets/komodo.400.jpg 400w,
+                                                ./assets/komodo.500.jpg 500w,
+                                                ./assets/komodo.jpg 600w"
+                                    sizes="(max-width: 300px),
+                                        (max-width: 400px), 
+                                        (max-width: 500px)"
+                                    src="./assets/komodo.jpg"
+                                    alt="">
+                                </div>
+                                <p>Ejercicio: </p>
+                                <div>
+                                    <img src="./assets/pastor.700.jpg"
+                                        srcset="./assets/pastor.300.jpg 300w,
+                                        ./assets/pastor.500.jpg 500w,
+                                        ./assets/pastor.700.jpg 700w"
+                                        sizes= "(max-width: 300px) 300px,
+                                        (max-width: 500px)"
+                                    alt="">
+                                </div>
+                    <div class="clearfix"></div>
+                    <p>EJERCICIO CON PICTURE</p>
+                        <picture>
+                            <source media="(min-width: 700px)" srcset="./assets/pastor.700.jpg" type="image/jpg" > <!-- Es mejor no poner el tipo a ponerlo mal -->
+                            <source media="(min-width: 500px)" srcset="./assets/pastor.500.jpg" type="image/jpg">
+                            <source media="(min-width: 10px)" srcset="./assets/pastor.300.jpg" type="image/jpg" >
+                            <img src="assets/pastor.700.jpg" alt="perro" style="width: auto;"> 
+                            
+                        </picture>   
+                        <p>La etiqueta picture y los formatos alternativos de imágenes</p>
+                        <picture class="imagen_normal">
+                            <source srcset="./assets/tropical-sunrise.webp" type="image/webp" >
+                                <img src="./assets/tropical-sunrise.jpg" alt="Paisaje tropical"> <!-- Sólo se debe meter una foto (la misma) en cada picture -->
+                        </picture>
+                        <picture>
+                            <source srcset="./assets/logo.svg" type="image/svg+xml">
+                                <img src="./assets/logo.gif" alt="">
+                        </picture>
+                        <p>Etiqueta figure</p>
+                    </section>
+                    <section>
+                        <h3>Video y Audio</h3>
+                        <p>Es posible incluir un vídeo desde una fuente externa (desde una url)</p>
+                    <div class="embed-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8ZPLEx52FLU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                     <p> Allow fullscream para que el vídeo se vea en pantalla completa, se puede quitar></p>  <!-- Allow fullscream para que el vídeo se vea en pantalla completa, se puede quitar --> 
+                    </div>
+                    <p>Otra opción es reproducir el vídeo de nuestro servidor. En ese caso deberemos de descargarnos un vídeo y utilizar la etiqueta &lt;video&gt; </p>
+                    <video src="./assets/Ghost_in_the_Shell_Opening.mp4" class="video" controls poster="./assets/111.jpg" >
+                        
+                      <source src="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webp">
+                        <p> Para poner otro tipo de video (por si no es compatible con los navegadores hacemos un source como en picture para poder poner srcset)   No se pone control en source, ya la tiene la etiqueta vídeo </p>  
+                    </video> <!-- Debemos de añadir el atributo "controls" para que el vídeo empiece y tenga los controles de pausar, iniciar...  -->
+                    <!-- ATENCIÓN: No se por qué soy a la unica que poniendo srcset en source le sale el vídeo, se supone que debes poner src (me funciona igual de bien) -->
+                    <figure class="figcapt">
+                        <img src="./assets/Captura2.PNG" alt="">
+                        <figcaption>Etiquetas de vídeo</figcaption>
+                    </figure>
+                    <audio src="./assets/Paul Kalkbrenner - Sky and Sand [www.slider.kz].mp3" controls></audio> <!-- CONSEJO: es preferible quitar los espacios -->
+                    </section>
+                    <section>
+                        <h3>Elementos de navegación gráficos</h3>
+                        <p>En HTML antiguo se usaba la etiqueta map para definir un hotspot (Es un mapa de bits sobre el cual asocias unas áreas para que el usuario haga x (Imagen interactiva). Se dejó de utilizar por no ser responsive.Una interfaz gráfico.</p>
+                        <p>En HTML5 se puede conseguir éste efecto usando svg </p>
+                        <embed src="./assets/logo.svg" type="image/svg+xml">
+                    </section>
+                </section>
+                <aside>
+                    <h3>Elementos embebidos no multimedia</h3>
+                    <p>La etiqueta <strong>&lt;iframe&gt;</strong> permite acceder a otra web desde la nuestra</p>
+                    <iframe src="https://www.tajamar.es/" class="web_externa"></iframe> <!-- los frameborder="0" es css y no se debe de usar en html, es una etiqueta deprecado (obsoleto) -->
+                    <p>Otras formas de insertar contenido externo: </p>
+                        <ul>
+                            <li>&lt;Object&gt; </li> 
+                            <li>&lt;Embed&gt; </li>
+                        </ul> <!-- iframe: una ventana que te lleva a otro sitio web -->
+                    <object data="https://www.tajamar.es/" type="text/html"></object>
+                    <embed src="https://www.tajamar.es/" type="text/html"> 
+                        <p>También relacionado con la navegación gráfica estaría el uso de iconos en los menús</p>
+                </aside>
+        </main>
+    <aside>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.88901547001!2d-3.6781258846042357!3d40.41130937936578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42261c4d5eca13%3A0x7b7bc704f060d85b!2sPlaza+Ni%C3%B1o+Jes%C3%BAs%2C+28009+Madrid!5e0!3m2!1ses!2ses!4v1557844089164!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+            <iframe
+  width="600"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCFzeAJCkJSc4sTLiwG-u3hEvlOmVgsGqo&q=Space+Needle,Seattle+WA" allowfullscreen>
+</iframe>
+<iframe
+  width="450"
+  height="250"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCFzeAJCkJSc4sTLiwG-u3hEvlOmVgsGqo&q=Space+Needle,Seattle+WA" allowfullscreen>
+</iframe>
+
+            
+                <h2>Publicidad</h2>
+                <img src="./assets/vanlife.jpg" alt="Publicidad">
+                <i class="fas fa-alicorn"></i>
+    </aside>
+    <aside class="ctre">
+        <a class="weatherwidget-io" href="https://forecast7.com/es/40d71n74d01/new-york/" data-label_1="Madrid" data-label_2="WEATHER" data-theme="original" >Madrid WEATHER</a>
+        <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+</aside>
+    </div>
+    <iframe class="iframe_footer" src="./footer.html" ></iframe>
+    </body>
+    <!-- ICONOS: https://fontawesome.com/icons/alicorn?style=light
+         FUENTES: https://fonts.google.com/?category=Display&selection.family=Lemon|Zilla+Slab -->
+    
+    </html>

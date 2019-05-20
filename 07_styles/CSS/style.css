@@ -1,0 +1,23 @@
+/* @import url(./Header.css); /* screen and (max-device-width: 500px);
+@import url(./Footer.css) */  /* ejemplos de imports sin condiciones */
+ 
+
+Body{
+background-color: darkslategray ;
+    color: rgb(224, 224, 104);
+}
+
+    /* FORMA MAS HABITUAL DE USA MEDIA QUERIES  */
+@media screen and (max-device-width: 500px){
+     body { background-color: rgb(77, 43, 109)}}
+
+/* @fontface define las fuentes 
+@keyframes
+@namespace
+@page
+@supports
+@documents 
+body Selector de etiqueta (todos los parrafos o todos lo que sea )
+.verde selector de clase solo a esa clase que he nombrado yo class:"verde" PoEj
+#verde (es para los id's pero no se usa por buenas practicas
+*/
