@@ -1,0 +1,98 @@
+
+header{
+    background-color:rgb(146, 145, 145);
+    color:rgb(224, 224, 104); 
+    padding-top:1rem;
+    padding-bottom:1rem;
+    padding-left:5rem;
+    text-align: center;
+    
+}
+body{ 
+    background-color:rgb(224, 224, 104);
+}
+
+/*  SELECTORES COMBINADOS */
+
+/* selector de descendiente (descendent) utiliza como el simbolo el espacio  este afecta a todod lo que este dentro de la clase selecionada */
+
+    header h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 2.7rem;
+        font-weight: bold;
+    }
+
+    header p {
+        margin-top: 1rem;
+        margin-bottom: 0;
+        font-size: 0.7rem;
+      }
+      .combinadores p{
+        background-color: rgba(69, 77, 146, 0.63);
+      }
+/* Selector de hijo (child) utliza como simbolo el >*/ /* esto solo engancha a los hijos por ejemplo los que estan el div no se ven afectado puesto que es decendiente pero no es hijo */
+      .combinadores>p {
+          background-color: brown;
+          color: aquamarine;
+      }
+
+
+
+/* selector de hermanos (sibilins) el simbolo es ~ VIRGULILLA */  /* solo afecta a los que vienen por detras visual no mira atras */
+
+section.combinadores div~p{
+    background-color:forestgreen; 
+}
+
+
+/* selector de hermanos adyacentes el simbolo + */
+   
+section.combinadores div+p{
+    background-color: goldenrod;
+}
+
+/* ********** */
+/* Selector de atributo simbolo [] */ /* para cuando tenemos atributo puesto [] */
+
+[title]{
+    color: crimson; 
+}
+[title="Extra"]{  /* atributo Igual a  */
+    color: rgb(211, 35, 182) !important;
+}
+ /* si pongo esto mismo por delante de kla anterior sale todo en rojo al ponerla despues sale azul he de indicar cual pero no es por poner extra es  */
+[title^="parrafo"]{ /* atributo empieza por  */
+    background-color: black;
+    background-color: aqua
+}
+[title*="tra"] {/* atributo contiene tra es extra  */
+    background-color: rgb(133, 5, 133);
+}
+[title$="2"]{/* termina por */
+    color: rgb(56, 241, 0);
+    background-color: blue;
+
+}
+
+
+/***********
+Estilos del footer */ 
+
+ 
+Footer {
+    background-color:rgb(146, 145, 145);
+    color:rgb(224, 224, 104); 
+    text-align: center;
+    padding-top:1rem;
+    padding-bottom:0.75rem;
+ }
+
+Footer p { 
+    color:rgb(224, 224, 104);
+    margin-top: 0;
+    margin-bottom: 0;}
+
+Footer address { 
+    font-size: normal;
+}

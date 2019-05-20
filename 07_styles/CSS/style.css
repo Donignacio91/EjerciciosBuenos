@@ -10,6 +10,28 @@ background-color: darkslategray ;
     /* FORMA MAS HABITUAL DE USA MEDIA QUERIES  */
 @media screen and (max-device-width: 500px){
      body { background-color: rgb(77, 43, 109)}}
+.morado {
+    color: rgb(82, 45, 116);
+}
+/* p{
+font-size: 1.1rem 
+}
+blockquote{
+    font-size: 1.1rem
+}
+ */ es lo mismo pero grupado 
+p, blockquote{
+    font-size: 1.1rem
+}
+/*  SELECTORES COMBINADOS */
+
+/* Selector de hijo (child) utliza como simbolo el */
+/* selector de descendiente (descendent) utiliza como el simbolo el espacio */
+.combinadores p{
+    background-color: rgba(129, 129, 129, 0.63);
+}
+/* selector de hermanos (sibilins) */
+/* selector de hermanos adyacentes */
 
 /* @fontface define las fuentes 
 @keyframes
