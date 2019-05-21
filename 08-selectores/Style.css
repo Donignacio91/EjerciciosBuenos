@@ -31,7 +31,7 @@ body{
       .combinadores p{
         background-color: rgba(69, 77, 146, 0.63);
       }
-/* Selector de hijo (child) utliza como simbolo el >*/ /* esto solo engancha a los hijos por ejemplo los que estan el div no se ven afectado puesto que es decendiente pero no es hijo */
+/* Selector de hijo (child) Utliza como simbolo el > esto solo engancha a los hijos por ejemplo los que estan el div no se ven afectado puesto que es decendiente pero no es hijo */
       .combinadores>p {
           background-color: brown;
           color: aquamarine;
@@ -39,7 +39,7 @@ body{
 
 
 
-/* selector de hermanos (sibilins) el simbolo es ~ VIRGULILLA */  /* solo afecta a los que vienen por detras visual no mira atras */
+/* selector de hermanos (sibilins) el simbolo es ~ VIRGULILLA solo afecta a los que vienen por detras visual no mira atras */
 
 section.combinadores div~p{
     background-color:forestgreen; 
@@ -60,8 +60,7 @@ section.combinadores div+p{
 }
 [title="Extra"]{  /* atributo Igual a  */
     color: rgb(211, 35, 182) !important;
-}
- /* si pongo esto mismo por delante de kla anterior sale todo en rojo al ponerla despues sale azul he de indicar cual pero no es por poner extra es  */
+} 
 [title^="parrafo"]{ /* atributo empieza por  */
     background-color: black;
     background-color: aqua
@@ -72,7 +71,6 @@ section.combinadores div+p{
 [title$="2"]{/* termina por */
     color: rgb(56, 241, 0);
     background-color: blue;
-
 }
 
 

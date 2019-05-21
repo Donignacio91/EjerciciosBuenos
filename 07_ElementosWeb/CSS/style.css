@@ -394,9 +394,8 @@ button {
      color: #106103;
  }
 .botonderecho {
-    padding right: 90%;
-    display: block
-
+    padding-right: 90%;
+    display: block;
 }
 .botonizquierdo{
     display: block;

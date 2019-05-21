@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Style .CSS</title>
 
-     <!--<link rel="stylesheet" href="CSS/reset.css"> --><!-- lo situo el primero para que me borre los estilos prederteminados por los navegadores ; si lo coloco el último borraria todos mis estilos -->  
+     <!-- <link rel="stylesheet" href="CSS/reset.css"> -->
+     <!-- lo situo el primero para que me borre los estilos prederteminados por los navegadores ; si lo coloco el último borraria todos mis estilos -->  
     <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css"> <!-- lo mismo que antes pero con una hoja de normalización la cual puedo cambiar a mi gusto como puto de partida -->
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/Header.css">
@@ -16,16 +17,59 @@
     <header>
         <h1>Estilos CSS</h1>
     </header>
+    <section>
+        <h2>MEDIA QUERIS</h2>
+        <p>Las <a class="enlace" href="https://developer.mozilla.org/es/docs/CSS/Media_queries"> media queries</a> (en español "consultas de medios") son útiles cuando deseas modificar tu página web o aplicación en función del tipo de dispositivo (como una impresora o una pantalla) o de características y parámetros específicos (como la resolución de la pantalla o el ancho del viewport del navegador).</p>
+        <p>Se utilizan para:</p>
+        <ul>
+            <li>Aplicar estilos condicionales con las reglas-at @media e @import de CSS.</li>
+            <li>Indicar medios específicos en los elementos &lt link &gt, &lt source &gt y otros elementos HTML.</li>
+            <li>Testear y monitorizar los estados de los medios usando los métodos de javascript Window.matchMedia() y MediaQueryList.addListener().</li>
+            <img class="img" src="./Assets/Media queris.PNG" alt="Media queries" title="si la pantalla es mayor de 500px aplica esto" >    
+        </ul>
+        <h3>Reset´s y normalizacion .CSS</h3>
+        <ul>
+            <li>Reset</li> <p>la hoja de .css reset se obtiene de <a class="enlace" href="http://meyerweb.com/eric/tools/css/reset/"> WEB´S</a> generalmente y se utlizan para borrar los estilos por defecto de los navegadores se linka la primera, si la pongo la última anularia tambien mi propio css dado que se renderiza verticamente (afecta a todo lo que tiene por encima)</p>
+
+            <img class="img" src="./Assets/links.PNG" alt="links">
+
+            <li>Normalizacion</li>
+            <p>Similar a la de reset se trata de una hoja de estilo pensada, en este caso, para establecer un auto estilo personalizado (un punto de partida)
+                el cual linkaremos el primero y le podremos linkar porteriormente nuevas hojas que modifiquen su apariencia pero ya partimos de algo "familiar"
+            </p>
+        </ul>
+       
+
+
+        
+    </section>
     <Section>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aperiam, optio delectus nihil quia ipsum explicabo veritatis beatae quae molestias porro fugiat tempore sit cumque. Cupiditate ipsum dolore officia impedit.</P>
-        <P class="morado">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti exercitationem eveniet animi cumque? Delectus beatae, fugiat expedita sequi commodi natus itaque aut voluptas, tenetur id officiis, consequatur eaque. Sed, impedit.
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At sint autem placeat vel, illo ducimus amet debitis molestiae enim? Cupiditate incidunt officia hic similique et rem magni deserunt tempore assumenda?</p>
-        </P>
+        <h2>SELECTORES COMBINADOS</h2>
+            <h3>EL CSS SE INTERPRETA DE MANERA DESCENDENTE</h3>
+        <ul>
+            <li> Selector de descendiente (descendent) </li>
+            <p> utiliza como el simbolo el espacio  este afecta a todod lo que este dentro de la clase selecionada</p>
+            <img class="img" src="./Assets/selectores descendentes.PNG" alt="COMBINADOS">
+            <li>Selector de hijo (child)</li>
+            <p>Utliza como simbolo el > esto solo engancha a los hijos por ejemplo los que estan el div no se ven afectado puesto que es decendiente pero no es hijo</p>
+            <img class="img" src="./Assets/hijo.PNG" alt="hijo">
+            <li>Selector de hermanos (sibillins)</li>
+            <p> El simbolo es ~ VIRGULILLA solo afecta a los que vienen por detras visual no mira atras</p>
+            <img class="img" src="./Assets/sibillins.PNG" alt="sibillins">
+            <li>Selector de hermanos adyacentes</li>
+            <p>Se hace referencia a este selector como selector adyacente o selector del próximo hermano. Sólo seleccionará un elemento especificado que esté inmediatamente después de otro elemento especificado</p>
+            <img class="img" src="./Assets/adyacentes.PNG" alt="adyacentes">
+            <li>Selector de atributo [···] </li>
+            <p>Comenzaremos el css con "["seguido del nombre del atributo y afectaremos a todos los elementos con dicho atributo.] </p>
+            <p>Se puede ser mas especifico al combinar [segudio del nombre del atributo y añadir: igual a; empieza por; contiene y termina por.  </p>
+            <img class="img" src="./Assets/Atributos.PNG" alt="Atributos">
+        </ul>
+       
     </Section>
     
     <footer>
         
-        <address>· Nacho Caballero Ruiz- Tajamar ·</address>
+        <address>· Nacho Caballero Ruiz @ Tajamar ·</address>
     </footer>
 </body>
 </html>

@@ -3,33 +3,45 @@
  
 
 Body{
-background-color: darkslategray ;
+    background-color: darkslategray;
     color: rgb(224, 224, 104);
+    font-family: 'Times New Roman', Times, serif; 
 }
+.enlace{ color: lime;
+}
+.img{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-left: 50px;
+}
+   
+
 
     /* FORMA MAS HABITUAL DE USA MEDIA QUERIES  */
-@media screen and (max-device-width: 500px){
+/* @media screen and (max-device-width: 500px){
      body { background-color: rgb(77, 43, 109)}}
-.morado {
+ */
+
+/* .morado {
     color: rgb(82, 45, 116);
-}
+} */
 /* p{
 font-size: 1.1rem 
 }
 blockquote{
     font-size: 1.1rem
 }
- */ es lo mismo pero grupado 
-p, blockquote{
+ *//*  es lo mismo pero grupado  */
+/* p, blockquote{
     font-size: 1.1rem
-}
+} */
 /*  SELECTORES COMBINADOS */
 
 /* Selector de hijo (child) utliza como simbolo el */
 /* selector de descendiente (descendent) utiliza como el simbolo el espacio */
-.combinadores p{
-    background-color: rgba(129, 129, 129, 0.63);
-}
+/* .combinadores p{
+    background-color: rgba(129, 129, 129, 0.63); */
+
 /* selector de hermanos (sibilins) */
 /* selector de hermanos adyacentes */
 
