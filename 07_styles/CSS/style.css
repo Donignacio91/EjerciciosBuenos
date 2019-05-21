@@ -2,19 +2,62 @@
 @import url(./Footer.css) */  /* ejemplos de imports sin condiciones */
  
 
-Body{
-    background-color: darkslategray;
-    color: rgb(224, 224, 104);
+body{
+    background-color: rgb(179, 241, 241);
+    color: rgb(61, 61, 19);
     font-family: 'Times New Roman', Times, serif; 
 }
-.enlace{ color: lime;
+.enlace{ color: rgb(2, 65, 2);
 }
 .img{
     padding-top: 6px;
     padding-bottom: 6px;
     margin-left: 50px;
 }
-   
+.cntr {
+    margin: 1rem 1rem 1rem 12rem;
+}
+.iframe_footer {
+    padding-left: 8cm;
+    width: 100%;
+    background-color:rgb(179, 241, 241);
+    color:rgb(1, 173, 38);
+    display: inline-block;
+    align-content: center;
+    align-items: center;
+
+}
+
+/* 
+.pseudoelementos .medio {
+    color:brown;
+}
+.pseudoelementos .medio::before,
+.pseudoelementos .medio::after {
+    content: "muy important";
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: fantasy;
+    color: chartreuse;
+} */
+
+/* .pseudoelementos .medio::after,
+.pseudoelementos .medio::before {
+    content: "muy important";
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: fantasy;
+    color: chartreuse;
+} */
+
+/* 
+.pseudoelementos p::first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: fantasy;
+    color: blueviolet;
+} */
+
 
 
     /* FORMA MAS HABITUAL DE USA MEDIA QUERIES  */

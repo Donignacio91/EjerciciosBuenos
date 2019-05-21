@@ -17,7 +17,9 @@
 <body>
     <header>
         <h1>Estilos CSS</h1>
-    </header>
+        <h2>SELECTORES COMBINADOS</h2>
+        </header>
+        <nav><ul><li><a class="enlace" href="../08-selectores/index.html">Ejercicio 07 style.</a></li></ul></nav>
     <section>
         <h2>MEDIA QUERIS</h2>
         <p>Las <a class="enlace" href="https://developer.mozilla.org/es/docs/CSS/Media_queries"> media queries</a> (en español "consultas de medios") son útiles cuando deseas modificar tu página web o aplicación en función del tipo de dispositivo (como una impresora o una pantalla) o de características y parámetros específicos (como la resolución de la pantalla o el ancho del viewport del navegador).</p>
@@ -67,10 +69,20 @@
         </ul>
        
     </Section>
+    <section>
+        <h2>Estilos de la sección pseudo</h2>
+            <p>Una <a class="enlace" href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes">pseudoclase CSS</a> es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. Por ejemplo,  :hover aplicará un estilo cuando el usuario haga hover sobre el elemento especificado por el selector.</p>
+            <img class="img" src="./Assets/pseudo.PNG" alt="pseudo">
+            <p>Las pseudoclase, junto con los pseudoelementos, permiten aplicar un estilo a un elemento no sólo en relación con el contenido del árbol de documento, sino también en relación a factores externos como el historial del navegador (:visited, por ejemplo), el estado de su contenido (como :checked en algunos elementos de formulario), o la posición del ratón (como :hover que permite saber si el ratón está encima de un elemento o no).</p>
+    </section>
     
-    <footer>
-        
-        <address>· Nacho Caballero Ruiz @ Tajamar ·</address>
-    </footer>
+    <aside class="ctre">
+        <a class="weatherwidget-io" href="https://forecast7.com/es/40d71n74d01/new-york/" data-label_1="Madrid" data-label_2="WEATHER" data-theme="original" >Madrid WEATHER</a>
+        <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+</aside>
+</div>
+<iframe class="iframe_footer" src="./footer.html" ></iframe>
 </body>
 </html>

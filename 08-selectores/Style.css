@@ -1,3 +1,9 @@
+* {
+    font-variant: small-caps;
+}
+/* *:not(li){
+    font-variant: normal;
+} */
 
 header{
     background-color:rgb(146, 145, 145);
@@ -8,11 +14,11 @@ header{
     text-align: center;
     
 }
+.enlace{ color: rgb(2, 65, 2);}
 body{ 
     background-color:rgb(224, 224, 104);
 }
-
-/*  SELECTORES COMBINADOS */
+    /*  SELECTORES COMBINADOS */
 
 /* selector de descendiente (descendent) utiliza como el simbolo el espacio  este afecta a todod lo que este dentro de la clase selecionada */
 
@@ -72,13 +78,128 @@ section.combinadores div+p{
     color: rgb(56, 241, 0);
     background-color: blue;
 }
+/* ***************** */
+/* Estilod de la seccion psudo  */
 
+.pseudoelementos p::first-letter {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: cursive ;
+    color: blueviolet;
+}
+/* .pseudoelementos p.medio::before */
 
-/***********
+/* .pseudoelementos p.medio::after{
+    content:"escrito desde css";
+    display: block;
+    color: black;
+    background-color: chartreuse; */
+    
+
+    .pseudoelementos .medio {
+        color:brown;
+    }
+    .pseudoelementos .medio::before,
+    .pseudoelementos .medio::after {
+        content: "Muy important";
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: fantasy;
+        background-color: chartreuse;
+        color:black;
+    }
+    body{
+        counter-reset: parrafo; 
+    }
+    .numerados p::before {
+        counter-increment: parrafo;
+        content:counter(parrafo,upper-roman ) " - ";}
+        /* list-style: *//* para que me diga todos los tipod de numero raros  */
+.comillas {
+    quotes:"\00AB" "\00BB"
+}
+
+.comillas p::before {
+    content: open-quote;}
+
+    .comillas p::after {
+        content: close-quote;
+    }   
+
+    /* ************* */
+
+ /* Pseudoclases */
+/* :hover es una pseudoclase significa tener el cursor sobre algo es parte de pseudoclases hover no es una clase estatica tiene que estar en una clase por eso es pseudo */
+ .pseudoclases header{ 
+    background-color: crimson;
+    color:rgb(2, 37, 2);
+
+ } /* cuanto este sobre Esta parte cambiara a lo que le diga en hover */
+ .pseudoclases header p{
+    padding: 1rem;
+    display: none;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+ .pseudoclases header:hover{
+    background-color: rgb(2, 37, 2);
+    color:crimson;
+ }
+ .pseudoclases header:hover p {
+     display: initial;
+ }
+ .pseudoclases header>div{
+    display: none;
+    padding: 1rem;
+ }
+ .pseudoclases header:hover>div{
+     display: initial;}
+    .imgg{
+        max-width: 500px;
+    display: block;}
+
+    .figure       {text-align: center;}
+/* ************** */
+.pseudoclases-numericas p:nth-child(2){ /* hijos directos de un parrafo en 2º grado */
+    text-decoration: underline;
+}/* solo tengo dos hijos directos de 2º clase */
+.pseudoclases-numericas p:nth-of-type(2){/* hijos 2º grado P */
+    font-size: x-large;
+    }
+    /* n se multiplica por dos y va pintando los pares */
+    .pseudoclases-numericas li:nth-of-type(2n) /* even tb valdría */ {
+        background-color: rgb(97, 97, 97);
+    }
+    .pseudoclases-numericas li:nth-of-type(2n+1)/* odd */{
+        background-color:bisque; 
+    }
+    .pseudoclases-numericas li:nth-of-type(3n){
+        color: crimson;
+
+    }
+    .pseudoclases-numericas li:nth-of-type(3n+1){
+        color: goldenrod;
+
+    }
+    .pseudoclases-numericas li:nth-of-type(3n+2){
+        color:rgb(1, 168, 43);
+
+    }
+    .pseudoclases-numericas li {
+        width: 2cm;
+        padding:0.5rem;
+        font-family: monospace;
+        text-align: center;
+    }
+    
+    /* .pseudoclases-numericas li:nth-last-of-type{
+        padding-right:-1.5rem;     } */
+/* **********
 Estilos del footer */ 
 
  
 Footer {
+    margin-top: 1rem;
     background-color:rgb(146, 145, 145);
     color:rgb(224, 224, 104); 
     text-align: center;
