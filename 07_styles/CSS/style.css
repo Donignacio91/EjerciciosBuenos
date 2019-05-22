@@ -3,16 +3,28 @@
  
 
 body{
-    background-color: rgb(179, 241, 241);
-    color: rgb(61, 61, 19);
+    margin-left: 20px;
+    background-color:rgb(198, 245, 179);
+    color:rgb(46, 46, 46); 
     font-family: 'Times New Roman', Times, serif; 
 }
-.enlace{ color: rgb(2, 65, 2);
+
+.enlace{ color: rgb(26, 29, 121);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
-.img{
-    padding-top: 6px;
+.nab{list-style:none}
+
+.imgg{padding-top: 6px;
     padding-bottom: 6px;
-    margin-left: 50px;
+    margin-left: 70px;
+  
+}
+
+.img{padding-top: 6px;
+    padding-bottom: 6px;
+    margin-left: 80px;
+   ;
 }
 .cntr {
     margin: 1rem 1rem 1rem 12rem;
