@@ -33,3 +33,8 @@ b = 3
 //let precio =  45.00;
 /* let producto= 'Gafas'; */
 //precio = producto error
+
+/* function suma(a: number, b:number) :number{
+    return a + b
+ } 
+ suma(12 , 56) */
