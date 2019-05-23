@@ -1,6 +1,7 @@
 :root {
     --color-letra:rgb(192, 238, 26);
     --color-fondo:rgba(26, 28, 90, 0.993);
+    --color-articlefondo: rgb(182, 229, 229);
     --font-title:'Kreon', serif;
     --font-body:'Kameron', serif;
     --size-tittle: 2.5rem;
@@ -8,7 +9,7 @@
     --size-base: calc(14rem/16);
     --sixe-small:calc(8rem/16);
     --size-tittle-section:1.5rem;
-
+    
 }
 *{
     box-sizing: border-box;
@@ -43,7 +44,6 @@ header h1{
     padding-top: 8px;
     font-size: var(--size-tittle);
 }
-header {}
 
     
     
@@ -62,9 +62,13 @@ body{
     font-size: var(--size-base);
     line-height:1;
     font-style: var(--font-body); 
-    background-color: rgba(63, 253, 212, 0.39);
+    background-color: rgba(100, 236, 111, 0.39);
     color:black;
     
+}
+h3{
+    font-family: var(--font-title);
+    padding-bottom: 15px
 }
 body h2{
     font-family: var(--font-title);
@@ -92,21 +96,68 @@ footer address {
 x = 0.875 rem
  */
 
- /* ----- */
- /* Zona main */
+ /* ----- */ 
+ 
+ /*Estilos de las secciones */
+ 
+ section{
+     margin-top: 10px;
+ }
+ section.float article{
+     Float:left
+ }
+
+
+ section article{
+
+    display: inline-block;
+    width: 50%;
+    background-color: var(--color-articlefondo);
+    border: 3px solid var(--color-letra);
+    padding-top:1rem;
+    padding-left:1rem;
+    padding-bottom:1rem;
+    padding-right: 1.5rem
+ }
+
+ /*  Zona class="inline-block" */
 
  main{ 
     margin: 1.5rem 2.5rem; 
  }
- main h2{
+ /* main h2{
      margin: 0.5rem;
+ } */
+
+
+ section.inline-block article{
+     
+     display: inline-block;
+     width: 50%;
+     vertical-align: top;
+     background-color: var(--color-articlefondo);
+     border: 3px solid var(--color-letra);
+     box-sizing: content-box;
+     box-sizing: border-box;
+     margin-left: -6px;
  }
 
- main section{
-     display: inline-block;
-     width: 49.8%;
-     vertical-align: top;
-     padding:1rem; 
-      
-     
+ section.inline-block article:nth-last-of-type(2) {
+     margin-left: -18px;
  }
+ section.float:after {
+     content: '';
+     display: block;
+     clear: both;
+}
+section.tabla{
+    display: table;
+
+} 
+section.tabla article {
+    display: table-cell;
+    align-items: center;
+}
+section.flex{
+    display: flex;
+}
