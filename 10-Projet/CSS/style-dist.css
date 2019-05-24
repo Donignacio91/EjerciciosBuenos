@@ -6,7 +6,11 @@
     --font-body:'Kameron', serif;
     --size-tittle: 2.5rem;
     --size-subtittle: 1.5rem;
+    --size-base: -webkit-calc(14rem/16);
+    --size-base: -moz-calc(14rem/16);
     --size-base: calc(14rem/16);
+    --sixe-small:-webkit-calc(8rem/16);
+    --sixe-small:-moz-calc(8rem/16);
     --sixe-small:calc(8rem/16);
     --size-tittle-section:1.5rem;
     
@@ -14,6 +18,8 @@
 /* oara hacer un impport en la primera linea 
 hago un @import url()  */
 *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 /* *{
@@ -137,7 +143,11 @@ section>header {
      vertical-align: top;
      background-color: var(--color-articlefondo);
      border: 3px solid var(--color-letra);
+     -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
      box-sizing: content-box;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
      box-sizing: border-box;
      margin-left: -6px;
  }
@@ -157,6 +167,10 @@ section .table{
 } 
 section .table article {
     display: table-cell;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -moz-box-align: stretch;
+    -ms-flex-align: stretch;
     align-items: stretch;
 }
 
@@ -165,7 +179,17 @@ main h3 {
     font-weight: bold;
 }
 section .flex{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 section .flex article{
@@ -173,6 +197,16 @@ section .flex article{
 
 @media screen and (min-width:600px) { /* lee el codigo y al llegar a la mediaqueri aplica lo que le pedimos en la media */
     section .flex{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;}}
         

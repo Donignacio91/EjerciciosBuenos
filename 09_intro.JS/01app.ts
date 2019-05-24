@@ -21,14 +21,15 @@ undefined // tipo undefine
 
 
 //typeScrip el tipado puede fuerte y estático
+/* 
 
-
-
+(
 let b: number // tipo number sin valor
 b = 3
 // b = pepe //error.
 
-
+)
+ */
 
 //let precio =  45.00;
 /* let producto= 'Gafas'; */
