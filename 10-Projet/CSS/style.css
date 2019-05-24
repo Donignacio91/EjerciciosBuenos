@@ -42,6 +42,7 @@ header{
     padding-bottom:5px;
 }
 header h1{
+    text-shadow: rgb(255, 230, 0) 0.1em 0.1em 0.2em;
     font-family: var(--font-title);
     padding-top: 8px;
     font-size: var(--size-tittle);
