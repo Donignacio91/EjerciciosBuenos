@@ -57,6 +57,7 @@ section.centrada {
 .espacios p{
     padding: 1rem;
     background: white;
+   
 }
 
 .espacios p{
@@ -94,6 +95,9 @@ margin-left: 2.5%;
         content: '';
         display: block;
         clear: both;
+    }
+    .espacios p:not(:last-of-type) {
+        margin-right:0; 
     }
     .espacios p:last-of-type {
         margin-right: 2.5%;
