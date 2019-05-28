@@ -1,7 +1,7 @@
 'use strict'
 
 //valores primitivos 
-//number, string y boolean
+//number, string y boolean.
 
 let a = 2
 let b = a
