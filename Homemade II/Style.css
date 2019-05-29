@@ -1,0 +1,46 @@
+:root {
+
+--font-family:'chunkfiveroman', serif;
+--font-title:'Kreon', serif;
+--font-body:'Kameron';
+}
+@font-face {
+    font-family: 'chunkfiveroman';
+    src: url('../assets/chunkfive-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+h1 {
+    font-family: var(--font-family);
+
+}
+h2 {
+    font-style: var(--font-title);
+    text-align: center;
+    background-color: rgb(172, 172, 172)
+}
+h3{
+    text-align: center;
+}
+p {
+    font-style: var(--font-body);
+}
+.flex{
+    margin: 1rem, 2rem;
+}  
+.flex p{
+    background-color: white;
+    padding: 1rem;
+    margin: 1%;
+}
+.flex img{
+    padding: 1rem;
+    margin: 1%;
+    max-width:500px;
+    max-height:300px; 
+}
+.flex .flex-wraper{
+    display:flex;
+    background-color: white;
+}
