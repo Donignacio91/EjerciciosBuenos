@@ -14,6 +14,16 @@ console.log(x, typeof x) // 2 number
 let w = x + y // aqui me concatenara los datos puesto que hay un valor con tipo string si pongo ambos en number me suma sin problema.
 console.log(w) 
 
+function isValidNumber(n){
+    r = true
+    if (isNaN(n) || typeof n == 'boolean' 
+    || Array.isArray (n)){
+        r = false
+    }
+    return r
+}
+
+
 function sumar(a = 0,b = 0) {
     if (isNaN(a) ||isNaN(b) 
     || typeof a == 'boolean' || typeof b =='boolean'
