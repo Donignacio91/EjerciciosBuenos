@@ -1,0 +1,66 @@
+.root{
+  
+--color-1: rgb(51, 56, 255);
+--color-letra: black;
+--color-fondo:rgb(67, 156, 232);
+--color-2: rgb(182, 229, 229);
+--color-3:rgb(68, 231, 221);
+--color-4:#4AFFBF;
+--font-title:'Courgette', cursive;
+--font-body:'Quattrocento Sans', sans-serif;
+}
+/* */
+  /*colors #4A7CFF,  #57DDFF #43E8DD #4AFFBF*/
+h1 {
+    font-family:'Courgette', cursive;
+    color: rgb(30, 126, 105);
+    text-align: center;
+    font-size: 40px
+}
+h2 {
+    font-family: 'Quattrocento Sans', sans-serif;
+    color: rgb(30, 126, 105);
+    text-align: center;
+    font-size: 25px;
+}
+body{
+    font-family: 'Average', serif;
+    background-color: rgb(196, 251, 255);
+
+}
+
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 35px;
+    color:rgb(0, 0, 0);
+    font-family: 'Courgette', cursive;
+}
+ 
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -300%);
+    
+}
+
+
+body p{
+    color: rgb(46, 46, 46);
+}
+img{
+    width:100%;
+}
+.intro{
+    padding-left:4rem;
+    padding-right:4rem;
+}
+.flex{
+    display:flex;
+}
+.flex p {
+    margin:0.5rem;
+}
