@@ -1,16 +1,29 @@
 /*HEADER*/
 
-.header {
-    background-color: var(--color-fondo);
-    color:var(--color-letra);
+.header h1 {
+    background-color: darkkhaki;
+    color:black;
     padding: 0.8rem 0rem 0.5rem 1rem;
     font-size: large;
     background-image: url("./assets/oilseed-rape-2135026_1920.jpg");
 }
 
 .header p {
+    background:darkkhaki; 
     font-size: var(--size-sub);
-    margin: 1rem;
+    padding-bottom: 1rem;
+    visibility: hidden;
+    text-align: center;
+}
+header:hover p{
+    visibility: initial;
+}
+header footer {
+    background:darkkhaki; 
+    color: bisque;
+
+}header {
+    background:darkkhaki; 
 }
 
 /*BODY*/
@@ -68,11 +81,6 @@ aside img {
     padding-left: 15%;
 }
 /*FOOTER*/
-footer {
-    background: maroon;
-    color: bisque;
-
-}
 
 footer a {  /* De esta forma coger todos los enlaces que haya dentro de footer */
     color: inherit;
