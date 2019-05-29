@@ -89,7 +89,7 @@ footer a {  /* De esta forma coger todos los enlaces que haya dentro de footer *
 
 .mainfooter aside{
     background-color: beige;
-    color: coral;
+    color: rgb(226, 114, 73);
     text-align: center;
     padding: 1rem; /* Da "Aire" a la página */
 }
