@@ -34,9 +34,12 @@ body{
     position: relative;
     display: inline-block;
     text-align: center;
-    font-size: 35px;
-    color:rgb(0, 0, 0);
+    font-size: 55px;
+    color: rgb(0, 0, 0);
     font-family: 'Courgette', cursive;
+    font-weight: bold;
+    width:100%;
+    -webkit-text-stroke: 0.5px rgb(61, 61, 61);
 }
  
 .centrado{
