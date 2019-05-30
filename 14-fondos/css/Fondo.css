@@ -1,0 +1,20 @@
+header{
+    min-height: 100vh;
+    display: flex;
+    justify-content:flex-end; /*alineamiento horizontal */
+    align-items: center; /* alineacion vertical*/
+    background-color: rgba(12, 85, 104, 0.562); /**toma color fondo bajo imagen*/
+    background-image: url(../assets/./osopie.jpg);
+    background-repeat:  no-repeat /*repeat-y*/; /*repetir en eje x o y el cuadrad*/
+    background-repeat: no-repeat; 
+    background-position: center; /*cambia la poss del element*/
+    background-size: cover; /*intenta colocar la imagen lo mas grande posoble sin desgradae cover cubre el 100€ llegando a pixselar*/
+    background-blend-mode: hard-light;/* mezcla imagen y color o dos colores o dos imagenes*/ 
+    
+}
+body {
+    margin:0
+}
+h1{
+    color: rgb(0, 10, 70);
+}

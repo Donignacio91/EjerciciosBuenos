@@ -1,0 +1,70 @@
+.gama{
+ display: flex;
+}
+ 
+.gama div {     
+    display: flex;
+    height: 12rem;
+    width: 12rem;
+}
+.gama div:nth-of-type(1) {
+    background: #40FF50;
+}
+.gama div:nth-of-type(2) {
+    background:#9CE82E;           
+}
+.gama div:nth-of-type(3) {
+     background:#FFEF40;          
+}
+.gama div:nth-of-type(4) {
+    background:#E8B32E;          
+}
+.trans {
+    display: flex;
+    margin: 1rem;
+    border: 1px solid;
+    padding: 1rem;
+    width: 90%;
+    height: 10vh;
+    background-color: rgb(66, 107, 8);
+}
+
+.trans div{
+    width: 10rem;
+    height: 10rem;
+    background-color:rgba(232, 179, 46);
+}
+.trans div:nth-of-type(2) {
+    background-color: rgba(232, 179, 46, 0.514);
+}
+.trans p{
+    color: rgba(0, 0, 0, 0.363);
+    font-size: 4rem;
+}
+.trans::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.opacity{
+    margin-top: 5rem;
+    opacity: 0;
+} /* esto es para esconder cosas y que al pasr por ellas se muestre al decir hoover opacity cuando paso se ve y cuando no desaparece*/
+.opacity:hover {
+ opacity: 1;
+ background-image: url(../assets/osofamily.jpg)
+} 
+.fondo {
+    background-image: url(../assets/Portada_SVA.jpg);
+    opacity:0.3;
+}
+.gradient {
+    background: black; /*lo pongo para que si no carga la img o el gradiante tenga un fondo donde apoyar mi tecxo puesto que corremos el riesgo de ue si un navegador no los sabe renderizar*/
+    background: linear-gradient(
+        to left, /*aqui pongo hacia donde */
+        rgb(64, 255, 80),
+        rgb(255, 239, 64),
+        rgba(200, 30, 30, 0.979)
+    )
+
+}
