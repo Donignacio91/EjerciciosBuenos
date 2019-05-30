@@ -13,10 +13,40 @@
   /*colors #4A7CFF,  #57DDFF #43E8DD #4AFFBF*/
 h1 {
     font-family:'Courgette', cursive;
-    color: rgb(30, 126, 105);
+    color:rgb(67, 156, 232);
     text-align: center;
-    font-size: 40px
+    font-size: 40px;
 }
+header{
+    background-color:rgb(30, 126, 105); 
+}
+header a{
+    color:rgb(4, 6, 7);
+    font-style:'Quattrocento Sans', sans-serif;
+    font-size: 35px;
+    margin: 1rem;
+    text-align: center;
+    
+    }
+.mainfooter{color:rgb(4, 6, 7);
+    font-style:'Quattrocento Sans', sans-serif;
+    font-size: 20px;
+    margin: 1rem;
+    text-align: center;
+    background-color: rgb(30, 126, 105);
+}
+.mainfooter a {
+    color:rgb(4, 6, 7);
+}
+header nav li{
+   list-style-type: none;
+   display: inline-block;
+   text-align: center;
+}
+header ul {
+    text-align: center;
+}
+
 h2 {
     font-family: 'Quattrocento Sans', sans-serif;
     color: rgb(30, 126, 105);
@@ -26,10 +56,33 @@ h2 {
 body{
     font-family: 'Average', serif;
     background-color: rgb(196, 251, 255);
-
 }
 
-
+.clearfix{
+    clear: both;
+}
+.flex_img{
+   display:block;
+   max-width: 100%;
+   width: 800px;
+   height: 500px;
+   float: left; 
+   vertical-align: text-bottom;
+}
+.flex_img2{
+    display:block;
+    max-width: 100%;
+    float: left; 
+    width: 500px;
+   height: 500px;
+ }
+ .flex_img3{
+    display:inline-block;
+    max-width: 100%;
+    float: right; 
+    width: 800px;
+   height: 500px;
+ }
 .contenedor{
     position: relative;
     display: inline-block;
@@ -56,6 +109,7 @@ body p{
 }
 img{
     width:100%;
+   
 }
 .intro{
     padding-left:4rem;
@@ -65,5 +119,22 @@ img{
     display:flex;
 }
 .flex p {
-    margin:0.5rem;
+    margin: 0.5rem;
 }
+
+/*TABLA*/
+.tabla{
+    display: flex;
+}              
+
+.tg  {border-collapse:collapse;border-spacing:0;border:none;border-color:#9ABAD9;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#9ABAD9;color:#444;background-color:#EBF5FF;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#9ABAD9;color:#fff;background-color:#409cff;}
+.tg .tg-iwyv{font-weight:bold;font-style:italic;font-family:"Comic Sans MS", cursive, sans-serif !important;;border-color:#343434;text-align:left;vertical-align:top}
+.tg .tg-a87l{font-family:Georgia, serif !important;;border-color:#343434;text-align:left}
+.tg .tg-r5ts{font-weight:bold;font-style:italic;font-family:"Comic Sans MS", cursive, sans-serif !important;;border-color:#343434;text-align:left}
+.tg .tg-kls0{background-color:#D2E4FC;font-weight:bold;font-style:italic;font-family:"Comic Sans MS", cursive, sans-serif !important;;border-color:#343434;text-align:left}
+.tg .tg-365r{background-color:#D2E4FC;font-family:Georgia, serif !important;;border-color:#343434;text-align:left}
+.tg .tg-nhmy{font-family:Georgia, serif !important;;border-color:#343434;text-align:left;vertical-align:top}
+.tg .tg-0n89{background-color:#D2E4FC;font-weight:bold;font-style:italic;font-family:"Comic Sans MS", cursive, sans-serif !important;;border-color:#343434;text-align:left;vertical-align:top}
+.tg .tg-l2bu{background-color:#D2E4FC;font-family:Georgia, serif !important;;border-color:#343434;text-align:left;vertical-align:top}
