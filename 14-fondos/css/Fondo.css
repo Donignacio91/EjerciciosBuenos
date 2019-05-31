@@ -1,20 +1,66 @@
 header{
     min-height: 100vh;
     display: flex;
-    justify-content:flex-end; /*alineamiento horizontal */
+    justify-content:center; /*alineamiento horizontal */
     align-items: center; /* alineacion vertical*/
-    background-color: rgba(12, 85, 104, 0.562); /**toma color fondo bajo imagen*/
-    background-image: url(../assets/./osopie.jpg);
+    background-color: rgba(0, 196, 245, 0); /**toma color fondo bajo imagen*/
+    background-image: url(../assets/24-horas-de-nurburgring-2015-cronica-desde-dentro-201521490_1.jpg);
     background-repeat:  no-repeat /*repeat-y*/; /*repetir en eje x o y el cuadrad*/
     background-repeat: no-repeat; 
     background-position: center; /*cambia la poss del element*/
     background-size: cover; /*intenta colocar la imagen lo mas grande posoble sin desgradae cover cubre el 100€ llegando a pixselar*/
-    background-blend-mode: hard-light;/* mezcla imagen y color o dos colores o dos imagenes*/ 
-    
+    background-blend-mode: hard-light;/* mezcla imagen y color o dos colores o dos imagenes*/   
+}
+ a {
+    color: inherit;
+    text-decoration: initial;
+}
+h1 span{
+    /*display:none;*/
+    color: rgba(255, 255, 255, 0);
 }
 body {
     margin:0
 }
 h1{
     color: rgb(0, 10, 70);
+}
+.content_wrapper {
+    background-image: url(../assets/osopie.jpg);
+    margin-left: 4rem;
+    margin-right: 4rem;  
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+}
+.mainfooter {
+    background-color: rgb(196, 196, 183);
+    color: rgb(0, 1, 88);
+    text-align: center;
+    padding: 1rem; /* Da "Aire" a la página */
+}
+.mainfooter aside{
+    background-color: rgb(196, 196, 183);
+    color: rgb(0, 1, 88);
+    text-align: center;
+    padding: 1rem; /* Da "Aire" a la página */
+}
+
+.mainfooter aside ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0rem; /* Da "Aire" a la página */
+ }  
+
+.mainfooter aside li{
+    display: inline;
+}
+
+.mainfooter aside a {
+    color: inherit;
+    text-decoration: none;
+    text-align:center;
+    display: inline;
+    padding: 1rem 1rem; /* Da "Aire" a la página */
 }
