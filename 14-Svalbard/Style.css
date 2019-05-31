@@ -120,6 +120,22 @@ img{
 .flex p {
     margin: 0.5rem;
 }
+.formulario{
+    background-color: #409cff; 
+    display: flex;
+    align-items:center;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 20px;
+}
+.formu{
+    
+    margin-left: 10px;
+
+}
+.button{
+    text-align: center;
+}
 
 /*TABLA*/
 .tabla{
@@ -137,3 +153,18 @@ img{
 .tg .tg-nhmy{font-family:Georgia, serif !important;;border-color:#343434;text-align:left;vertical-align:top}
 .tg .tg-0n89{background-color:#D2E4FC;font-weight:bold;font-style:italic;font-family:"Comic Sans MS", cursive, sans-serif !important;;border-color:#343434;text-align:left;vertical-align:top}
 .tg .tg-l2bu{background-color:#D2E4FC;font-family:Georgia, serif !important;;border-color:#343434;text-align:left;vertical-align:top}
+
+/*PUBLI*/
+
+.entry img.aligncenter {
+    margin: 18px auto;
+    clear: both;
+    display: block;
+}
+a img {
+    transition: opacity .2s ease;
+}
+    img {
+        -webkit-border-radius: 9px;
+        border-radius: 9px;
+    }
