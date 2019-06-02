@@ -16,18 +16,29 @@ h1 {
     color:rgb(67, 156, 232);
     text-align: center;
     font-size: 40px;
+    letter-spacing: 1.5px,
 }
 header{
-    background-color:rgb(30, 126, 105); 
+    background-color:rgb(30, 126, 105);
+    letter-spacing: 1.5px, 
 }
 header a{
     color:rgb(4, 6, 7);
     font-style:'Quattrocento Sans', sans-serif;
-    font-size: 35px;
+    font-size: 20px;
     margin: 1rem;
     text-align: center;
-    
+    letter-spacing: 1.5px,
     }
+    .lii {display: inline;}
+.flexcont{
+    display: flex;
+    flex-direction: column;
+}
+.flexcont ul li{
+    display: inline;
+
+ }
 .mainfooter{color:rgb(4, 6, 7);
     font-style:'Quattrocento Sans', sans-serif;
     font-size: 20px;
@@ -53,7 +64,12 @@ h2 {
     text-align: center;
     font-size: 25px;
 }
+h3 {
+    margin-left:10px; 
+}
 body{
+    margin-left:50px;
+    margin-right: 50px;
     font-family: 'Average', serif;
     background-color: rgb(196, 251, 255);
 }
@@ -64,11 +80,17 @@ body{
 .flex_img{
    display:block;
    max-width: 100%;
-   width: 800px;
-   height: 500px;
+   width: 500px;
+   height: 200px;
+   padding-right: 10px;
    float: left; 
    vertical-align: text-bottom;
 }
+.img1{
+    width: 490px;
+    height: 190px;
+}
+
 .flex_img2{
     display:block;
     max-width: 100%;
@@ -76,13 +98,36 @@ body{
     width: 500px;
    height: 500px;
  }
+ 
+ 
  .flex_img3{
-    display:inline-block;
+    display:block;
     max-width: 100%;
     float: right; 
-    width: 800px;
-   height: 500px;
+    width: 400px;
+     height: 230px;
+     padding-left: 10px;
  }
+ .img3{
+     width:400px;
+     height:230px;
+ }
+ .flex_img4{
+    display:block;
+    max-width: 100%;
+    float: right; 
+    width: 600px;
+     height: 100px;
+     margin-bottom:100px; 
+
+ }
+ .img_4{
+    width: 700px;
+    height: 300px;
+ }
+.jaleo {
+    margin-top: 200px;
+}
 .contenedor{
     position: relative;
     display: inline-block;
@@ -156,6 +201,11 @@ img{
 
 /*PUBLI*/
 
+.publi{
+    max-width: 70%;
+    margin-left: 15%;
+    border:solid 2px rgb(30, 126, 105);
+}
 .entry img.aligncenter {
     margin: 18px auto;
     clear: both;
@@ -165,6 +215,5 @@ a img {
     transition: opacity .2s ease;
 }
     img {
-        -webkit-border-radius: 9px;
         border-radius: 9px;
     }
