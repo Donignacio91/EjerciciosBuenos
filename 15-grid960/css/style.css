@@ -1,7 +1,27 @@
 body {
     margin: 0,
 }
-header {
-    background-color:red;
-
+header,footer {
+    background-color:brown;
+    color:bisque;
 }
+main{
+    min-height: 80vh;
+    background-color: bisque;
+}
+.columnas{
+    column-fill: ;
+    
+    column-count: 4;
+     column-gap: 2rem;
+     column-rule: 1px solid brown;/* borde entre columnas*/
+}
+.column_wrapper{
+    width: 90%;
+    margin: 1rem auto; /*centra en wrapel a centro de la pantalla*/
+    
+}
+
+.columnas :nth-of-type(1){
+    margin-top: 0;
+} 

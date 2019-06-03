@@ -32,7 +32,7 @@
     } else if(!isEntero(n)){//2º excepción{
         return -2
     }
-     else if (n%2) {
+     else if (n%2) /*resto de la división entre 2*/  {
 
      r = false}
 
@@ -40,15 +40,15 @@
       
  }
 
- let x = 1
- console.log (!(x%2))
- x = 2
- console.log (!(x%2))
- x = 3
- console.log (!(x%2))
- x = 4
- console.log (!(x%2))
- isPar (x)
+ let n = 1
+ console.log (!(n%2))
+ n = 2
+ console.log (!(n%2))
+ n = 3
+ console.log (!(n%2))
+ n = 4
+ console.log (!(n%2))
+ isPar (n)
 
  /**
   * @description Función que muestra si un numero es par o impar 
@@ -106,3 +106,5 @@ function probar()
     mostrar (x)
     }
     probar()
+
+    module.exports = isPar;
