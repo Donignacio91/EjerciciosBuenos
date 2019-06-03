@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+header,footer{
+    background: rgb(92, 104, 92);
+    color: aliceblue;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 90%;
+    margin:1rem auto;
+}
+.relative{
+    position: relative; /*pasa a estar en una capa superior tendremos que moverla*/
+    top: 2rem; /* de su top lo muevo dos rem empiezo en top los valores posotivos arriba 
+    negativos abajo */
+    left: 2rem; /**positivos derecha negatvos izquierda si pogon right habra que cambuar */
+    background-color: rgba(0, 255, 255, 0.295);
+}
+p{
+    background-color: salmon;
+    padding: 0.5rem 1rem;
+}
+.absolute_wrapper {
+    position: relative;
+    
+}
+.absolute{ 
+    background-color: rgba(148, 25, 11, 0.377);
+    margin: 0;
+    position: absolute; /*si no hay nadie se va al inicio del body (con top) con button se iria al footer a no se que entre medias tenga otro algo con position relative*/
+    top: 0rem;
+    
+    right: 6rem;
+    
+}
+

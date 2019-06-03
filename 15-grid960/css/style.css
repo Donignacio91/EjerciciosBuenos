@@ -10,7 +10,6 @@ main{
     background-color: bisque;
 }
 .columnas{
-    column-fill: ;
     
     column-count: 4;
      column-gap: 2rem;
