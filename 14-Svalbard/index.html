@@ -9,14 +9,17 @@
     <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Average&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     
     <title>Svalbardt</title>
 </head>
 <body>
      
-<div class="contenedor"> 
-    <img src="./assets/osoportada.jpg" alt="Lago helado svalbardt"> <!-- https://regardis.com/como-poner-texto-encima-de-una-imagen-con-html-css/ -->
-    <div class="centrado">Svalbard.</div>
+<div id="inicio" class="portada"> 
+    <img src="./assets/Fotooso portada.jpg" alt="Lago helado svalbardt"> <!-- https://regardis.com/como-poner-texto-encima-de-una-imagen-con-html-css/ -->
+    <div class="centrado">Svalbard.</div> 
    </div>
 
    <div class="clearfix"></div>
@@ -38,7 +41,7 @@
 <section>
     
 
-   <h2 id="inicio"> Tierra de osos.</h2>
+   <h2 > Tierra de osos.</h2>
    <div class="tabla">
 
           <table class="tg" style="undefined:table-layout: fixed; width: 363px">
@@ -168,7 +171,13 @@
    </p>
    </div>
 </section>
-<section>
+<div class="return">
+  <a href="#inicio" rel="tag" title="Inicio">
+      <i class="fas fa-mountain"></i></a>
+      <!-- <i class="fas fa-paw"></i> -->
+</div>
+
+<section class="free">
   <h2>SVALBARD, EL LUGAR DONDE ESTÁ PROHIBIDO MORIRSE</h2>
   <p> Debido a un experimento llevado a cabo a comienzos del siglo XX, donde unos científicos tomaron una muestra de tejido de dos marineros que fueron enterrados, se descubrió que los cadáveres estaban en perfecto estado de conservación.
       La noticia se extendió y, con la idea de que un cuerpo congelado tras su muerte podría ser curado y resucitado en el futuro, comenzó a haber un boom de movimiento de población hacia la isla con la intención de ser enterrados en ella para ese futurístico plan.
@@ -178,6 +187,11 @@
   <div class="publi">
     <a href="https://clk.tradedoubler.com/click?p(281568)a(3053933)g(24376548)" target="_blank" rel="nofollow noopener"><img class="aligncenter wp-image-9447 size-full" title="seguro de viaje internacional" src="http://unviajecreativo.com/wp-content/uploads/2019/02/900x200_viajerocreativo-20.jpg" alt="seguro de viaje internacional" width="900" height="200" srcset="https://unviajecreativo.com/wp-content/uploads/2019/02/900x200_viajerocreativo-20.jpg 900w, https://unviajecreativo.com/wp-content/uploads/2019/02/900x200_viajerocreativo-20-300x67.jpg 300w, https://unviajecreativo.com/wp-content/uploads/2019/02/900x200_viajerocreativo-20-768x171.jpg 768w, https://unviajecreativo.com/wp-content/uploads/2019/02/900x200_viajerocreativo-20-640x142.jpg 640w" sizes="(max-width: 900px) 100vw, 900px"></a>
   </div>
+  <div class="return">
+      <a href="#inicio" rel="tag" title="Inicio">
+          <i class="fas fa-mountain"></i></a>
+          <!-- <i class="fas fa-paw"></i> -->
+    </div>
 </section>
 <section>
      <h2>¿Que  hacer en Svalbard?</h2>
@@ -219,7 +233,11 @@
                               <li> Campamentos en la naturaleza</li>
                     </ul>
      </div>
-
+     <div class="return">
+        <a href="#inicio" rel="tag" title="Inicio">
+            <i class="fas fa-mountain"></i></a>
+            <!-- <i class="fas fa-paw"></i> -->
+      </div>
     
 </section>
 <section>
@@ -236,6 +254,11 @@
                     Bastante movidito, llegando casi en el último minuto debido a un retraso en nuestro vuelo de Helsinki a Oslo, antes de partir hacia nuestro destino final; Longyearbyen.</p>
              
      </div>
+     <div class="return" >
+        <a href="#inicio" rel="tag" title="Inicio">
+            <i class="fas fa-mountain"></i></a>
+            <!-- <i class="fas fa-paw"></i> -->
+      </div>
       <div>
         <img src="./assets/Portada_SVA.jpg" alt="renos paisa"></div>
 
@@ -253,21 +276,34 @@
       
         <p>Nombre y apellidos</p>
         <div class="formu">
-          <label for="name"></label>
           
           <label for="name"></label>
-          <input type="text" id="name" />
+          <input type="text" id="name" required />
       </div>
       <p>Correo electronico.</p>
       <div class="formu">
           <label for="mail"></label>
-          <input type="email" id="mail" />
+          <input type="email" id="mail" required />
       </div>
       <p>¿Cuándo nos visitaría?</p>
       <div class="formu">
           <label for="msg"></label>
-          <input type="text" id="month" />
+          <input type="text" id="month" required />
       </div>
+      <p>Seleccione continente de destino</p> <!-- No se pueden poner dos legend por muy lógico que sea ponerlo aquí, ya que ya que dentro del fieldset ya está la del "datos del curso" -->
+                            <label for="Madrid">Europa</label>
+                                   <input type="radio" name="ubicacion" id="Europa" value="Europa"> <!-- sE PONE EN EL CASO DE LOS INPUT RADIO EL MISMO NOMBRE PARA PODER AGRUPARLOS -->
+                            <label for="Barcelona">América</label>
+                                  <input type="radio" name="ubicacion" id="América" value="América">
+                            <label for="Sevilla">Asia</label>
+                                  <input type="radio" name="ubicacion" id="Asia" value="Asia">
+                            </input>
+                            <label for="Sevilla">África</label>
+                                  <input type="radio" name="ubicacion" id="África" value="África">
+                            <label for="Sevilla">Oceanía</label>
+                            <input type="radio" name="ubicacion" id="Oceanía" value="Oceanía">
+                            </input>
+
       <p>Mensaje.</p>
       <div class="formu">
           <label for="msg"></label>
@@ -278,6 +314,11 @@
     </div>
   </form>
 </div>
+<div>
+    <a href="#inicio" rel="tag" title="Inicio">
+        <i class="fas fa-mountain"></i></a>
+        <!-- <i class="fas fa-paw"></i> -->
+  </div>
 </section>
     <footer class="mainfooter">
      <address>
