@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin-right: auto;
+    margin-left: 15%;
+}
+header{
+        max-height:100vh;
+        min-height:35vh;
+        max-width: 960px;
+        margin-top: 0;
+        display: flex;
+        justify-content:center; /*alineamiento horizontal */
+        align-items: top ;  /* alineacion vertical*/
+        background-image: url(../assets/Fotooso\ portada.jpg);
+        background-repeat:  no-repeat /*repeat-y*/; /*repetir en eje x o y el cuadrad*/
+        background-position: center; /*cambia la poss del element*/
+        background-size: cover; /*intenta colocar la imagen lo mas grande posoble sin desgradae cover cubre el 100€ llegando a pixselar*/
+        /*background-blend-mode: hard-light;/* mezcla imagen y color o dos colores o dos imagenes*/   
+    }
+   
+header a{
+    color:rgb(4, 6, 7);
+    font-style:'Quattrocento Sans', sans-serif;
+    font-size: 15px;
+    text-decoration:none; 
+    margin: 1rem;
+    text-align: center;
+    letter-spacing: 1.5px,
+    }
+ header .lii {
+     display: inline;
+    }
+ header nav li{
+        list-style-type: none;
+        display: inline-block;
+        text-align: center;
+     }
+ header ul {
+         text-align: center;
+     }
+.introNav{
+    display: flex;
+    align-items: center;
+}
+.boton_1{
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    font-style: normal;
+    color:rgb(52, 89, 92);
+    background-color: #84c6f1;
+    border-radius: 15px;
+    border: 3px solid rgb(196, 251, 255) ;
+  }
+  .boton_1:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }
