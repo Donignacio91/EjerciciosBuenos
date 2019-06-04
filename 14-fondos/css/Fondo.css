@@ -1,8 +1,8 @@
 header{
     min-height: 100vh;
     display: flex;
-    justify-content:center; /*alineamiento horizontal */
-    align-items: center; /* alineacion vertical*/
+    justify-content:flex-start; /*alineamiento horizontal */ /*star es derecha end es izquierda
+    align-items: center; /* alineacion vertical*/ /*star es arriba y end abajo*/
     background-color: rgba(0, 196, 245, 0); /**toma color fondo bajo imagen*/
     background-image: url(../assets/24-horas-de-nurburgring-2015-cronica-desde-dentro-201521490_1.jpg);
     background-repeat:  no-repeat /*repeat-y*/; /*repetir en eje x o y el cuadrad*/
@@ -15,7 +15,7 @@ header{
     color: inherit;
     text-decoration: initial;
 }
-h1 span{
+h1 span{ /*  aling items solo funciona si antes les hago inline blok a los  */
     /*display:none;*/
     color: rgba(255, 255, 255, 0);
 }
