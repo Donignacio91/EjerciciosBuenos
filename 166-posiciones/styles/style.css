@@ -4,20 +4,23 @@
 body{
     margin: 0;
 }
+header{
+    min-height: 10vh;
+}
 header,footer{
     background: rgb(92, 104, 92);
     color: aliceblue;
-    min-height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 main{
     width: 90%;
-    margin:1rem auto;
+    margin: 1rem auto 5rem auto;
+    
 }
 .relative{
-    position: relative; /*pasa a estar en una capa superior tendremos que moverla*/
+    position: relative; /*pasa a estar en una capa superior tendremos que moverla es relativo a su posicion original*/
     top: 2rem; /* de su top lo muevo dos rem empiezo en top los valores posotivos arriba 
     negativos abajo */
     left: 2rem; /**positivos derecha negatvos izquierda si pogon right habra que cambuar */
@@ -36,8 +39,49 @@ p{
     margin: 0;
     position: absolute; /*si no hay nadie se va al inicio del body (con top) con button se iria al footer a no se que entre medias tenga otro algo con position relative*/
     top: 0rem;
-    
     right: 6rem;
-    
+    }
+
+.fixed { /*para fijar footer o header */
+    position: fixed;
+    bottom: 0; /*para footer*/
+    /*top:0;/*para header*/
+    left:0;
+    right:0;
+    height: 1rem;
+    overflow: hidden; /*me permite que un elemento tenga un scroll*/
+    align-items: flex-start;
+     
+}
+.fixed:hover { 
+    height: auto;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
+.center {
+    text-align: center;
+}
+.overFlow {
+    height: 40vh;
+    overflow: scroll;
+
+}
+.overFlow::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  .overFlow::-webkit-scrollbar-track {
+    background: #106d1f; 
+  }
+  
+  /* Handle */
+  .overFlow::-webkit-scrollbar-thumb {
+    background: rgb(143, 247, 148); 
+  }
+  
+  /* Handle on hover */
+  .overFlow::-webkit-scrollbar-thumb:hover {
+    background: rgb(9, 197, 19); 
+  }

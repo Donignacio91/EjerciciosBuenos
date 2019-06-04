@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+}
+header {
+    position: relative;
+    min-height: 100vh;/*el header ocupara la pantalla entera */
+    
+
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center; /* vertical */
+    /*cuando hay capas flotates da igual 10 que 1000 pero el valor mas alto de un monteon de relatives y absolutes sera el 1º */
+    /* background-image: url(../assets/img-noise-32x32.png); */
+   
+}
+header::before{
+    content: '';
+    display:block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+   opacity: 0.3; 
+   z-index: 10;
+   background-image: url(../assets/LongIsland-Bahamas-ShaneGross.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+.introNav{
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 20%;
+     z-index:50;
+}
+.logo{
+    display: inline-block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 20%;
+     z-index:50;
+}
+.logo img{
+    max-width: 80%;
+    min-width: 50%;
+}
+
+li {
+    position: relative;
+}
+nav{
+    position: absolute;
+    top:60%;
+    z-index: 30;
+
+}
+nav ul {
+    list-style: none;
+padding: 0;
+margin:0
+}
+nav > ul > li {
+    float:left;
+    min-width: 7em;
+}
+nav a {
+    display: block;
+    margin: .25em;
+    padding: .5em;
+    text-decoration: none;
+    text-align: center;
+
+}
+li ul{
+    display: none;
+}
+li:hover{
+    display: block;
+    position: absolute;
+}
+/*Sub menus*/
+li ul li ul {
+    position: absolute;
+    top:0;
+    left: 7em;
+    width: 10em;
+}
+nav > ul a:focus,
+nav > ul a:hover{
+
+}
