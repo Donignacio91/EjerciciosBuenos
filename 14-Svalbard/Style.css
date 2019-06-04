@@ -31,8 +31,33 @@ header a{
     letter-spacing: 1.5px,
     }
     .lii {display: inline;}
+header nav li{
+   list-style-type: none;
+   display: inline-block;
+   text-align: center;
+}
+header ul {
+    text-align: center;
+}
+body{
+    margin-left:50px;
+    margin-right: 50px;
+    font-family: 'Average', serif;
+    background-color: rgb(196, 251, 255);
+}
 
-    
+
+
+
+
+
+h1 {
+    font-family:'Courgette', cursive;
+    color:rgb(67, 156, 232);
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 1.5px,
+}
 .flexcont{
     display: flex;
     flex-direction: column;
@@ -51,14 +76,8 @@ header a{
 .mainfooter a {
     color:rgb(4, 6, 7);
 }
-header nav li{
-   list-style-type: none;
-   display: inline-block;
-   text-align: center;
-}
-header ul {
-    text-align: center;
-}
+
+
 
 h2 {
     font-family: 'Quattrocento Sans', sans-serif;
@@ -69,12 +88,7 @@ h2 {
 h3 {
     margin-left:10px; 
 }
-body{
-    margin-left:50px;
-    margin-right: 50px;
-    font-family: 'Average', serif;
-    background-color: rgb(196, 251, 255);
-}
+
 
 .clearfix{
     clear: both;
