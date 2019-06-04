@@ -1,4 +1,3 @@
-
 describe('Función esPar', () => {
     let esPar = require('../10_pares.js')
 

@@ -71,4 +71,7 @@ function isEntero( n = 0) {
        console.log(mensajes[i])
    }
    
-   module.exports = esPar
+  
+   exports.isEntero = isEntero
+   exports.mostrar = mostrar
+   exports.isPar = isPar
