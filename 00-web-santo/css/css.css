@@ -1,4 +1,79 @@
 
+/*font titlle= font-family: 'Knewave', cursive;
+        font-family: 'Indie Flower', cursive;
+
+
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin-right: 18%;
+    margin-left: 18%;
+ }
+header{
+        position: relative;
+        z-index: 10;
+    }
+.hUno{
+
+max-width: 100%;
+}
 h1{
+    background-color: rgb(236, 236, 42);
+    font-family: 'Knewave', cursive;
+    text-align: end;
+    font-size: 3rem;
+    margin:0;
+    max-width: 100%;
+}
+.imgportada{
+    display: flex;
+  
+   
+}
+.fotoporta{
+    max-width: 1106px;
+    max-height: 600px;
+}
+.menu {
+    background-color: black;
+    position: relative;
+    z-index: 15;
+   display: flex;
+   float: left;
+}
+.menu li{
+    list-style:none;
+
+}
+.menu a {
+    text-decoration: none;
+    color: rgb(236, 236, 42);
     font-family: 'Indie Flower', cursive;
+
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+.nav{
+    position: relative;
+    z-index: 15;
+    margin-top: 80px; 
+}
+
+.flag{
+    display: inline-block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 20%;
+     z-index:50; 
+     margin-left:200px;
+}
+.flag img{
+    max-width: 20%;
+    min-width: 10%;
+    margin-top:570px;
+ display: flex;
+  
 }
