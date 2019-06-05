@@ -27,14 +27,17 @@ h1{
     margin:0;
     max-width: 100%;
 }
-.imgportada{
+.flexportada{
     display: flex;
   
    
 }
+.imagenportada{
+    width: 80%;
+}
 .fotoporta{
     max-width: 1106px;
-    max-height: 600px;
+    width: 100%;
 }
 .menu {
     background-color: black;

@@ -1,12 +1,46 @@
-body {
+
+@media screen and (min-width:1000px){
+    nav{
+        position: absolute;
+        top:60%;
+        z-index: 30;
+    
+    }
+    nav ul {
+        list-style: none;
+    padding: 0;
+    margin:0
+    }
+    nav > ul > li {
+        float:left;
+        min-width: 7em;
+    }
+    nav a {
+        display: block;
+        margin: .25em;
+        padding: .5em;
+        text-decoration: none;
+        text-align: center;}
+.introNav
+{
+            display: block;
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            width: 20%;
+             z-index:50;
+        }
+    
+    
+}
+
+ body{
     margin: 0;
 }
 header {
     position: relative;
     min-height: 100vh;/*el header ocupara la pantalla entera */
-    
-
-    display: flex;
+     display: flex;/*al ser flex sus ijos tambien*/
     justify-content: center; /* horizontal */
     align-items: center; /* vertical */
     /*cuando hay capas flotates da igual 10 que 1000 pero el valor mas alto de un monteon de relatives y absolutes sera el 1º */
@@ -28,14 +62,8 @@ header::before{
    background-position: center;
    background-size: cover;
 }
-.introNav{
-    display: block;
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    width: 20%;
-     z-index:50;
-}
+
+
 .logo{
     display: inline-block;
     position: absolute;
@@ -52,30 +80,7 @@ header::before{
 li {
     position: relative;
 }
-nav{
-    position: absolute;
-    top:60%;
-    z-index: 30;
 
-}
-nav ul {
-    list-style: none;
-padding: 0;
-margin:0
-}
-nav > ul > li {
-    float:left;
-    min-width: 7em;
-}
-nav a {
-    display: block;
-    margin: .25em;
-    padding: .5em;
-    text-decoration: none;
-    text-align: center;
-
-}
-li ul{
     display: none;
 }
 li:hover{
