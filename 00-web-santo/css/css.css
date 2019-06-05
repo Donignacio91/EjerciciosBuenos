@@ -16,8 +16,7 @@ header{
         z-index: 10;
     }
 .hUno{
-
-max-width: 100%;
+    max-width: 100%;
 }
 h1{
     background-color: rgb(236, 236, 42);
@@ -38,6 +37,7 @@ h1{
 .fotoporta{
     max-width: 1106px;
     width: 100%;
+    
 }
 .menu {
     background-color: black;
@@ -71,12 +71,12 @@ h1{
     right: 2rem;
     width: 20%;
      z-index:50; 
-     margin-left:200px;
-}
-.flag img{
-    max-width: 20%;
-    min-width: 10%;
-    margin-top:570px;
- display: flex;
+    margin-right:10vh; 
+    margin-top: 50vh
   
 }
+.flag img{
+    max-width: 25%;
+    min-width: 15%;
+    display: flex;
+    }

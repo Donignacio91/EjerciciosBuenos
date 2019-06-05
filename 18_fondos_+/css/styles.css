@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    font-family: Geneva, sans-serif;
+    font-style: italic;
+}
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav ul {
+
+    list-style-type: none;
+}
+/*****************************
+        H E A D E R
+****************************/
+
+header {
+    position: relative;
+    min-height: 100vh;
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+    /* background-blend-mode: difference;  */
+}
+
+header::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    background-image: url(../assets/komodo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 10;
+}
+
+h1 {
+    color: rgb(116, 85, 20);
+    z-index: 20;
+    width: fit-content;
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    width: 5%;
+    /* height: 100vh; */
+    top: 1rem;
+   /*  left: 1rem; */
+   right: 3rem;
+}
+
+.logo img {
+    max-width: 100%;
+    min-width: 48px;
+    /* padding-left: 2rem; */
+}
+
+/**********************************
+    C O N T E N T W R A P P E R
+***********************************/
+
+.content-wrapper {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    color: rgb(202, 202, 202);
+}
+
+footer {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+
+
+
+/********************************************
+     D I S E Ñ O  R E S P O N S I V E
+********************************************/
+
+
+@media screen and (min-width: 1000px) {
+
+
+/*************************  
+        M E N Ú P R I N C I P A L
+*************************/
+
+
+li {
+    position: relative /* //PARA PODER UTILIZAR LOS UL'S ANIDADOS CON POSITION:ABSOLUTE */
+}
+
+nav {
+    position: absolute;
+ 
+    top: 8%;
+    left: 28%; 
+      z-index: 30;
+    /*
+    
+    
+    float: left;  */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav>ul>li {
+
+    display: inline-block;
+   /*  float: left; */
+    /* min-width: 7em; */
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+    display: block; /* ////PARA PODER OTORGAR PADDING VERTICAL */
+    margin: 0.25em;
+    padding: 0.5em;
+
+
+    background-color: royalblue;
+    border: 2px solid gray;
+    border-radius:0.5em ;
+    text-align: center;
+}
+
+nav>ul a:hover, 
+nav>ul a:focus {
+color: yellow;
+border-color: whitesmoke;
+background-color: rgb(85, 125, 247)
+
+
+}
+
+/************************
+    SUBMENÚS
+***********************/
+
+li ul {
+    display: none;
+}
+
+li:hover>ul {
+    display: block;
+    position: absolute;
+}
+
+/************************
+    SUBMENÚS SEGUNDOS
+***********************/
+
+li ul li ul {
+    position: absolute;
+    top: 0em;
+    left: 6.5em;
+    
+     z-index: 40;
+}
+
+
+}
+
+nav.horizontal{
+
+
+    display: none;
+}
+
+
+
+
+
+
+/**********************************************
+        F O O T E R  N A V
+**********************************************/
+nav.burger{
+
+color: rgb(241, 120, 120);
+font-size: 2.2rem;
+position: absolute;
+top: 1.15rem;
+left: 1rem;
+z-index: 40;
+
+
+}
+
+.mobile_nav {
+
+border: 2px solid lavenderblush;
+
+
+}
+
+/* width: 50%;
+max-width: 50%; */
+/* right: 20rem;position: relative; */
+
+
+/* nav.burger embed {
+position: absolute;
+top: 1rem;
+left: 1.5rem;
+width: 20%;
+max-width: 50px;
+min-width: 30px;
+
+} */

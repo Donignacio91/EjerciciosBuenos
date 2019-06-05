@@ -1,0 +1,284 @@
+
+body {
+    margin: 0;
+}
+
+header { /* Capa profunda */
+    position: relative;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center; /*  Vertical  */
+    justify-content: center; /* Horizontal*//* 
+    background-color: rgba(245, 229, 8, 0.486);  */
+    z-index: 20;
+}
+
+header::before { /* Generamos un componente flotante encima del header */
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 10; /* Para decirle en qué orden están las capas flotantes. EL número da igual si es el más grande el que queremos.*/
+    opacity: 0.5;
+    background-image: url(../Assets/paisajes-espectaculares-del-mundo-1.jpg); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    color: rgb(24, 0, 0);    
+    z-index: 30;
+    width: fit-content;
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
+}
+
+.content-wrapper {    
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.mainfooter {
+    background-color:rgb(189, 27, 154)  ;
+    color: beige;
+    text-align: center;
+    padding: 1rem; /* Da "Aire" a la página */
+}
+
+.mainfooter aside{
+    background-color:rgb(189, 27, 154) ;
+    color: beige;
+    text-align: center;
+    padding: 1rem; /* Da "Aire" a la página */
+}
+
+.mainfooter aside ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0rem; /* Da "Aire" a la página */
+ }  
+
+.mainfooter aside li{
+    display: inline;
+}
+
+.mainfooter aside a {
+    color: inherit;
+    text-decoration: none;
+    text-align:center;
+    display: inline;
+    padding: 1rem 1rem; /* Da "Aire" a la página */
+}
+
+.img {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 20%; 
+    z-index: 50;
+}
+
+.img img {
+    max-width: 100%;
+    min-width: 80%;
+
+}
+
+
+
+/* Cómo hacer responsive un menú*/
+
+/* hacemos una clase para el nav y metemos todo lo anterior en una jquery */
+
+body header nav {
+    position: absolute;
+    /* bottom: 0%; */
+    z-index: 50;/* 
+    background-color: pink;
+    border: 1px solid rgb(247, 96, 121);
+    color: rgb(243, 83, 110); */
+    text-align: center;
+}
+
+nav {
+    /* position: absolute; */
+    z-index: 30;
+} 
+
+nav.horizontal {
+    top: 60%;
+    display: none; /* Ocultamos el menú */
+
+}
+
+nav.icono {
+    color: #E0234E;
+    font-size: 3rem;
+    top: 3rem;
+    left:2rem;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.nav-footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    color: white;
+    border: 1px solid #E0234E;
+    background-color:  rgb(247, 96, 121);
+}
+
+.mainfooter{
+    min-height: 10vh;
+    display: flex;
+    color:pink;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width:650px){
+
+    nav.icono,
+    .nav-footer{
+        display:none;
+    }
+
+     .content-wrapper{
+         margin-left: 3rem;
+         margin-right: 3rem;
+     }
+
+     nav.horizontal {
+        top: 60%;
+        display: initial; /* Hace que se vea un display none  */
+    
+    }
+
+        body header nav {
+            position: absolute;
+            /* bottom: 0%; */
+            z-index: 50;
+            background-color: pink;
+            border: 1px solid rgb(247, 96, 121);
+            color: rgb(243, 83, 110);
+            text-align: center;
+        }
+    
+        nav.horizontal {
+            position: absolute;
+            top: 60%;
+            z-index: 30;
+        } 
+        
+        nav.horizontal ul {   
+            list-style-type: none;
+            padding: 0;
+            margin:0;
+        }
+        
+        nav.horizontal >ul >li { /* De esta manera te salen los submenús uno debajo de otro  */
+            float: left;
+            min-width: 7em;;
+        }
+        
+        nav.horizontal li {
+            display: inline-block; /* Empuja para abajo a todo  */
+            margin: .25em;
+            padding: 0.5em;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            
+        }
+        
+        nav.horizontal a {
+            color:inherit;
+            text-decoration: none;
+            display: block;/* Modo estándar de hacer un botón estos 3 +padding
+            margin: 0.25em ;
+            padding: 0.5em; */
+            width: 100%;
+            /* border: 1px solid pink; */
+            position: relative;
+            text-align: center;
+        }
+        
+        nav.horizontal > ul a:focus,
+        nav.horizontal li:hover{
+            background-color: rgb(247, 96, 121);
+            border: 1px solid pink;
+            color: white;
+        }
+        
+        li ul { /* Submenús ocultos */
+            display: none;
+        }
+        
+        li:hover>ul{
+            display: block;
+            position: initial; /* position: initial; Se hace más grande cuando estás encima del ul *//* 
+            background-color: rgb(247, 96, 121);
+            border: 1px solid pink;
+            color: white; */
+        }
+        
+        nav > ul a:focus,
+        nav > ul a:hover {
+            /* background-color: rgb(238, 18, 55);
+            /* border: 1px solid pink; */
+            /*color: white; */
+        }
+    
+        li ul li ul {
+            position: absolute;
+            top: 0;
+            left: 7em;
+            width: 10em;
+        }
+        
+        /* li:hover >ul {
+            display: initial; 
+        }
+         */
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
