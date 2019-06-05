@@ -1,0 +1,50 @@
+body{
+    margin:0;
+    background-color: bisque;
+}
+header{
+    background-color: aqua;
+    color: black;
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+}
+
+/*contenedor*/
+section.flex{
+min-height: 70vh;
+display: flex;
+flex-wrap: wrap;/* del padre o contenedor  ajusta al tamaño de la pantalla y hace responsive un flex*/
+flex-direction: row-reverse;/* Esto haría un modo Arabe */
+flex-direction: column; /* los parrafos le da igual porque ocupan todo el ancho pero coloca de arriba hacia abajo*/
+flex-direction: column; /* los parrafos le da igual porque ocupan todo el ancho pero coloca de arriba hacia abajo*/
+flex-direction: column-reverse;/*De abajo hacia arriba*/
+flex-direction: row; /*por defecto row y tarabajamos por filas  direccion de los ejes row normal rowreverse invertido*/
+justify-content: center;/*flex-end;*/ /*irse todos al final porque la dirección no la e cambiadojustify-content: flex-start irse todos al principio */
+justify-content:space-between; 
+align-items: stretch;
+align-items: flex-start;
+align-items: flex-end; 
+align-items:center; 
+align-items: baseline;
+
+align-content: flex-start;
+align-content: center;
+align-content: space-between;
+align-content: space-around;
+
+}
+
+
+
+
+section.flex div{ /*todos lo div vienen en block y ocupan todo el ancho hasta qye yo se lo diga */
+    font-size: 4rem;
+    padding: 1rem;
+    background-color: chocolate;
+    margin:0.5rem;
+}
+section.flex div:nth-of-type(4){
+    font-size: 4rem;
+}

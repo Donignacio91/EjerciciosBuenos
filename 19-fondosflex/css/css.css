@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+}
+
+header { /* Capa profunda */
+    position: relative;
+    min-height: 100vh; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+header::before { /* Generamos un componente flotante encima del header */
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 10; /* Para decirle en qué orden están las capas flotantes. EL número da igual si es el más grande el que queremos.*/
+    opacity: 0.7;
+    background-image: url(../assets/santo_tome_principe_portada_lpt1117_235_justin_foulkes_lp_traveller.jpg); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+}
+
+   /* esto es solo para los hijos con valores por defecto de estiramientps u encpgimiento  */
+ /*ajusta el  factores de crecimiento se aplican en eje principal*/
+
+div.top{
+flex: 1 1 auto;
+display: flex; 
+}
+div.inferior{
+flex: 8 1 auto;
+display: flex;
+    align-items: center; 
+    justify-content: center;
+
+}
+    div.menuwrapper{
+    flex: 10 1 auto;
+    display: flex;
+    align-items: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+}
+    div.logowrapper{
+    flex: 1 5 auto;
+    display: flex;
+    align-items: center;
+    j
+
+}
+
+.borde{
+    border: 1px solid
+}
+h1 {  
+    z-index: 30;
+    width: fit-content;
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.logowrapper img {
+    max-width: 100%;
+    min-width: 80%;
+
+}
+nav.icono {
+    color: #E0234E;
+    font-size: 3rem;
+    top: 3rem;
+    left:2rem;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav ul{
+    list-style-type: none;
+}
