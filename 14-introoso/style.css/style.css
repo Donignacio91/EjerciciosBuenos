@@ -23,7 +23,7 @@ header{
     margin-right:0;
         max-height:100vh;
         min-height:35vh;
-        max-width: 960px;
+        max-width: 100%;
         margin-top: 0;
         display: flex;
         justify-content:center; /*alineamiento horizontal */
@@ -82,8 +82,16 @@ header a{
     color:rgb(67, 156, 232);
     text-align: center;
     font-size: 40px;
-    letter-spacing: 1.5px,
+    letter-spacing: 1.5px;
+    position: absolute;
+    margin-left: 35vh;
+   display:flex;
+} 
+.no{
+
+    float: right;
 }
+
 .flexcont{
     display: flex;
     flex-direction: column;
@@ -156,7 +164,7 @@ h3 {
      max-height:230px;
  }
  .flex_img4{
-    display:block;
+    display:inline-block;
     max-width: 100%;
     float: right; 
     width: 600px;
@@ -169,8 +177,15 @@ h3 {
     width: 700px;
     height: 300px;
  }
+ .flex5{
+ display:block;
+ 
+ }
+ .img5{
+max-width: 100%;
+ }
 .jaleo {
-    margin-top: 200px;
+    margin-top: 70px;
 }
 .contenedor{
     position: relative;
@@ -202,6 +217,7 @@ img{
 .intro{
     padding-left:4rem;
     padding-right:4rem;
+    position: relative;
 }
 .flex{
     display:flex;
@@ -258,6 +274,20 @@ img{
 a img {
     transition: opacity .2s ease;
 }
-imgc {
+img {
         border-radius: 9px;
     }
+.return{
+display: flex;
+align-items: center;
+justify-content:center;
+    }
+    .retuurn{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        margin-top: 150px
+            }
+.aaa{
+color: rgb(3, 99, 65)
+}
