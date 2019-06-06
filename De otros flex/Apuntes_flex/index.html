@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apuntes de flex</title>
+</head>
+
+<body>
+    <header>
+        <h1>Apuntes de flex</h1>
+    </header>
+    <p>Esto define un contenedor flexible; En línea o bloque dependiendo del valor dado. Permite un contexto flexible para todos sus hijos directos.Tenga en cuenta que las columnas CSS no tienen efecto en un contenedor flexible.</p>
+    <section id="flex-directions">
+        <header>
+            <h2>Flex directions</h2>
+        </header>
+        
+            <div>
+                <img src="./assets/flex-container.png" alt="Flex directions">
+            </div>
+            <h3>Row(Default)</h3>
+                <p> Comportamiento que hace que mis casillas se coloquen en posición normal en lo que nos referimos al orden.</p>
+            <h3>Row-Reverse</h3>
+                <p>alteramos los ejes (el principio ahora es el final sólo a las cajitas) en los párrafos no pasa porque son muy largos, si tuviéramos el texto en una línea estaría el texto orientado a la derecha     las ordena horizontalmente.</p>
+            <h3>Column</h3>
+                <p>Los párrafos se colocan de arriba abajo.</p>
+            <h3>Column-reverse</h3>
+                <p>Los párrafos se colocan de  abajo arriba</p>
+        <a href="#inicio"><i class="fas fa-arrow-circle-up"></i></a>        
+    <section id="flex-wrap">
+        <header>
+            <h2>Flex-wrap</h2>
+        </header>
+        
+        <p><span>Recordatorio:</span> el eje transversal es el eje perpendicular al eje principal. Su dirección depende de la dirección del eje principal.</p>
+        <blockquote>Por defecto, todos los elementos de flexión intentarán encajar en una línea. Puede cambiar eso y permitir que los elementos se ajusten según sea necesario con esta propiedad. los elementos flexibles se envolverán en varias líneas, de arriba a abajo.</blockquote>
+            <h3>Wrap</h3>
+                <p>flex wrap del padre. Ajusta al tamaño de la pantalla, se hace responsive. Siempre hasta el límite del tamaño completo.</p>
+                <blockquote>
+                    Multilíneas, la dirección se define por flex-direction.
+                </blockquote>
+                <img src="./assets/flex.wrap.PNG" alt="">
+            <h3>NoWrap (Default)</h3>
+                <p>Todos los elementos flexibles estarán en una línea.</p>
+                    <h4>Otros</h4>
+                    <img src="./assets/flex-grow.PNG" alt="">
+                    <p> El valor predeterminado es 0 1 auto.</p>
+                    <p>Los números son ratios. El segundo número hace que decrezca y el primero que crezca.</p>
+            <h3>Wrap-Reverse</h3>     
+                <p>Los elementos flexibles se envolverán en varias líneas de abajo hacia arriba.</p>
+                <blockquote>
+                    Multilíneas, opuesta a la dirección definida por flex-direction.
+                </blockquote>
+    </section>
+    </section>
+    <section id="justify-content">
+        <header>
+            <h2>Justify content</h2>
+        </header>
+        
+        <div>
+            <img src="./assets/flex-justify.png" alt="Justify content">
+        </div>
+        <blockquote>
+                Define el comportamiento predeterminado de cómo los elementos flexibles se distribuyen a lo largo del eje transversal en la línea actual. Puedes considerarlo como la justify-contentversión para el eje transversal (perpendicular al eje principal).
+        </blockquote>
+        <h3>Flex-Start</h3>
+        
+            <p> Desde el principio y en el sentido que marque el flex direction o el que está por defecto.</p>
+        
+        <h3>Flex-end</h3>
+            <p>No cambia la dirección sin ola justificación a no ser que hagamos un row-reverse.</p>
+        
+        <h3>Center</h3>
+            <p>Me coloca todos los elementos en el centro (respetándose unos a otro).</p>
+        
+        <h3>Space-between</h3>
+            <p>Hace que se reparta el espacio entre ellos sin contar el margen izq y derecho del primero y el segundo.</p>
+
+        <h3>Space-around</h3>  
+            <p>Ponemos alredor del bloque márgenes por defecto (También al primero y al último no como el de arriba).</p>
+        <a href="#inicio"><i class="fas fa-arrow-circle-up"></i></a>    
+    </section>
+    <section id="aling-items">
+        <header>
+            <h2>Aling-Items</h2>
+        </header>
+        
+            <h3>Stretch (Default)</h3>
+                <p>En el eje secundario los elementos del eje vertical estén estirados. Siempre ocupará lo que se le marque</p>
+            <h3>Flex-start</h3>
+                <p>Se queda sin estiramiento, se quedan por defecto</p>
+            <h3>Flex-end</h3>    
+                <p>Deja el espacio de arriba a mi disposición (Ahora nos deja espacio porque tenemos min-height de 60 y ocupa lo suyo pero abajo).</p>
+            <h3>Center</h3>   
+                <p>Nos coloca todos en el centro respecto a la pantalla.</p> 
+            <h3>Otros</h3>
+                <h4>Aling-Self</h4>
+                    <img src="./assets/aling-self.PNG" alt="">
+                    <blockquote>
+                            Esto permite que la alineación predeterminada (o la especificada por align-items) se sobrescriba para los elementos flex individuales.
+                    </blockquote>
+        <a href="#inicio"><i class="fas fa-arrow-circle-up"></i></a>            
+    </section>
+    <section id="aling-content">
+        <header>
+             <h2>Aling-Content</h2>
+        </header>
+       
+            <h3>Flex-Start</h3>
+                <p> Reparte los distintos elementos siempre que existan varias líneas de elementos del conjunto de las líneas.</p>
+            <h3>Center</h3>
+                <p>Las dos líneas se nos centran en toda la pantalla. </p>
+            <h3>Space-Around</h3>
+                <p>Se comportan repartiéndose entre ellas todo el espacio.</p>
+            <h3>Space-Between</h3>
+                <p></p>
+        <a href="#inicio"><i class="fas fa-arrow-circle-up"></i></a>
+    </section>
+    <section id="resumen">
+        <header>
+            <h2>Resumen</h2>
+        </header>
+        
+        <blockquote>
+            <ul>
+                <li>Para disposiciones horizontales (filas): el eje principal es horizontal, y el eje transversal es vertical.</li>
+                <li>Para disposiciones verticales (columnas): el eje principal es vertical, y el eje transversal es horizontal.</li>
+                <li>Utilice   justify-content  para alinear a lo largo del eje principal.</li>
+                <li>Utilice   align-items  para alinear a lo largo del eje transversal.</li>
+                <li>Utilice   align-self  para alinear un solo elemento.</li>
+            </ul>
+        </blockquote>
+        <a href="#inicio"><i class="fas fa-arrow-circle-up"></i></a>
+    </section>
+    <footer>
+        <address>Referencias:
+            <ul>
+                <li><a href="https://css-tricks.com/almanac/properties/f/flex-wrap/">Flex Wrap</a></li>
+                <li><a href="https://openclassrooms.com/en/courses/5295881-create-web-page-layouts-with-css/5415181-align-items-and-justify-content">Justify-Content VS Aling-Items</a></li>
+            </ul>
+        </address>
+    </footer>
+</body>
+
+</html>
