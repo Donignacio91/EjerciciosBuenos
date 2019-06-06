@@ -1,12 +1,14 @@
+*{
+    box-sizing: border-box;
+}
 body {
     margin: 0;
 }
 
-header { /* Capa profunda */
+header { /* Capa profunda *//* */
     position: relative;
     min-height: 100vh; 
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     
 }
@@ -30,63 +32,168 @@ header::before { /* Generamos un componente flotante encima del header */
    /* esto es solo para los hijos con valores por defecto de estiramientps u encpgimiento  */
  /*ajusta el  factores de crecimiento se aplican en eje principal*/
 
+ 
+
+
 div.top{
-flex: 1 1 auto;
-display: flex; 
-}
-div.inferior{
-flex: 8 1 auto;
-display: flex;
+    flex: 1 1 auto;
+    display: flex; 
+    justify-content: space-between;
     align-items: center; 
-    justify-content: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    z-index: 20;
+   
+}
+        div.top img{
+            width: 6rem;
+            margin-right: 2vh;
+            fill:rgb(117, 35, 224);
+}
+div.top.navhorizontal{
+    display: none;
 
 }
-    div.menuwrapper{
+
+        div.top nav a{
+            color: rgb(117, 35, 224);
+            text-decoration: none;
+            font-size: 3rem;
+            margin-left: 2vh;}
+        
+
+
+        div.top nav ul{
+            list-style: none;
+}
+
+
+
+div.inferior{
     flex: 10 1 auto;
     display: flex;
-    align-items: flex-start;
-    align-items: flex-start;
+    z-index: 20;
     justify-content: center;
+
 }
-    div.logowrapper{
-    flex: 1 5 auto;
-    display: flex;
-    align-items: center;
+  
     
-
-}
-
 .borde{
     border: 1px  solid;
 }
+
+
 h1 {  
-    z-index: 30;
-    width: fit-content;
-    text-align: center;
-    padding: 2rem;
-    margin: 0;
+    color: black;
+   width: fit-content;
+   text-align: center;
+   padding: 2rem;
+   margin: 0;
+   align-items: center; 
+   justify-content: center;
+}
+
+.content-wrapper {
+    margin-left: 0.8rem;
+    margin-right: 0.5rem;
+}
+footer {
+    min-height: 10vh;
+    background-color: rgb(48, 87, 4);
+    color: bisque;
     display: flex;
-    align-items: center; 
     justify-content: center;
+    align-items: center;
+}
+nav.footer {
+    color: rgb(0, 0, 0);
+    background-color: rgba(200,200,200,0.5);	
+    border: 1px solid rgb(48, 87, 4); /*violeta*/
+    width: 70%;
+    margin: 1rem auto;
+    padding-left: 3.5rem; 
+   justify-content: center;
+    
 }
 
-.logowrapper img {
-    max-width: 100%;
-    min-width: 80%;
-
+nav.footer>ul>li{
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+   
+    font-weight: bold;
 }
-nav.icono {
-    color: #E0234E;
-    font-size: 3rem;
-    top: 3rem;
-    left:2rem;
+nav.footer>ul>li>ul>li{
+    font-size: 0.5rem;
+    font-weight: 100;
+    font-size: .8rem;
+    font-weight: 100;
 }
-
 nav a {
-    color: inherit;
-    text-decoration: none;
+	color: inherit;
+	text-decoration: none;
+}
+nav ul {
+	list-style-type: none;
+}@media screen and (min-width: 500px) {
+    .content-wrapper {
+        
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }    
+    .navhorizontal{
+        display:flex;}
 }
 
-nav ul{
-    list-style-type: none;
+@media screen and (min-width: 650px) {
+    
+    .content-wrapper {
+    
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+    }
+    .navhorizontal{
+        display:flex;
+        padding: 0px;
+        margin:0px;
+    }
+    .nav.footer{
+        display: none;
+    }
+    
 }
+
+@media screen and (min-width: 800px){
+
+        .content-wrapper {
+            display: flex;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            flex-wrap:wrap; 
+        }
+        section{
+            
+            padding-left: 1rem;
+            padding-left: 1rem;
+            width: 50%;
+        }
+        
+        .nav.footer{
+            display: none;
+        }
+        nav a { /* Cualquier a dentro de nav */
+            background-color: rgba(200,200,200,0.5);	
+            text-align: right;
+            margin-top: 1rem;
+            flex-wrap:wrap;
+        }
+        nav ul{
+            display: flex;
+            text-align: center;
+            margin-left:30px ;
+        }
+        .navhorizontal{
+            display:flex;
+            text-align: center;
+            
+        }}
