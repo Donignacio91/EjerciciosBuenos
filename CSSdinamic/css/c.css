@@ -1,0 +1,48 @@
+section{
+    margin: 3rem;
+}
+div{background-color: rgb(156, 199, 156);
+    color: gold;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+div.transi{
+    
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: cubic-bezier(.34,1.84,1,-0.85);
+}
+p.boton:hover+div{ /*este mas hace que afecte al hermano en este caso transi*/
+    background:  gold;
+    color:rgb(156, 199, 156);
+    width: 6rem;
+    height: 6rem;
+    font-size: 3rem;
+}
+
+
+div.trans{
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(.34,1.84,1,-0.85);
+}
+p.btn-escalar:hover+div{
+
+    transform:scale(3);
+}
+
+p.btn-rotar:hover+div{
+    transform: rotate(70deg)
+}
+p.btn-inclinar:hover+div{
+    transform:skew(25deg)
+}
+p.btn-trasladar:hover+div{
+    transform: translatex(35px)
+}

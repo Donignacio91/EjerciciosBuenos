@@ -133,8 +133,10 @@ nav a {
 	text-decoration: none;
 }
 nav ul {
-	list-style-type: none;
-}@media screen and (min-width: 500px) {
+    list-style-type: none;
+    
+}
+@media screen and (min-width: 500px) {
     .content-wrapper {
         
         margin-left: 2rem;
@@ -142,6 +144,15 @@ nav ul {
     }    
     .navhorizontal{
         display:flex;}
+}
+
+		
+li ul { /* El segundo nivel del menú oculto*/
+    display: none;
+}
+li:hover > ul { /* El segundo nivel del menú se muestra */
+    display: initial;
+   /* position: absolute; */ /*Determina que el submenu empuje o no el contenido del sitio al desplegrase*/
 }
 
 @media screen and (min-width: 650px) {
@@ -162,6 +173,7 @@ nav ul {
     }
     
 }
+
 
 @media screen and (min-width: 800px){
 
