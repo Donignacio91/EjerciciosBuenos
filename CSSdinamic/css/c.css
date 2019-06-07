@@ -38,6 +38,7 @@ p.btn-escalar:hover+div{
 }
 
 p.btn-rotar:hover+div{
+    transform-origin: top;/*le puedo decir con respecto a que punto gira */ /*Valen para todas  */
     transform: rotate(70deg)
 }
 p.btn-inclinar:hover+div{
@@ -45,4 +46,11 @@ p.btn-inclinar:hover+div{
 }
 p.btn-trasladar:hover+div{
     transform: translatex(35px)
+}
+
+section.trans3D{
+    perspective: 500px;
+}
+p.btn-3D:hover+div{
+    transform: translate3d(1.5rem);
 }
