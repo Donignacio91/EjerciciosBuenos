@@ -14,7 +14,7 @@ body{
     margin-left: 15%;
 }
 header{
-  
+   
     /* border: 1px solid black; */
 }
 .topline{
@@ -57,14 +57,34 @@ header{
 }
 .flag{
     
-
 }
 .rus2{
     margin-top:1.2rem;
     font-family: 'Seymour One', sans-serif;
     font-size: 1rem;
-   
+    color:rgb(25, 77, 219);
 }
+
+.top_r a:nth-of-type(1){
+        color:white;
+    }
+    .blue{
+        color:rgb(57, 97, 206);
+    }
+    .top_r a:nth-of-type(3){
+        color:rgb(146, 3, 3);
+    }
+
+
+
+
+/* *************************  *
+         ----MENU ----        
+***************************   */
+
+
+
+
 .menu{
     border-top: 0.07em  solid rgba(0, 0, 0, 0.432);
     border-bottom: 0.07em  solid rgba(0, 0, 0, 0.432);
@@ -82,7 +102,16 @@ header{
     .menu ul li a{
     text-decoration: none;
     font-family: 'Pragati Narrow', sans-serif;
-    color:rgb(146, 3, 3);
+    /* color:rgb(146, 3, 3) */
     font-weight: bold;
     letter-spacing: 1.2px;
+    color:rgb(146, 3, 3);
+    }
+    
+
+    /* ********************* *
+        ---SECCION FOTOS---
+    ***********************  */
+    .cubo{
+        display: flex;
     }
