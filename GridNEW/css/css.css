@@ -1,0 +1,57 @@
+
+body {
+    margin: 0;
+    background-color: bisque
+}
+
+header {
+    background-color: brown;
+    color: bisque;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.grid {
+    margin: 0.5rem;
+   /*min-height: 70vh; /*determina el alto de los grid*/
+    display: grid;
+     /*  grid-template-columns: auto auto; con esto consigo dos columnas iguales */
+    grid-template-columns: 1fr  2fr 1fr; /*no son medida de nada son fraiones por eso con esta configuración la primera y la ultima tiene la mitad de tamaño que la central*/
+    /*grid-template-rows: auto auto auto; /*regulo cuantos pisos hay la altura*/
+    /*grid-template-rows:2fr repeat(3,1fr); /*es lo mismo que poner dos veces 1 fr*/
+    grid-template-rows:2fr  1fr; /*las filas que conforman la columna*/
+    grid-column-gap:0.5rem; /*va a hacer los margins pero en grid se hace asi*/
+    grid-row-gap:0.5rem; /*el margen entre columnas*/
+    /*grid-auto-rows: /*difine como son las filas que surjan de forma automatica es decir qyo hago una tabla que saldrian 3 de habcho por 2 de altura y meto 9 divs me hariua una fila nueva cion medidas auto por defecto para modificarlas aki pongo como en grid tmplate */
+    grid-auto-rows:2fr;
+}
+
+section.grid div {
+    font-size: 4rem;
+    padding: 1rem;
+    background-color: darksalmon;
+    /*margin: 0.5rem*/
+}
+section.grid div:nth-of-type(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+section.grid div:nth-of-type(2){
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+
+   /* grid-row: 3 / span 2
+   grid-column:  2 / 3; Es lo mismo que rodo lo escrito*/
+}
+section.grid div:nth-of-type(9){
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+  
+  

@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+body > header {
+  background-color: grey;
+  color: bisque;
+}
+body > header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+section {
+  margin: 2.6rem;
+}
+section header {
+  background-color: bisque;
+  color: #e93e3e;
+}
+
+/*# sourceMappingURL=style.css.map */
