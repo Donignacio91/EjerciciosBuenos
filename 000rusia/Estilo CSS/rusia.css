@@ -283,47 +283,78 @@ section.gridfotos{
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    min-height: 90vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 40vh;
     grid-column-gap:0.2rem; 
     grid-row-gap:0.2rem;
 }
+
+
+
 section.gridfotos div:nth-of-type(1){
     background-image: url(../Assets/BORTSH-Sopa-Rusa.jpg);
     background-size: cover;
 }
 section.gridfotos div:nth-of-type(2){
-    background-image: url(../Assets/vodka_grey-goose.jpg);
+    background-image: url(../Assets/Belesh.jpg);
     background-size: cover;
 }
 section.gridfotos div:nth-of-type(3){
-     background-image: url(../Assets/tostas-de-pan-con-caviar.jpg);
+     background-image:url(/000rusia/Assets/pelmen3-e1532716282909.jpg);
      background-size: cover;
     }
-section.gridfotos div:nth-of-type(4){
-    background-image: url(/000rusia/Assets/pelmen3-e1532716282909.jpg);
+
+    section.gridfotos2{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        min-height: 40vh;
+        grid-column-gap:0.2rem; 
+        grid-row-gap:0.2rem;
+    }
+
+section.gridfotos2 div:nth-of-type(1){
+    background-image: url(../Assets/tostas-de-pan-con-caviar.jpg);
      background-size: cover;
     }
-section.gridfotos div:nth-of-type(5){
-     background-image: url(../Assets/cental.jpg);
-     background-size: cover;
-}
-section.gridfotos div:nth-of-type(6){
-     background-image: url(../Assets/gastronomia-rusa.jpg);
-     background-size: cover;
-}
-section.gridfotos div:nth-of-type(7){
-     background-image: url(../Assets/Belesh.jpg);
+    
+section.gridfotos2 div:nth-of-type(2){
+     background-image:  url(../Assets/vodka_grey-goose.jpg); 
      background-size: cover;
 }
 
-section.gridfotos div:nth-of-type(8){
-     background-image: url(../Assets/Ensalada_Olivier_Rusa.jpg);
+section.gridfotos2 div:nth-of-type(3){
+     background-image: url(../Assets/Ensalada_Olivier_Rusa.jpg); 
+     background-size: cover;
+}
+
+
+section.gridfotos4{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 40vh;
+    grid-column-gap:0.2rem; 
+    grid-row-gap:0.2rem;
+}
+
+section.gridfotos4 div:nth-of-type(1){
+    background-image: url(../Assets/gastronomia-rusa.jpg);
+     background-size: cover;
+}
+
+section.gridfotos4 div:nth-of-type(2){
+    background-image:url(../Assets/cental.jpg);
      background-size: cover;
      
+     
 }
-section.gridfotos div:nth-of-type(9){
+section.gridfotos4 div:nth-of-type(3){
     background-image: url(../Assets/ukr_boscht.jpg);
     background-size: cover;
 }
