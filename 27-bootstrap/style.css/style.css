@@ -1,0 +1,35 @@
+:root{
+    --color-letra:rgb(192, 238, 26);
+    --color-fondo:rgba(26, 28, 90, 0.993);
+    --color-articlefondo: rgb(182, 229, 229);
+    --font-title:'Kreon', serif;
+    --font-body:'Kameron', serif;
+    --size-tittle: 2.5rem;
+    --size-subtittle: 1.5rem;
+    --size-base: calc(14rem/16);
+    --sixe-small:calc(8rem/16);
+    --size-tittle-section:1.5rem;
+    
+}
+body{
+    font-style: var(--font-body)
+}
+
+.mainheader{
+    background-color: var(--color-fondo);
+    color: var(--color-letra);
+    font-size: var(--size-tittle);
+ 
+    font-style: var(--font-title);
+
+}
+.mainfooter{
+    background-color: var(--color-fondo);
+    color: var(--color-letra);
+    font-size: var(--size-tittle);
+    min-height: 10vh;
+    font-style: var(--font-title);
+}
+.mainfooter address{
+    margin-bottom:0;
+}
