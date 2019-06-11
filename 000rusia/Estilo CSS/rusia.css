@@ -215,15 +215,20 @@ header{
 .flexpyf1{
     display: flex;
         margin-bottom:0.3rem; 
+        max-height: 
 }
 .fflex1{
+    max-height: 320px ;
+    
+}
+.fflex1 img{
     width: 96%;
-    max-width: 540px;
+   
     margin: 0 auto;
     margin-left: 1rem;
    
 }
-.fflexp1{
+.fflexp1 p{
 
     width: 90%;
     max-width: 400px;
@@ -285,25 +290,23 @@ section.gridfotos{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    min-height: 40vh;
     grid-column-gap:0.2rem; 
     grid-row-gap:0.2rem;
 }
+section.gridfotos div{
+    display: flex;
+}
 
-
-
-section.gridfotos div:nth-of-type(1){
-    background-image: url(../Assets/BORTSH-Sopa-Rusa.jpg);
-    background-size: cover;
+section.gridfotos div img:nth-of-type(1){
+   
+    width: 96%;
+    margin: 0 auto;
 }
 section.gridfotos div:nth-of-type(2){
-    background-image: url(../Assets/Belesh.jpg);
-    background-size: cover;
+   
 }
 section.gridfotos div:nth-of-type(3){
-     background-image:url(/000rusia/Assets/pelmen3-e1532716282909.jpg);
-     background-position: left;
-     background-size: cover;
+ 
     }
 
     section.gridfotos2{
@@ -312,24 +315,26 @@ section.gridfotos div:nth-of-type(3){
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-        min-height: 40vh;
         grid-column-gap:0.2rem; 
         grid-row-gap:0.2rem;
     }
-
-section.gridfotos2 div:nth-of-type(1){
-    background-image: url(../Assets/tostas-de-pan-con-caviar.jpg);
-     background-size: cover;
+section.gridfotos2 div{
+        display: flex;
     }
+
+section.gridfotos2 div img:nth-of-type(1){
+   
+    width: 96%;
+    margin: 0 auto;
+ 
+ }
     
 section.gridfotos2 div:nth-of-type(2){
-     background-image:  url(../Assets/vodka_grey-goose.jpg); 
-     background-size: cover;
+    
 }
 
 section.gridfotos2 div:nth-of-type(3){
-     background-image: url(../Assets/Ensalada_Olivier_Rusa.jpg); 
-     background-size: cover;
+    
 }
 
 
@@ -339,26 +344,23 @@ section.gridfotos4{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    min-height: 40vh;
     grid-column-gap:0.2rem; 
     grid-row-gap:0.2rem;
 }
-
-section.gridfotos4 div:nth-of-type(1){
-    background-image: url(../Assets/gastronomia-rusa.jpg);
-     background-size: cover;
+section.gridfotos4 div{
+    display: flex;
+}
+section.gridfotos4 div img:nth-of-type(1){
+    width: 96%;
+    margin: 0 auto;
 }
 
-section.gridfotos4 div:nth-of-type(2){
-    background-image:url(../Assets/cental.jpg);
-     background-size: cover;
-     
+section.gridfotos4 div img:nth-of-type(2){
+
      
 }
-section.gridfotos4 div:nth-of-type(3){
-    background-image: url(../Assets/ukr_boscht.jpg);
-    background-position: left;
-    background-size: cover;
+section.gridfotos4 div img:nth-of-type(3){
+   
 }
 
 .gridparraf{
