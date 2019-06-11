@@ -218,15 +218,15 @@ header{
 }
 .fflex1{
     width: 96%;
-    max-width: 960px;
+    max-width: 540px;
     margin: 0 auto;
     margin-left: 1rem;
    
 }
 .fflexp1{
 
-    width: 96%;
-    max-width: 960px;
+    width: 90%;
+    max-width: 400px;
     margin: 0 auto;
     margin-right: 0.3rem;
 }
@@ -302,6 +302,7 @@ section.gridfotos div:nth-of-type(2){
 }
 section.gridfotos div:nth-of-type(3){
      background-image:url(/000rusia/Assets/pelmen3-e1532716282909.jpg);
+     background-position: left;
      background-size: cover;
     }
 
@@ -356,6 +357,7 @@ section.gridfotos4 div:nth-of-type(2){
 }
 section.gridfotos4 div:nth-of-type(3){
     background-image: url(../Assets/ukr_boscht.jpg);
+    background-position: left;
     background-size: cover;
 }
 
