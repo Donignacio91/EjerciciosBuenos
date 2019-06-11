@@ -115,7 +115,7 @@ header{
 
     }
     .foto1{
-        border: 1px solid black;
+        border: 1px solid rgba(0, 0, 0, 0.452);
         width: 96%;
         max-width: 960px;
         margin: 0 auto;
@@ -126,7 +126,7 @@ header{
         height: 100%;
     }
     .foto2{
-        border: 1px solid black;
+       
         width: 96%;
         max-width: 960px;
         margin: 0 auto;
@@ -143,7 +143,7 @@ header{
 
     }
     .foto3{
-        border: 1px solid black;
+        border: 1px solid rgba(0, 0, 0, 0.418);
         width: 96%;
         max-width: 960px;
         margin: 0 auto;
@@ -154,7 +154,7 @@ header{
         height: 100%;
     }
     .foto4{
-        border: 1px solid black;
+        border: 1px solid rgba(0, 0, 0, 0.466);
         width: 96%;
         max-width: 960px;
         margin: 0 auto;
@@ -212,6 +212,32 @@ header{
     border-bottom: 0.07em  solid rgba(0, 0, 0, 0.432);
     margin-bottom:1rem;
    }
+.flexpyf1{
+    display: flex;
+        margin-bottom:0.3rem; 
+}
+.fflex1{
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-left: 1rem;
+   
+}
+.fflexp1{
+
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-right: 0.3rem;
+}
+.pyfoto{
+    margin-left: 1rem;
+}
+
+
+
+
+
    .cntfloat_l{
     max-width: 100%;
     width: 50%;
@@ -238,74 +264,76 @@ header{
         display: block;
         margin: 0;}
 /*****************************************
----------- ¿Quié comer? -----------------
+---------- ¿Qué comer? -----------------
 **************************************/
-
+.qcomer{
+    margin-top: 3rem;
+}
 
     .sutil{
         text-align: center;
         font-size: 1rem;
         font-style: italic;
-        }
-   
-        .fotos{
-            margin-left: 2rem;
-            margin-right: 2rem;
-            margin-top: 1rem;
-        }
-        .cubo{
-            display: flex;
-            margin-bottom:0.3rem; 
-           
-    
-        }
-        .foto1{
-            border: 1px solid black;
-            width: 96%;
-            max-width: 960px;
-            margin: 0 auto;
-         
-        }
-        .foto1 img{
-            width: 100%;
-            height: 100%;
-        }
-        .foto2{
-            border: 1px solid black;
-            width: 96%;
-            max-width: 960px;
-            margin: 0 auto;
-            margin-right: 0.3rem;
-        }
-        .foto2 img{
-            width: 100%;
-            height: 100%;
-        }
-    
-        .cubo2{
-            display: flex;
-           
-    
-        }
-        .foto3{
-            border: 1px solid black;
-            width: 96%;
-            max-width: 960px;
-            margin: 0 auto;
-            margin-right: 0.3rem;
-        }   
-        .foto3 img{
-            width: 100%;
-            height: 100%;
-        }
-        .foto4{
-            border: 1px solid black;
-            width: 96%;
-            max-width: 960px;
-            margin: 0 auto;
-          
-        }
-        .foto4 img{
-            width: 100%;
-            height: 100%;
-        }
+    }
+/*************************************
+--------- GRID --------------------
+*********************************/
+
+section.gridfotos{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 90vh;
+    grid-column-gap:0.2rem; 
+    grid-row-gap:0.2rem;
+}
+section.gridfotos div:nth-of-type(1){
+    background-image: url(../Assets/BORTSH-Sopa-Rusa.jpg);
+    background-size: cover;
+}
+section.gridfotos div:nth-of-type(2){
+    background-image: url(../Assets/vodka_grey-goose.jpg);
+    background-size: cover;
+}
+section.gridfotos div:nth-of-type(3){
+     background-image: url(../Assets/tostas-de-pan-con-caviar.jpg);
+     background-size: cover;
+    }
+section.gridfotos div:nth-of-type(4){
+    background-image: url(/000rusia/Assets/pelmen3-e1532716282909.jpg);
+     background-size: cover;
+    }
+section.gridfotos div:nth-of-type(5){
+     background-image: url(../Assets/cental.jpg);
+     background-size: cover;
+}
+section.gridfotos div:nth-of-type(6){
+     background-image: url(../Assets/gastronomia-rusa.jpg);
+     background-size: cover;
+}
+section.gridfotos div:nth-of-type(7){
+     background-image: url(../Assets/Belesh.jpg);
+     background-size: cover;
+}
+
+section.gridfotos div:nth-of-type(8){
+     background-image: url(../Assets/Ensalada_Olivier_Rusa.jpg);
+     background-size: cover;
+     
+}
+section.gridfotos div:nth-of-type(9){
+    background-image: url(../Assets/ukr_boscht.jpg);
+    background-size: cover;
+}
+
+.gridparraf{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows:auto auto auto;
+    grid-column-gap:0.2rem; 
+    grid-row-gap:0.2rem;
+}
