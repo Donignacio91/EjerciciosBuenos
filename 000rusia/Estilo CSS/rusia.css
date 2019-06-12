@@ -248,7 +248,7 @@ section.gridfotos{
     margin-right: 0.5rem;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    
     grid-column-gap:0.2rem; 
     grid-row-gap:0.2rem;
 }
@@ -265,7 +265,7 @@ section.gridfotos div{
     display: flex;
 }
 
-section.gridfotos div img:nth-of-type(1){
+section.gridfotos div img{
    
     width: 96%;
     margin: 0 auto;
