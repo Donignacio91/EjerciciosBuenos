@@ -1,0 +1,43 @@
+    
+:root {
+
+    --color_back: rgb(175, 135, 175);
+    --color_font: rgb(220, 243, 243);
+    --font_main: 'Archivo', sans-serif;;
+    --font_title:'Archivo Black', sans-serif;;
+    
+    }
+    
+    main {
+    
+        font-family: var(--font_main);
+        font-weight: bold;
+    }
+    
+    
+    .main_header {
+        background-color: var(--color_back);
+        color: var(--color_font);
+        min-height: 10vh;
+        font-family: var(--font_title);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+     
+    
+    }
+    
+    
+    .main_footer {
+    
+        background-color: var(--color_back);
+        color: var(--color_font);
+        min-height: 10vh;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    address {
+        margin-bottom: 0;
+    }

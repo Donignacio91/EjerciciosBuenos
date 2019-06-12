@@ -1,0 +1,11 @@
+
+
+$colores-tema:(
+    "letra":rgb(192, 238, 26),
+    "fondo":rgba(26, 28, 90, 0.993)
+);
+
+
+$font-family-base: 'Kameron', serif;
+
+@import"../node_modules/bootstrap/scss/bootstrap.scss";

@@ -12,12 +12,13 @@
     
 }
 body{
+    
     font-style: var(--font-body)
 }
 
+
 .mainheader{
-    background-color: var(--color-fondo);
-    color: var(--color-letra);
+    
     font-size: var(--size-tittle);
  
     font-style: var(--font-title);
