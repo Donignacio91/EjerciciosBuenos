@@ -22,13 +22,9 @@
         font-family: var(--font_title);
         padding-top: 1rem;
         padding-bottom: 1rem;
-     
-    
     }
-    
-    
+
     .main_footer {
-    
         background-color: var(--color_back);
         color: var(--color_font);
         min-height: 10vh;
