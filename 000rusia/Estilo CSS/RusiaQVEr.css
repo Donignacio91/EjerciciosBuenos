@@ -1,0 +1,80 @@
+/*COMUN*/
+body{
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+
+.tittle{
+           
+    text-align: center;  
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-family: 'Pragati Narrow', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color:rgb(146, 3, 3);
+    margin-bottom: 0;
+}
+.sub_line{
+
+max-width: 80%;
+margin-right: 10%;
+margin-left: 10%;
+border-bottom: 0.07em  solid rgba(0, 0, 0, 0.432);
+}
+
+.subtittle{
+margin-top: 1rem;
+   font-size: 1rem;
+text-align: center;  
+margin-left: 0.5rem;
+margin-right: 0.5rem;
+font-family: 'Pragati Narrow', sans-serif;
+font-weight: bold;
+letter-spacing: 1.2px;
+color:rgb(146, 3, 3);
+margin-bottom: 0;
+} 
+.clearfix{
+clear: both;
+}
+.sub_line2{
+
+max-width: 20%;
+margin-right: 40%;
+margin-left: 40%;
+border-bottom: 0.07em  solid rgba(0, 0, 0, 0.432);
+margin-bottom:1rem;
+}
+
+/******************************************
+-------------- Que ver ------------
+    ********************************/
+  section{
+margin-top: 2rem;
+  }
+ .flex {
+        display: flex;
+    
+         
+    }
+.resfot{
+        width: 96%;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+.resfot img{
+    width: 100%;
+    height: 100%;
+}
+.resfot1{
+    max-height: 60%;
+    width: 76%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.resfot1 img{
+width: 100%;
+height: 100%;
+}
