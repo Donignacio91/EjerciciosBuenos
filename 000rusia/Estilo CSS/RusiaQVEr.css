@@ -47,6 +47,14 @@ margin-left: 40%;
 border-bottom: 0.07em  solid rgba(0, 0, 0, 0.432);
 margin-bottom:1rem;
 }
+.return{
+    display:flex;
+    justify-content: center;
+}
+.return a{
+    color:rgb(146, 3, 3);
+    margin-top:1rem;
+}
 
 /******************************************
 -------------- Que ver ------------
@@ -78,3 +86,50 @@ margin-top: 2rem;
 width: 100%;
 height: 100%;
 }
+
+
+
+
+
+
+
+
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	max-width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+

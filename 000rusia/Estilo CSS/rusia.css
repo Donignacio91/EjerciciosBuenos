@@ -55,7 +55,14 @@ body{
     font-size: 1rem;
     color:rgb(25, 77, 219);
 }
-
+ .return{
+     display:flex;
+     justify-content: center;
+ }
+ .return a{
+     color:rgb(146, 3, 3);
+     margin-top:1rem;
+ }
 
 
 
@@ -227,7 +234,15 @@ body{
     height: 100%;
 }
 
+btn-escalar:hover+div{
 
+    transform:scale(3);
+}
+.trans{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.34,1.84,1,-0.85);
+}
 
 /*****************************************
 ---------- ¿Qué comer? -----------------
