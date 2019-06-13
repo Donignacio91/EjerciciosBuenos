@@ -325,4 +325,22 @@ section.gridfotos4 div img:nth-of-type(1){
     width: 96%;
     margin: 0 auto;
 }
+.qvt{
+    font-size: 0.5rem;
+}
+@media screen and (min-width: 600px) {
+   .qvt{
+        font-size: 0.6rem;
+    }
+}
 
+@media screen and (min-width: 800px) {
+    .qvt{
+         font-size: 0.9rem;
+     }
+ }
+ @media screen and (min-width: 1000px) {
+    .qvt{
+         font-size: 1.2rem;
+     }
+ }
