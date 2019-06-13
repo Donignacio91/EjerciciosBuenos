@@ -344,3 +344,13 @@ section.gridfotos4 div img:nth-of-type(1){
          font-size: 1.2rem;
      }
  }
+
+ div.trans{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.34,1.84,1,-0.85);
+}
+p.btn-escalar:hover+h3{
+
+    transform:scale(3);
+}

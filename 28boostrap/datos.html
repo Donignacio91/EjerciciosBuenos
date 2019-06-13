@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/1custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Kameron|&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kreon|&display=swap" rel="stylesheet">
+    <title>Bootstrap</title>
+</head>
+<body>
+        <header class="main_header ">
+                <div class="container pt-6 pb-2">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-xs-12 ">
+                            <h1>Uso de Bootstrap</h1>
+                        </div>
+        <div class="col 4">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Clientes </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">datos</a>
+                </li>
+            </ul>
+        </div>
+
+</header>
+<div class="container">
+    <div class="main">
+        <section class="col-xs-1-12">
+            <div class="jumbotron">
+                <h1 class="display-3">Datos</h1>
+                <p class="lead">Formulario</p>
+               
+               
+            </div>
+
+            <div class="container">
+                <form>
+                    <div class="form-group row">
+                        <label for="inputName" class="col-3 col-form-label">Nombre </label>
+                        <div class="col-5">
+                            <input type="text" class="form-control" name="inputName" id="inputName" placeholder="">
+                        </div>
+                    </div>
+
+
+                    <fieldset class="form-group row">
+                        <legend class="col-form-legend col-sm-1-12">datos de usuario</legend>
+                        <div class="col-sm-1-12">
+                                <div class="form-group row"><!--  por estar en un mismo row salen los dos form seguidos si los saco del row me los pone uno sobre otro -->
+                                        <label for="inputName" class="col-1 col-lg-2 col-form-label">Nombre </label>
+                                        <div class="col-3">
+                                            <input type="text" class="form-control" name="inputName" id="inputName" placeholder="">
+                                        </div>
+                                        <div class="form-group row">
+                                                <label for="inputapellidos" class="col-3 col-lg-3 col-form-label">apellidos </label>
+                                                <div class="col-5">
+                                                    <input type="text" class="form-control" apellidos="inputapellidos" id="inputapellidos" placeholder="">
+                                                </div>
+                                    </div>
+                                    </div>
+                        </div> <div class="form-group row">
+                                    <div class="offset-sm-2 col-sm-10">
+                                        <button type="submit" class="btn btn-primary">Action</button>
+                                    </div>
+                                </div>
+                            </form>
+                        <div class="container">
+                            <form>
+                                <div class="form-group row ">
+                                    <label for="inputName" class="form-control col-sm-1-2  mr-1"> Nombre</label>
+                                    <div class="col-sm-1-6">
+                                        <input type="text" class="form-control" name="inputName" id="inputName" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group row ">
+                                        <label for="inputApellidos" class="form-control col-sm-1-2 col-form-label mr-1"> Apellidos</label>
+                                        <div class="col-sm-1-6">
+                                            <input type="text" class="form-control" Apellidos="inputApellidos" id="inputApellidos" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label for="mail" class="col-sm-1-12">Correo electronico</label>
+                                      <input type="email" class="form-control col-sm-1-2 col-form-label mr-1" name="" id="" aria-describedby="emailHelpId" placeholder="">
+                                      <small id="emailHelpId" class="form-text text-muted">........@gmail.com</small>
+                                    </div>
+
+                                    <div class="form-group row ">
+                                            <label for="inputName" class="col-4 col-form-label  mr-1"> Otra cosa</label>
+                                            <div class="col-sm-1-6">
+                                                <input type="text" class="form-control" name="inputName" id="inputName" placeholder="">
+                                            </div>
+                                        </div>  
+                                    </div>
+
+
+                                <div class="form-group">
+                                   
+                                           <label for="password" class="col-4">Password</label>
+                                  <input type="password" class="form-control" name="password" id="password" placeholder="">
+                                   
+                                   </div>
+
+
+
+                    </fieldset>
+                    <div class="form-group row">
+                        <div class="offset-sm-2 col-sm-10">
+                            <button type="submit" class="btn btn-warning">Action</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+
+        </section>
+        
+
+        <section>
+
+            <div class="container">
+                <form>
+                    <div class="form-group row">
+                        <label for="inputName" class="col-sm-12 col-form-label">Nombre de usuario</label>
+                        <div class="col-6">
+                            <input type="text" class="form-control" name="inputName" id="inputName" placeholder="escriba su nombre de usuario">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                            <label for="inputapellidos" class="col-sm-12 col-form-label">Apellidos</label>
+                            <div class="col-6">
+                                <input type="text" class="form-control" apellidos="inputapellidos" id="inputapellidos" placeholder="">
+                            </div>
+                        </div>
+                     
+                        
+                        <div class="form-group row">
+                          <label for="E-mail" class="col-12 col-form-label">Escriba aquí su correo</label>
+                          <input type="email" class="form-control" name="E-mail" id="E-mail" aria-describedby="emailHelpId" value="@gmail.com" placeholder="">
+                          <small id="emailHelpId" class="form-text text-muted">pepe@gmail.com</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="password">Contraseña</label>
+                          <input type="password" class="form-control" name="password" id="password"  placeholder="">
+                        </div>
+                        
+                        
+                        <div class="form-group row">
+                          <label for="TExt" class="col-12 col-form-label">Escriba aquí su formcaión</label>
+                          <textarea class="form-control" name="Formacion" id="formacion" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-group row">
+                                <label for="inputnacimiento" class="col-sm-12 col-form-label">Fecha de nacimiento</label>
+                                <div class="col-6">
+                                      <small id="emailHelpId" class="form-text text-muted">  Escriba su fecha de nacimiento dd/mm/aaaa</small>
+                                    <input type="text" class="form-control col-sm-12" nacimiento="inputnacimiento" id="inputnacimiento" placeholder="">
+                                </div> 
+                                
+                            </div>
+                              
+
+                        <div class="form-group row">
+                                <label for="TExt" class="col-12 col-form-label">Obsevaciones</label>
+                                <textarea class="form-control" name="observaciones" id="observaciones" rows="3"></textarea>
+                              </div>
+                              <div class="form-group row">
+                                    <label for="TExt" class="col-12 col-form-label">Terminos y condiciones de uso</label>
+                                    <textarea class="form-control" name="observaciones" id="observaciones" rows="3"></textarea>
+                                  </div> 
+                                  <small id="emailHelpId" class="form-text text-muted">acepte terminos y condiciones de uso</small>
+
+                                  <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" name="" id="" value="checkedValue" class="custom-control-input">
+                                    <span class="custom-control-indicator"></span>
+                                    <span class="custom-control-description"></span>
+                                  </label>
+
+
+                                  <div class="form-check">
+                                        <label class="form-check-label">
+                                          <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+                                          Display value
+                                        </label>
+                                      </div>
+                            
+
+                         <div class="form-group">
+                           <label for="curso">Seleccione el curso</label>
+                           <select multiple class="form-control" name=" curso" id="curso">
+                             <option>CSS</option>
+                             <option>SASS</option>
+                             <option> JavaScrip</option>
+                             <option>IFCD 0110</option>
+                           </select>
+                         </div>
+
+                        
+                         
+                         <div class="form-check form-check-inline">
+                             <label class="form-check-label">
+                                 <input class="form-check-input" type="radio" name="" id="" value="checkedValue"> andalucia
+                             </label>
+                         </div>
+                         <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="" id="" value="checkedValue"> cataluña
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="" id="" value="checkedValue">comunidad valenciana
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="" id="" value="checkedValue"> comunidad de madrid
+                                        </label>
+                                    </div>
+<div class="form-check">
+  <label class="form-check-label">
+    <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+    Display value
+  </label>
+</div>
+                                   
+                           
+
+ </div>
+
+
+
+
+
+
+                    <fieldset class="form-group row">
+                        <legend class="col-form-legend col-sm-1-12">Group name</legend>
+                        <div class="col-sm-1-12">
+                            
+                        </div>
+                    </fieldset>
+                    <div class="form-group row">
+                        <div class="offset-sm-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Action</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+    </div>
+</div>
+
+
+
+
+ <footer class="main_footer">
+        <header>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xs-12">
+                        <address>NAcho</address>
+                    </div>
+
+                </div>
+            </div>
+
+    <script src="../node_modules/jquery/dist/jquery.slim.js"></script> 
+    <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="../node_modules/holderjs/holder.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

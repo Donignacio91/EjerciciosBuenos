@@ -28,6 +28,7 @@
     "holderjs": "^2.9.6",
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1",
-    "popper.js": "^1.15.0"
+    "popper.js": "^1.15.0",
+    "pug": "^2.0.3"
   }
 }
