@@ -361,10 +361,12 @@ section.gridfotos4 div img:nth-of-type(1){
     height: 100%;
 }
 .book{
+    color: white;
+    font-size:25px;
     background-image: url(../Assets/booking_logotype_blue_150x25.png);
     background-repeat: no-repeat;
     background-origin: border-box;
-    background-position: right
+    background-position: center;
 }
 
 /******************************
