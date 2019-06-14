@@ -1,0 +1,11 @@
+header#mainheader.mainheader 
+            -if(page == 1){
+                h1= titulo
+            -} else {
+                h1 #{titulo} - Continuacion
+            -}
+            nav.mainMenu
+            ul
+                each item in aMenu 
+                    +itemMenu(item)
+    
