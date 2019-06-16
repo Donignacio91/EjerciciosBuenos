@@ -351,6 +351,12 @@ section.gridfotos4 div img:nth-of-type(1){
 .qvt{
     font-size: 0.5rem;
 }
+/******************************
+-------tabla  --------
+******************************/
+.tabla{
+}
+
 /*****************************
 ------    PUBLI    ----------
 *******************************/
@@ -367,7 +373,7 @@ section.gridfotos4 div img:nth-of-type(1){
 -------Dormir  --------
 ******************************/
 .dormir{
-    margin-top:10rem;
+    margin-top:4rem;
 }
 .hotelgrid{
     margin-left: 0.5rem;
@@ -470,18 +476,18 @@ p.btn-escalar:hover+h3{
 
 .formulario{
     display: flex;
-    
 }
 form{
     text-align: center;
+}
+.iframeFrom{
+  
 }
 /**********************************
 ------------ asides ---------------
 **********************************/
 
-.textwidget custom-html-widget{
-    margin:;
-}
+
 .doble1 div{
     margin-top:1.2rem
 }
