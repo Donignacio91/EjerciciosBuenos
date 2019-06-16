@@ -7,6 +7,7 @@
     margin-top:1rem;
 }
 
+
 .formLabel{
     display:block;
     margin-top: 1.8rem;
@@ -24,12 +25,11 @@
     grid-template-columns: 1fr 2fr 1fr ;
     
 }
-.doble2{
-    text-align: center;
-}
+
 
 .formulario{
     display: flex;
+    
 }
 form{
     text-align: center;

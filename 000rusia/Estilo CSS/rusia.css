@@ -355,12 +355,13 @@ section.gridfotos4 div img:nth-of-type(1){
 ------    PUBLI    ----------
 *******************************/
 .publi{
-    display: flex;
+    margin-top: 3rem;
+    text-align: center;
+  
+    
 }
 .publi aside{
-   margin-top:2rem;
-   margin-left: 37%;
-    
+  
 }
 /******************************
 -------Dormir  --------
