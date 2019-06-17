@@ -7,7 +7,7 @@
     margin-top:1rem;
 }
 
-.formLabel{
+.formLabelm{
     display:block;
     margin-top: 1.8rem;
     margin-bottom: 0.5rem;
@@ -17,18 +17,18 @@
     letter-spacing: 1.2px;
     color:rgb(146, 3, 3);
 }
-.doble{
+.doblem{
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     display:grid;
     grid-template-columns: 1fr 2fr 1fr ;
     
 }
-.doble2{
+.doble2m{
     text-align: center;
 }
 
-.formulario{
+.formulariom{
     display: flex;
 }
 form{
