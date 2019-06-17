@@ -1,13 +1,23 @@
 .mainheader,
 .mainfooter{
-    background-color: brown;
+    background-color: rgb(4, 83, 15);
     color: goldenrod;
 }
-.nav ul{
+nav ul{
     margin:0;
     padding:0;
     display: flex;
     list-style:none;
+}
+nav a{
+    display:block;
+    text-decoration:none;
+    padding:1rem;
+}
+nav a.activo {
+    color:gold;
+    text-decoration: underline;
+    text-decoration-color:gold;
 }
 .mainmenu a{
     text-decoration: none;

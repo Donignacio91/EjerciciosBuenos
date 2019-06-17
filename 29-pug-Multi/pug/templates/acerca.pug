@@ -1,0 +1,24 @@
+-const page = 5
+-const titulo_pagina = "acerca de"
+include ../partials/variables.pug
+include ../partials/mixin.pug
+
+include ../partials/meta.pug
+    body
+        include ../partials/nuevoheader.pug
+        main
+            section#acerca
+                header
+                    h2= aMenu[3].nombre
+                    p= aMenu[3].description
+                h3 Formulario de contactos
+                form(action="")
+                    +inputGroup('Nombre')
+                        input(type="text", name="nombre")
+                    +inputGroup('mail')
+                        input(type="email", name="email")
+                    +inputGroup('password')
+                        input(type="password", name="Contraseña")
+                    +inputGroup('Observaciones')
+                          textarea(name="Observaciones", cols="30", rows="10")
+        include ../partials/footer.pug

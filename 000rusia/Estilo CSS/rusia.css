@@ -483,7 +483,7 @@ section .formum{
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     display:grid;
-    grid-template-columns: 1fr 2fr 1fr ;
+    grid-template-columns: 1fr 3fr 1fr ;
     
 }
 .doble2m{
@@ -534,7 +534,7 @@ form{
     
      }
     .qvt{
-         font-size: 0.6rem;
+         font-size: 0.8rem;
      }
  
  @media screen and (min-width: 800px) {

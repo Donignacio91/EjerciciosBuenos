@@ -1,0 +1,9 @@
+html(lang=langage)
+    head
+        meta(charset=charset)
+        -if(page == 1){
+               title #{titulo}
+        -} else {
+                h1 #{titulo_pagina} | #{titulo}
+        -}
+        link(rel="stylesheet", href="./css/Stylepug.css")

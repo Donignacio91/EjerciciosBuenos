@@ -1,69 +1,17 @@
 
 //-Comentario solo pug
 //comentario pug y html
--const titulo = 'Hola mundo pug'
--const charset = 'utf-8'
--const empresa = 'Colegio <b>Tajamar</b>'
--const page = 2
--const aPaises = [{nombre:'España', id:'ES'},{nombre:'Francia',id:'FR'},{nombre:'Italia', id: 'IT'}]
--const aMenu = [{nombre:'Inicio', id:'inicio', description:'blabla'},{nombre:'Clientes', id:'clientes', description:'blabla'},{nombre:'Porfolio',id:'clientes', description:'blabla'},{nombre:'Acerca de nosotros',id:'about', description:'blabla'}]
--const aMenuP = [{nombre:'web',id:'web',description:'blabla'},{nombre:'Mobile_App´s', id:'app',description:'blabla'},{nombre:'IX/UI', id:'ixui', description:'blabla'}]
-//mixin son estrucutuas que tienen forma de fucncion con nombre y parametros
-mixin itemMenu(item)
-    li
-        a(href="#"+item.id.toLowerCase() tittle=item.description) #{item.nombre}
+-const page = 1
 
-mixin inputGroup (inputName)
-    .formGroup
-        label(for=inputName.toLowerCase()) #{inputName}
-        block
-        p.error(hidden) Aquí irán los errores.
-
-
-
-html(lang=langage)
-    head
-        meta(charset=charset)
-        title #{titulo}
-        link(rel="stylesheet", href="./css/Stylepug.css")
-    body
-       include ../partials/nuevoheader.pug
+include ../partials/variables.pug
+include ../partials/mixin.pug
+include ../partials/meta.pug
+body
+        include ../partials/nuevoheader.pug
         main
             section#inicio
                 p. 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur facilis quas ut expedita placeat at tenetur cumque aliquid? Numquam ex pariatur minima aliquam qui ipsa tempora impedit eligendi ipsam?Perferendis.
                 p. 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit esse rem optio eius voluptas. Maxime, nobis temporibus! Corrupti architecto beatae exercitationem sed doloremque at dolorem nobis? Ab ex facere a.
-            
-            section#clientes
-                form(action="")
-                    select(name="Pais")
-                        //- -for (i=0; i<aPaises.length; i++) {
-                        //- -let item = aPaises[i]
-                        //- option(value=item.id) #{item.Nombre} 
-                        //- -}
-                        each item in aPaises 
-                             option(value=item.id) #{item.nombre}  
-            section#porfolio
-                header
-                    h2 Porfolio
-                    nav.mainheader.mainMenu
-                        ul
-                            each item in aMenuP
-                                +itemMenu(item)
-            section#about
-                header
-                    h2= aMenu[3].nombre
-                    p= aMenu[3].description
-                h3 Formulario de contactos
-                form(action="")
-                    +inputGroup('Nombre')
-                        input(type="text", name="nombre")
-                    +inputGroup('mail')
-                        input(type="email", name="email")
-                    +inputGroup('password')
-                        input(type="password", name="Contraseña")
-                    +inputGroup('Observaciones')
-                          textarea(name="Observaciones", cols="30", rows="10")
-
         include ../partials/footer.pug
