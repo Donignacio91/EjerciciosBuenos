@@ -32,7 +32,11 @@ li:hover > ul {
     position: absolute;
 }
 
-
+.sutil{
+    text-align: center;
+    font-size: 0.7rem;
+    font-style: italic;
+}
 
 
 
@@ -136,8 +140,10 @@ margin-bottom:1rem;
     display:flex;
 justify-content: center;
 }
-
-
+.square li{
+    list-style-type: square;
+    
+}
 
 /******************************************
 -------------- Que ver ------------
