@@ -1,0 +1,16 @@
+extends ../partials/layout.pug 
+block variables
+    -const page = 3
+    -const titulo_pagina = "porfolio"
+    -const aMenuP = [{nombre:'web',id:'web',description:'blabla'},{nombre:'Mobile_App´s', id:'app',description:'blabla'},{nombre:'IX/UI', id:'ixui', description:'blabla'}]
+ 
+block main
+    section#porfolio
+        header
+            h2 Porfolio
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus non, optio aut, repudiandae eveniet eaque provident dolores ea iste molestias animi vel odio accusamus illo vitae totam quas earum veritatis.
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magni libero modi ab aliquam vitae at. Illum deserunt esse iusto recusandae perferendis tenetur totam, exercitationem vero reprehenderit ad beatae tempora?
+        nav
+            ul
+                each item in aMenuP
+                    +itemMenu(item)

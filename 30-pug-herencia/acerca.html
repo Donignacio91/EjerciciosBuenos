@@ -1,0 +1,69 @@
+
+<!--mixin son estrucutuas que tienen forma de fucncion con nombre y parametros--><!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <h1>acerca de | Pug s.L.</h1>
+    <link rel="stylesheet" href="./css/Stylepug.css">
+  </head>
+  <body>
+    <Desactivar>para: inglés</Desactivar>
+    <header class="mainheader" id="mainheader"> 
+      <h1>Pug s.L. - undefined  undefined</h1>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="index.html" tittle="blabla">Inicio</a>
+          </li>
+          <li><a href="clientes.html" tittle="blabla">Clientes</a>
+          </li>
+          <li><a href="porfolio.html" tittle="blabla">Porfolio</a>
+          </li>
+          <li><a href="partners.html" tittle="blabla">partners</a>
+          </li>
+          <li><a href="news.html" tittle="blabla">news</a>
+          </li>
+          <li><a class="activo" href="#clientes.html" tittle="blabla">Clientes</a><a href="clientes.html" tittle="blabla">Clientes</a>
+          </li>
+          <li><a href="acerca.html" tittle="blabla">Acerca de nosotros</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="acerca">
+        <header>
+          <h2>Clientes</h2>
+          <p>blabla</p>
+        </header>
+        <h3>Formulario de contactos</h3>
+        <form action="">
+          <div class="formGroup">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre">
+            <p class="error" hidden="hidden">Aquí irán los errores.</p>
+          </div>
+          <div class="formGroup">
+            <label for="mail">mail</label>
+            <input type="email" name="email">
+            <p class="error" hidden="hidden">Aquí irán los errores.</p>
+          </div>
+          <div class="formGroup">
+            <label for="password">password</label>
+            <input type="password" name="Contraseña">
+            <p class="error" hidden="hidden">Aquí irán los errores.</p>
+          </div>
+          <div class="formGroup">
+            <label for="observaciones">Observaciones</label>
+            <textarea name="Observaciones" cols="30" rows="10"></textarea>
+            <p class="error" hidden="hidden">Aquí irán los errores.</p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="mainfooter"> 
+      <address>&copy; Ignacio Caballero Ruiz</address>
+      <div><small>Colegio <b>Tajamar</b></small></div>
+      <div><small>Ignacio Caballero Ruiz</small></div>
+    </footer>
+  </body>
+</html>

@@ -1,12 +1,9 @@
+extends ./layout.pug
+
+block variables
 -const page = 5
 -const titulo_pagina = "acerca de"
-include ../partials/variables.pug
-include ../partials/mixin.pug
-
-include ../partials/meta.pug
-    body
-        include ../partials/nuevoheader.pug
-        main
+        block main
             section#acerca
                 header
                     h2= aMenu[3].nombre

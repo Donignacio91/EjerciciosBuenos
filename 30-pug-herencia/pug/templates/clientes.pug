@@ -1,0 +1,15 @@
+extends ./layout.pug 
+block variables
+    -const page = 2
+    -const titulo_pagina = "clientes"
+    -const aPaises = [{nombre:'España', id:'ES'},{nombre:'Francia',id:'FR'},{nombre:'Italia', id: 'IT'}]
+block main
+    section#clientes
+        form(action="")
+            select(name="Pais")
+                //- -for (i=0; i<aPaises.length; i++) {
+                //- -let item = aPaises[i]
+                //- option(value=item.id) #{item.Nombre} 
+                //- -}
+                each item in aPaises 
+                        option(value=item.id) #{item.nombre}  
