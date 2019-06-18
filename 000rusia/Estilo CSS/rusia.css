@@ -553,19 +553,25 @@ text-align:center ;
    .hotelgrid blockquote {
     margin:0 ; 
    }
-     section .formu{
+    section.formu{
          display:none;
      }
-     section .formum{
+     section.formum{
         display:initial;
     }
-    .formlabel{margin-left:0;}
+    .formlabel{margin-left:0;
+    }
  }
  
  
  @media screen and (min-width: 600px) {
     
-     }
+    section.formu{
+        display:initial;
+    }
+    section.formum{
+       display:none;
+   }
     .qvt{
          font-size: 0.8rem;
      }
@@ -573,8 +579,9 @@ text-align:center ;
         display: none;
     }
       .doble{
-       grid-template-columns:  1fr .fr ;
+       grid-template-columns:  1fr 1fr ;
 }
+
  
  @media screen and (min-width: 800px) {
      .qvt{
@@ -607,6 +614,7 @@ text-align:center ;
        .doble{
         grid-template-columns:  1fr 2fr 1fr ;
  }}
+
 
   .top_r a :hover  {            
     transform: scale(1.5);
