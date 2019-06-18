@@ -473,7 +473,7 @@ section .formum{
     display:block;
     margin-top: 1.8rem;
     margin-bottom: 0.5rem;
-    margin-left: 1.5rem;
+   
     font-family: 'Pragati Narrow', sans-serif;
     font-weight: bold;
     letter-spacing: 1.2px;
@@ -559,6 +559,7 @@ text-align:center ;
      section .formum{
         display:initial;
     }
+    .formlabel{margin-left:0;}
  }
  
  
@@ -568,18 +569,45 @@ text-align:center ;
     .qvt{
          font-size: 0.8rem;
      }
+    .oculto{
+        display: none;
+    }
+      .doble{
+       grid-template-columns:  1fr .fr ;
+}
  
  @media screen and (min-width: 800px) {
      .qvt{
           font-size: 0.9rem;
       }
+      .oculto{
+        display: none;
+    }
+      .doble{
+       grid-template-columns:  1fr 3fr ;
+}
   }
   @media screen and (min-width: 1000px) {
      .qvt{
           font-size: 1.2rem;
       }
-      
-  }
+      .oculto{
+          display: none;
+      }
+        .doble{
+         grid-template-columns:  1fr 2fr ;
+  }}
+  @media screen and (min-width: 1001px) {
+    .qvt{
+         font-size: 1.2rem;
+     }
+     .oculto{
+         display: initial;
+     }
+       .doble{
+        grid-template-columns:  1fr 2fr 1fr ;
+ }}
+
   .top_r a :hover  {            
     transform: scale(1.5);
     transition-property:all ;
