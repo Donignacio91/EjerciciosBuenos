@@ -497,9 +497,41 @@ form{
     text-align: center;
 }
 /******************************
+   ------- FOOTER   --------
+******************************/
+.mainfooter{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    grid-column-gap:0.2rem; 
+    grid-row-gap:0.2rem;
+}
+.mainfooter div{
+    border: 1px solid black;
+}
+.logo img{
+    max-width: 90%; 
+    
+}
+.logo{
+    display:flex;
+}
+.icono{
+   
+text-align:center ;
+}
+.icono ul {
+    padding:0;
+}
+.icono ul li{
+    list-style: none;
+}
+
+.content {
+    
+}
+/******************************
 ------- MEDIAQUERIS   --------
 ******************************/
-
 @media screen and (max-width: 600px) {
     body{
      margin-left: 5%;
@@ -548,3 +580,22 @@ form{
       }
       
   }
+  .top_r a :hover  {            
+    transform: scale(1.5);
+    transition-property:all ;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 2s;
+    }
+     span a :hover  {            
+        transform: scale(1.5);
+        transition-property:all ;
+        transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 2s;
+        }
+
+  .return a :hover  {            
+    transform: scale(2);
+    transition-property:all ;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 2s;
+    }
