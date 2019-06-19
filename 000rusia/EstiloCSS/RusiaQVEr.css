@@ -242,3 +242,64 @@ height: 100%;
      margin-left: 5%;
      margin-right: 5%;
      }}
+     /******************************
+   ------- FOOTER   --------
+******************************/
+footer{
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 3rem;
+    background-color:rgb(146, 3, 3);
+    color: white;
+}
+.logo{
+    background-color: white;
+}
+.icono a{
+  
+    color: white;
+    font-size: 30px;
+}
+.mainfooter{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    grid-column-gap:0.2rem; 
+    grid-row-gap:0.2rem;
+}
+.mainfooter div{
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+.logo img{
+    max-width: 90%; 
+    
+}
+.logo{
+    display:flex;
+}
+.icono{
+   
+text-align:center ;
+}
+.icono ul {
+    padding:0;
+}
+.icono ul li{
+    list-style: none;
+}
+.vcard{
+   
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.vcard a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.given-name{margin-top: 2rem;
+}
+.fex{
+    margin-top: 2rem;
+}
