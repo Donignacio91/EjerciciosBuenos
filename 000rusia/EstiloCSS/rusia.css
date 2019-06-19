@@ -285,7 +285,7 @@ btn-escalar:hover+div{
 --------- GRID --------------------
 *********************************/
 
-section.gridfotos{
+div.gridfotos{
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     display:grid;
@@ -301,20 +301,20 @@ section.gridfotos{
     grid-column-gap:0.2rem; 
     grid-row-gap:0.2rem;
 }
-section.gridfotos div{
+div.gridfotos div{
     display: flex;
     align-items: center;
 }
 
-section.gridfotos div img{
+div.gridfotos div img{
     border-radius: 15px; 
     max-width: 96%;
     margin: 0 auto;
 }
-section.gridfotos2  img{
+div.gridfotos2  img{
     border-radius: 15px; }
 
-    section.gridfotos2{
+    div.gridfotos2{
         margin-left: 0.5rem;
         margin-right: 0.5rem;
         display:grid;
@@ -322,18 +322,18 @@ section.gridfotos2  img{
         grid-column-gap:0.2rem; 
         grid-row-gap:0.2rem;
     }
-section.gridfotos2 div{
+div.gridfotos2 div{
         display: flex;
         align-items: center;
     }
 
-section.gridfotos2 div img:nth-of-type(1){
+div.gridfotos2 div img:nth-of-type(1){
     
     width: 96%;
     margin: 0 auto;
  
  }
-section.gridfotos4{
+div.gridfotos4{
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     display:grid;
@@ -342,11 +342,11 @@ section.gridfotos4{
     grid-column-gap:0.2rem; 
     grid-row-gap:0.2rem;
 }
-section.gridfotos4 div{
+div.gridfotos4 div{
     display: flex;
     align-items: center;
 }
-section.gridfotos4 div img:nth-of-type(1){
+div.gridfotos4 div img:nth-of-type(1){
     border-radius: 15px;
     width: 96%;
     margin: 0 auto;
@@ -357,6 +357,10 @@ section.gridfotos4 div img:nth-of-type(1){
 /******************************
 -------tabla  --------
 ******************************/
+.curio{
+    margin-bottom:2rem; 
+}
+
 .curiosity{
     margin-left: 0.5rem;
         margin-right: 0.5rem;
@@ -364,7 +368,7 @@ section.gridfotos4 div img:nth-of-type(1){
         grid-template-columns: 2fr auto 2fr;
         grid-column-gap:0.2rem; 
         grid-row-gap:0.2rem;
-        margin-top: 3rem;
+        margin-top: 1rem;
    
 }
 

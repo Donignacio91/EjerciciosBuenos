@@ -120,12 +120,10 @@
             <div> <a href="./Lugares_rusia.html#malaya"><img src="./Assets/8MalayaZemlyaMemorial1.jpg" alt="malaya"></a>
             </div>
         </div>
-        <div class="tabla">
-            
-        </div>
+       
     </section>
-    <div class="return"><a href="#inicio"> <i class="fas fa-home"></i></a></div>
-<section>
+    <div class="return curio"><a href="#inicio"> <i class="fas fa-home"></i></a></div>
+    <div class="sub_line"></div>
 <aside class="curiosity">
     <div class="lagar">
         <a href="https://es.gizmodo.com/rusia-pierde-contacto-con-un-satelite-lleno-de-reptiles-1610868106"><img src="./Assets/Largartosespaciales.PNG" alt="lagarto espacial"></a>
@@ -134,7 +132,7 @@
     <div class="auto">
             <table class="centar main_table">
                     <tr>
-                      <th colspan="3"> <span class="tittle1">Curiostity</span>  </th>
+                      <th colspan="3"> <span class="tittle1">Curiostity</span></th>
                     </tr>
                     <tr>
                       <th scope="row" >Capital</th>
@@ -172,7 +170,7 @@
     </div>
 
 </aside>
-</section>
+<div class="sub_line"></div>
     <div class="clearfix">
     </div>
     <section class="qcomer" id="qcomer">
@@ -183,12 +181,12 @@
         </p>
     </section>
 
-    <section class="gridfotos">
+    <div class="gridfotos">
         <div><img src="./Assets/1-Boscht(1).jpg" alt="Sopa bortsh remolacha carne rusa"></div>
         <div><img src="./Assets/2-Belesh.jpg" alt="Pastel ternera pasta verduras mantequilla"></div>
         <div><img src="./Assets/3-pelmeni.jpg" alt="tortelini ruso tipo guioza"></div>
-    </section>
-    <section class="gridfotos1 gridparraf">
+    </div>
+    <div class="gridfotos1 gridparraf">
         <div>
             <h3 class="subtittle qvt ">Sopa borsch</h3>
             <p>La sopa Borsch también es conocida como la sopa rusa de remolacha. Y este es su ingrediente principal y
@@ -205,13 +203,13 @@
             <p>Los pelmeni son un plato tradicional de Rusia y muy popular entre su población el cual se elabora con
                 masa y relleno de pequeñas bolas de carne picada generalmente de cerdo, de cordero o de res.</p>
         </div>
-    </section>
-    <section class="gridfotos2">
+    </div>
+    <div class="gridfotos2">
         <div><img src="./Assets/4-Caviar1.jpg" alt="Tostas de caviar ruso"></div>
         <div><img src="./Assets/5-vodka.jpg" alt="Vodka greygoose"></div>
         <div><img src="./Assets/6-Ensalada_Olivier_Rusa1.jpg" alt="Nuestra ensaladilla rusa su Olivier"></div>
-    </section>
-    <section class="gridfotos3 gridparraf">
+    </div>
+    <div class="gridfotos3 gridparraf">
         <div>
             <h3 class="subtittle qvt "> El caviar </h3>
             <p>
@@ -239,12 +237,12 @@
                 humilde. 
             </p>
         </div>
-    </section>
-    <section class="gridfotos4">
+    </div>
+    <div class="gridfotos4">
         <div><img src="./Assets/caviar-Ruso-mesa-golden-pearls-lq-1-1).jpg" alt="Caviar ruso"></div>
         <div><img src="./Assets/8-central.jpg" alt="popurri de ingredientes rusos"></div>
         <div><img src="./Assets/9-boscht1.jpg" alt="Sopa de remolacha boscht"></div>
-    </section>
+    </div>
     <div class="return"><a href="#inicio"> <i class="fas fa-home"></i></a>
     
     </div>
@@ -255,10 +253,7 @@
                         class="image wp-image-7849  attachment-400x333 size-400x333" alt=""
                         style="max-width: 100%; height: auto;"></a></aside>
         </div>
-    <section>
-        
-
-    </section>
+   
     <section class="dormir" id="dormir">
         <h2 class="subtittle ">¿Donde dormir?</h2>
         <div class="sub_line2"></div>
@@ -328,30 +323,30 @@
                         <div class="doble2">
                             <div class="fomulario">
                              <form action="https://jsonplaceholder.typicode.com/users"  method="POST">
-                                <label for="Nombre" ><span class="formLabel">Nombre</span> </label>
+                                <label for="Nombre" ><span id="formmm" class="formLabel">Nombre</span> </label>
                                 <input class="formInput" type="text" name="Nombre" size="25" placeholder="имя" required>
                     
                                 <label for="1º_Apellido" id="fomul" class="formLabel">1º Apellido</label>
                                 <input class="formInput" type="text" name="1º Apellido" size="25" placeholder="фамилия" required>
                     
-                                <label for="2º_Apellido" class="formLabel">2º Apellido</label>
+                                <label for="2º_Apellido"  id="formapem" class="formLabel">2º Apellido</label>
                                 <input class="formInput" type="text" name="2º Apellido" size="25" placeholder="вторая фамилия">
                     
-                                <label for="Fecha_de_nacimiento" class="formLabel">Fecha de nacimiento</label>
-                                <input class="formInput" type="datetime" name="Fecha de nacimiento" placeholder="dd/mm/aaaa" required>
+                                <label for="Fecha_de_nacimiento"  id="formnac" class="formLabel">Fecha de nacimiento</label>
+                                <input class="formInput" type="datetime-local" name="Fecha de nacimiento">
                     
-                                <label for="Correo_electronico" class="formLabel">Correo electronico</label>
+                                <label for="Correo_electronico" id="formaim" class="formLabel">Correo electronico</label>
                                 <input class="formInput" type="email" name="Correo electronico" size="25" placeholder="Электронная почта" value="@gmail.com" 
                                 pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})" required>
                     
-                                <label for="Password" class="formLabel">Password</label>
-                                <input class="formInput" type="password" name="Password" size="25" placeholder="пароль" required minlength="5" required maxlength="16">
+                                <label for="Password"  id="forpassm" class="formLabel">Password</label>
+                                <input class="formInput" type="password" name="Password" size="25" placeholder="пароль" required minlength="5"  maxlength="16">
                     
-                                <label for="Sexo" class="formLabel">Sexo</label>
+                                <label for="Sexo"  id="forsexm" class="formLabel">Sexo</label>
                                      <input type="radio" name="Mujer" value="m" required> Mujer
                                     <input type="radio" name="Hombre" value="h" required> Hombre
                                   
-                                <label  for="Observaciones" class="formLabel">Observaciones</label>
+                                <label  for="Observaciones"  id="formob" class="formLabel">Observaciones</label>
                                     <textarea class="formArea" name="Info" id="Info" rows="4" cols="25"
                                         placeholder="Спросите нас"></textarea>
                                 <div class="formLabel">
@@ -365,7 +360,7 @@
                             <aside>
                                 <div class="textwidget custom-html-widget"> <a href="https://www.awin1.com/cread.php?s=2045228&amp;v=11081&amp;q=323095&amp;r=476345"> <img src="https://www.awin1.com/cshow.php?s=2045228&amp;v=11081&amp;q=323095&amp;r=476345" alt="awin1"> </a></div>
                     
-                                <div id="google_image_div"><a href="https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjsuY0w-Dyh14Re6MHIFSjQycYiiKy6eXlT95cpCYsT-PYJmYEtHcgpSS8hWVxPhZpEgMjrG09uxDv62FXhzen3l7OgAAzsvsecgEpWIK-iAxYVBwSUUQ7ZCUF98Y06xhtsfzDgQ9a7r0vXf8int8FQGOs65ts26sGjI_ray9b3VxvvUOB-sLi8_C8jwRsDqmW8ZEmr7JaPEhy27Gj7eJlovdqzGyBv2p_X_FHl_M14o-Xm6tl6r2e-uHw3qnVsOB-S82anx8PRUzQB__it88aPA7fO64yfL4Bw&amp;sig=Cg0ArKJSzH2SXKMuQk9H&amp;adurl=https://www.logitravel.com/destinationsshowcase/destination/1872%3Fanuncio%3D102775230%26utm_id%3D24373%26utm_campaign%3DLosCabos&amp;nx=CLICK_X&amp;ny=CLICK_Y" id="aw0" target="_blank"><amp-img alt="logitravel" class="img_ad i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-element i-amphtml-layout" height="250" i-amphtml-layout="fixed" i-amphtml-ssr="" src="https://tpc.googlesyndication.com/simgad/17584190283614018825" style="width:300px;height:250px;" width="300"><img alt="logitravel"  decoding="async" src="https://tpc.googlesyndication.com/simgad/17584190283614018825"></amp-img></a></div>
+                                <div id="google_image_div2"><a href="https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjsuY0w-Dyh14Re6MHIFSjQycYiiKy6eXlT95cpCYsT-PYJmYEtHcgpSS8hWVxPhZpEgMjrG09uxDv62FXhzen3l7OgAAzsvsecgEpWIK-iAxYVBwSUUQ7ZCUF98Y06xhtsfzDgQ9a7r0vXf8int8FQGOs65ts26sGjI_ray9b3VxvvUOB-sLi8_C8jwRsDqmW8ZEmr7JaPEhy27Gj7eJlovdqzGyBv2p_X_FHl_M14o-Xm6tl6r2e-uHw3qnVsOB-S82anx8PRUzQB__it88aPA7fO64yfL4Bw&amp;sig=Cg0ArKJSzH2SXKMuQk9H&amp;adurl=https://www.logitravel.com/destinationsshowcase/destination/1872%3Fanuncio%3D102775230%26utm_id%3D24373%26utm_campaign%3DLosCabos&amp;nx=CLICK_X&amp;ny=CLICK_Y" id="aw0" target="_blank"><amp-img alt="logitravel" class="img_ad i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-element i-amphtml-layout" height="250" i-amphtml-layout="fixed" i-amphtml-ssr="" src="https://tpc.googlesyndication.com/simgad/17584190283614018825" style="width:300px;height:250px;" width="300"><img alt="logitravel"  decoding="async" src="https://tpc.googlesyndication.com/simgad/17584190283614018825"></amp-img></a></div>
                     
                                 <div class="textwidget custom-html-widget"> <a href="https://www.awin1.com/cread.php?s=2035064&amp;v=10946&amp;q=321947&amp;r=476345"> <img src="https://www.awin1.com/cshow.php?s=2035064&amp;v=10946&amp;q=321947&amp;r=476345" alt="awin1"> </a></div>
                              </aside>
@@ -386,11 +381,11 @@
                                 </div>
                                 <div class="doble2m">
                                     <aside>
-                                         <div class="textwidget custom-html-widget"> <a href="https://www.awin1.com/cread.php?s=2045228&amp;v=11081&amp;q=323095&amp;r=476345"> <img src="https://www.awin1.com/cshow.php?s=2045228&amp;v=11081&amp;q=323095&amp;r=476345" > </a></div>
+                                         <div class="textwidget custom-html-widget"> <a href="https://www.awin1.com/cread.php?s=2045228&amp;v=11081&amp;q=323095&amp;r=476345"> <img src="https://www.awin1.com/cshow.php?s=2045228&amp;v=11081&amp;q=323095&amp;r=476345" alt="publi"> </a></div>
                             
-                                        <div id="google_image_div"><a href="https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjsuY0w-Dyh14Re6MHIFSjQycYiiKy6eXlT95cpCYsT-PYJmYEtHcgpSS8hWVxPhZpEgMjrG09uxDv62FXhzen3l7OgAAzsvsecgEpWIK-iAxYVBwSUUQ7ZCUF98Y06xhtsfzDgQ9a7r0vXf8int8FQGOs65ts26sGjI_ray9b3VxvvUOB-sLi8_C8jwRsDqmW8ZEmr7JaPEhy27Gj7eJlovdqzGyBv2p_X_FHl_M14o-Xm6tl6r2e-uHw3qnVsOB-S82anx8PRUzQB__it88aPA7fO64yfL4Bw&amp;sig=Cg0ArKJSzH2SXKMuQk9H&amp;adurl=https://www.logitravel.com/destinationsshowcase/destination/1872%3Fanuncio%3D102775230%26utm_id%3D24373%26utm_campaign%3DLosCabos&amp;nx=CLICK_X&amp;ny=CLICK_Y" id="aw0" target="_blank"><amp-img alt="" class="img_ad i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-element i-amphtml-layout" height="250" i-amphtml-layout="fixed" i-amphtml-ssr="" src="https://tpc.googlesyndication.com/simgad/17584190283614018825" style="width:300px;height:250px;" width="300"><img alt="" class="i-amphtml-fill-content i-amphtml-replaced-content" decoding="async" src="https://tpc.googlesyndication.com/simgad/17584190283614018825"></amp-img></a></div>
+                                        <div id="google_image_div1"><a href="https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjsuY0w-Dyh14Re6MHIFSjQycYiiKy6eXlT95cpCYsT-PYJmYEtHcgpSS8hWVxPhZpEgMjrG09uxDv62FXhzen3l7OgAAzsvsecgEpWIK-iAxYVBwSUUQ7ZCUF98Y06xhtsfzDgQ9a7r0vXf8int8FQGOs65ts26sGjI_ray9b3VxvvUOB-sLi8_C8jwRsDqmW8ZEmr7JaPEhy27Gj7eJlovdqzGyBv2p_X_FHl_M14o-Xm6tl6r2e-uHw3qnVsOB-S82anx8PRUzQB__it88aPA7fO64yfL4Bw&amp;sig=Cg0ArKJSzH2SXKMuQk9H&amp;adurl=https://www.logitravel.com/destinationsshowcase/destination/1872%3Fanuncio%3D102775230%26utm_id%3D24373%26utm_campaign%3DLosCabos&amp;nx=CLICK_X&amp;ny=CLICK_Y" id="aw0z" target="_blank"><amp-img alt="" class="img_ad i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-element i-amphtml-layout" height="250" i-amphtml-layout="fixed" i-amphtml-ssr="" src="https://tpc.googlesyndication.com/simgad/17584190283614018825" style="width:300px;height:250px;" width="300"><img alt="" class="i-amphtml-fill-content i-amphtml-replaced-content" decoding="async" src="https://tpc.googlesyndication.com/simgad/17584190283614018825"></amp-img></a></div>
                             
-                                        <div class="textwidget custom-html-widget"> <a href="https://www.awin1.com/cread.php?s=2035064&amp;v=10946&amp;q=321947&amp;r=476345"> <img src="https://www.awin1.com/cshow.php?s=2035064&amp;v=10946&amp;q=321947&amp;r=476345"> </a></div>
+                                        <div class="textwidget custom-html-widget"> <a href="https://www.awin1.com/cread.php?s=2035064&amp;v=10946&amp;q=321947&amp;r=476345"> <img src="https://www.awin1.com/cshow.php?s=2035064&amp;v=10946&amp;q=321947&amp;r=476345" alt="publi"> </a></div>
                                     </aside>
                                        
                                         <h3 class="subtittle ">Contacte con nosotros. </h3>
@@ -407,21 +402,21 @@
                                         <input class="formInput" type="text" name="2º Apellido" size="40" placeholder="вторая фамилия">
                             
                                         <label for="Fecha_de_nacimiento" class="formLabelm" >Fecha de nacimiento</label>
-                                        <input class="formInput" type="date" name="Fecha de nacimiento" size="40" placeholder="dd/mm/aaaa" required>
+                                        <input class="formInput" type="datetime-local" name="Fecha de nacimiento" size="40" >
                             
-                                        <label for="Correo electronico" class="formLabelm">Correo electronico</label>
+                                        <label for="Correo_electronico" class="formLabelm">Correo electronico</label>
                                         <input class="formInput" type="email" name="Correo electronico" size="40" placeholder="Электронная почта" value="@gmail.com"
                                         pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})" required>
                             
                                         <label for="Password" class="formLabelm">Password</label>
-                                        <input class="formInput" type="password" name="Password" size="40" placeholder="пароль" required minlength="5" required maxlength="16">
+                                        <input class="formInput" type="password" name="Password" size="40" placeholder="пароль" required minlength="5"  maxlength="16">
                             
                                         <label for="Sexo" class="formLabelm">Sexo</label>
                                              <input type="radio" name="Mujer" value="m" > Mujer
                                             <input type="radio" name="Hombre" value="h" > Hombre
                                           
                                         <label for="Observaciones" class="formLabelm">Observaciones</label>
-                                            <textarea class="formArea" name="Info" id="Info" rows="6" cols="40"
+                                            <textarea class="formArea" name="Info" id="Infom" rows="6" cols="40"
                                                 placeholder="Спросите нас;"></textarea>
                                         <div class="formLabelm">
                                           <input type="submit" value="Enviar">
@@ -432,9 +427,9 @@
                                         </div>
                                         
                                         <aside>
-                                            <div class="textwidget custom-html-widget"><a href="https://www.civitatis.com/es/?aid=1322" target="_blank" rel="nofollow noindex noopener noreferrer"><img class="aligncenter size-full wp-image-19090" src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_300,h_250/http://www.laviajeraempedernida.com/wp-content/uploads/2018/12/gif_300x250-1-5.gif" alt="" width="300" height="250"></a></div>
+                                            <div class="textwidget custom-html-widget"><a href="https://www.civitatis.com/es/?aid=1322" target="_blank" ><img class="aligncenter size-full wp-image-19090" src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_300,h_250/http://www.laviajeraempedernida.com/wp-content/uploads/2018/12/gif_300x250-1-5.gif" alt="publi" ></a></div>
                             
-                                        <div class="textwidget custom-html-widget"> <a href="https://www.awin1.com/cread.php?s=2092432&amp;v=10144&amp;q=328883&amp;r=476345"> <img src="https://www.awin1.com/cshow.php?s=2092432&amp;v=10144&amp;q=328883&amp;r=476345" > </a></div>
+                                        <div class="textwidget custom-html-widget"> <a href="https://www.awin1.com/cread.php?s=2092432&amp;v=10144&amp;q=328883&amp;r=476345"> <img src="https://www.awin1.com/cshow.php?s=2092432&amp;v=10144&amp;q=328883&amp;r=476345" alt="publi" > </a></div>
                             
                                         <div class="textwidget custom-html-widget"><a href="https://www.youtube.com/naniarenas?utm_source=Youtube&amp;utm_medium=Banner&amp;utm_campaign=Videos&amp;utm_term=Videos%20de%20viajes&amp;utm_content=Mini%20videos%20de%20viajes" target="_blank" rel="noopener noreferrer"><img class="aligncenter size-full wp-image-16809" src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_300,h_250/https://www.laviajeraempedernida.com/wp-content/uploads/2018/04/LaViajera.jpg" alt="" width="300" height="250"></a></div>
                                         </aside>
@@ -456,7 +451,7 @@
 <footer>
 <div class="mainfooter">
     <div class="logo">
-      <a href="https://spain.mid.ru/visados"><img src="./Assets/embasy rusi.jpeg" alt="Logo embajada rusa en españa"></a>
+      <a href="https://spain.mid.ru/visados"><img src="./Assets/embasyrusi.jpeg" alt="Logo embajada rusa en españa"></a>
     </div>
 
 
