@@ -34,7 +34,7 @@ li ul {
 }
 li:hover > ul { 
     display: block;
-    position: absolute;
+    position: relative;
 }
 
 .sutil{
@@ -75,39 +75,30 @@ li:hover > ul {
             }
            
             .menu ul li ul li a.cha{
-                color:rgb(255, 255, 255);
+                color:rgb(230, 222, 222);
             }
             .menu ul li ul li a.vi{
-                color:rgb(255, 255, 255);
+                color:rgb(230, 222, 222);
             }
             .menu ul li ul li a.ma{
-                color:rgb(255, 255, 255);
+                color:rgb(230, 222, 222);
             }
-        .menu ul li ul li a {color:rgb(47, 1, 1);}
+        .menu ul li ul li a {color:rgb(148, 3, 3);}
 .vertical{
     text-align: center;
     background-image: url(../Assets/russian\ flag\ 2.jfif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left:25%;
+    margin-left:20%;
+    margin-right: 20%;
    
 }
 .vertical>li a{
     margin-right: 30px;
      
 } 
- @media screen and (max-width: 1000px) {
-    .vertical{
-        margin-left:20%;}
-    }
-        
-        @media screen and (max-width: 800px) {
-            .vertical{
-                margin-left:15%;}}
-  @media screen and (max-width: 800px) {
-                    .vertical{
-                        margin-left:15%;}}
+
 .tittle{
            
     text-align: center;  
@@ -217,11 +208,6 @@ height: 100%;
     }
   
 
-
-
-
-
-
 .slider {
    
 	width: 90%;
@@ -264,12 +250,6 @@ height: 100%;
 }
 
 
-
-@media screen and (max-width: 600px) {
-    body{
-     margin-left: 5%;
-     margin-right: 5%;
-     }}
      /******************************
    ------- FOOTER   --------
 ******************************/
@@ -277,15 +257,14 @@ footer{
     margin-right: 15%;
     margin-left: 15%;
     margin-top: 3rem;
-    background-color:rgb(146, 3, 3);
-    color: white;
+    background-color:rgba(146, 3, 3, 0.363);
+    
 }
-.logo{
-    background-color: white;
-}
+
+
 .icono a{
   
-    color: white;
+    color: rgb(146, 3, 3);
     font-size: 30px;
 }
 .mainfooter{
@@ -294,19 +273,16 @@ footer{
     grid-column-gap:0.2rem; 
     grid-row-gap:0.2rem;
 }
-.mainfooter div{
-    border: 1px solid rgba(255, 255, 255, 0);
-}
+
 .logo img{
-    max-width: 90%; 
-    
+    max-width: 100%;   
 }
 .logo{
     display:flex;
 }
 .icono{
    
-text-align:center ;
+text-align:center;
 }
 .icono ul {
     padding:0;
@@ -316,13 +292,13 @@ text-align:center ;
 }
 .vcard{
    
-    color: white;
+    color: rgb(5, 5, 5);
     text-align: center;
     text-decoration: none;
 }
 .vcard a{
     text-decoration: none;
-    color: white;
+    color: rgb(5, 5, 5);
     text-align: center;
 }
 
@@ -331,3 +307,33 @@ text-align:center ;
 .fex{
     margin-top: 2rem;
 }
+
+/********************
+      ----media-----   
+      *************/
+      
+
+@media screen and (max-width: 600px) {
+    body{
+     margin-left: 5%;
+     margin-right: 5%;
+     }
+     li:hover > ul { 
+                        display: none;
+                    } }
+      
+      @media screen and (min-width: 600px) {
+                    
+                       
+                    }
+
+
+      /*  @media screen and (max-width: 1000px) {
+                .vertical{
+        margin-left:20%;}
+    }
+        
+        @media screen and (max-width: 800px) {
+            .vertical{
+                margin-left:15%;}}
+  */

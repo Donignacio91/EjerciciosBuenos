@@ -575,15 +575,14 @@ footer{
     margin-right: 15%;
     margin-left: 15%;
     margin-top: 3rem;
-    background-color:rgb(146, 3, 3);
-    color: white;
+    background-color:rgba(146, 3, 3, 0.363);
+  
 }
 .logo{
     background-color: white;
 }
 .icono a{
-  
-    color: white;
+    color: rgb(146, 3, 3);
     font-size: 30px;
 }
 .mainfooter{
@@ -592,19 +591,14 @@ footer{
     grid-column-gap:0.2rem; 
     grid-row-gap:0.2rem;
 }
-.mainfooter div{
-    border: 1px solid rgba(255, 255, 255, 0);
-}
 .logo img{
-    max-width: 90%; 
-    
+    max-width: 100%; 
 }
 .logo{
     display:flex;
 }
 .icono{
-   
-text-align:center ;
+text-align:center;
 }
 .icono ul {
     padding:0;
@@ -620,7 +614,7 @@ text-align:center ;
 }
 .vcard a{
     text-decoration: none;
-    color: white;
+    color: rgb(5, 5, 5);
     text-align: center;
 }
 
