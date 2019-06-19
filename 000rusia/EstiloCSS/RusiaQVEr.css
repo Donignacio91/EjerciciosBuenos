@@ -81,8 +81,15 @@ li:hover > ul {
             }
         .menu ul li ul {}
 .vertical{
-    background-color:  rgba(0, 0, 0, 0.507);
+    text-align: center;
+    background-color:  rgba(0, 0, 0, 0.712);
+    margin-left:25%;
+   
 }
+.vertical>li a{
+    margin-right: 30px;
+     color:rgb(255, 255, 255);
+} 
 .tittle{
            
     text-align: center;  
