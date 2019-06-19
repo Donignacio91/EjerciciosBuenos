@@ -125,11 +125,12 @@ body{
     .cubo{
         display: flex;
         margin-bottom:0.3rem; 
-       
-
+         }
+        .fotos img{   
+            border-radius: 15px; 
     }
     .foto1{
-        border: 1px solid rgba(0, 0, 0, 0.452);
+        
         width: 96%;
         max-width: 960px;
         margin: 0 auto;
@@ -157,7 +158,7 @@ body{
 
     }
     .foto3{
-        border: 1px solid rgba(0, 0, 0, 0.418);
+        
         width: 96%;
         max-width: 960px;
         margin: 0 auto;
@@ -168,7 +169,7 @@ body{
         height: 100%;
     }
     .foto4{
-        border: 1px solid rgba(0, 0, 0, 0.466);
+        
         width: 96%;
         max-width: 960px;
         margin: 0 auto;
@@ -242,7 +243,8 @@ body{
 }
 
 .gridver div img{
-
+   
+        border-radius: 15px; 
     width: 96%;
     margin: 0 auto; 
     
@@ -305,11 +307,12 @@ section.gridfotos div{
 }
 
 section.gridfotos div img{
-    
+    border-radius: 15px; 
     max-width: 96%;
     margin: 0 auto;
 }
-
+section.gridfotos2  img{
+    border-radius: 15px; }
 
     section.gridfotos2{
         margin-left: 0.5rem;
@@ -344,7 +347,7 @@ section.gridfotos4 div{
     align-items: center;
 }
 section.gridfotos4 div img:nth-of-type(1){
-    
+    border-radius: 15px;
     width: 96%;
     margin: 0 auto;
 }
@@ -354,8 +357,63 @@ section.gridfotos4 div img:nth-of-type(1){
 /******************************
 -------tabla  --------
 ******************************/
-.tabla{
+.curiosity{
+    margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        display:grid;
+        grid-template-columns: 2fr auto 2fr;
+        grid-column-gap:0.2rem; 
+        grid-row-gap:0.2rem;
+        margin-top: 3rem;
+   
 }
+
+.arca img{
+    border-radius: 15px;
+    width: 100%;
+    margin: 0 auto;
+    margin-left:10%;
+    margin-top:8%;
+}
+.lagar img{
+    border-radius: 15px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top:8%;
+}
+
+
+table {
+    width: 100%;
+    text-align: center;
+    
+}
+.centrar {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main_table>tbody>tr{
+    padding-top: 1rem;
+    padding-bottom: 0.2rem;
+}
+
+/* Filas Pares */
+.main_table>tbody>tr:nth-of-type(even) {
+    background-color:rgba(111, 175, 235, 0.411) ;
+}
+/* Filas impares */
+.main_table>tbody>tr:nth-of-type(odd) {
+    background-color: rgba(111, 175, 235, 0.411);
+}
+
+.sin_borde {
+    border: 0;
+
+
+}
+
 
 /*****************************
 ------    PUBLI    ----------
@@ -384,7 +442,7 @@ section.gridfotos4 div img:nth-of-type(1){
     grid-row-gap:0.2rem;
 }
 .hotelgrid div img{
-
+    border-radius: 15px;
     width: 96%;
     margin: 0 auto;
 }
@@ -422,7 +480,16 @@ p.btn-escalar:hover+h3{
 /**********************************
 ------------ FORMU ---------------
 **********************************/
-
+::-webkit-input-placeholder{
+    text-align: center;
+    font-size: 10px;
+}
+.textarea{
+    border: 0.5px solid rgba(146, 3, 3, 0.479);
+}
+.formInput{
+    border: 0.5px solid rgba(146, 3, 3, 0.479); 
+}
 .formLabel{
     display:block;
     margin-top: 1.8rem;
@@ -496,9 +563,25 @@ section .formum{
 form{
     text-align: center;
 }
+
 /******************************
    ------- FOOTER   --------
 ******************************/
+footer{
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 3rem;
+    background-color:rgb(146, 3, 3);
+    color: white;
+}
+.logo{
+    background-color: white;
+}
+.icono a{
+  
+    color: white;
+    font-size: 30px;
+}
 .mainfooter{
     display: grid;
     grid-template-columns: 0.5fr 2fr 1fr;
@@ -506,7 +589,7 @@ form{
     grid-row-gap:0.2rem;
 }
 .mainfooter div{
-    border: 1px solid black;
+    border: 1px solid rgba(255, 255, 255, 0);
 }
 .logo img{
     max-width: 90%; 
@@ -525,9 +608,22 @@ text-align:center ;
 .icono ul li{
     list-style: none;
 }
+.vcard{
+   
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.vcard a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
 
-.content {
-    
+.given-name{margin-top: 2rem;
+}
+.fex{
+    margin-top: 2rem;
 }
 /******************************
 ------- MEDIAQUERIS   --------
@@ -561,6 +657,21 @@ text-align:center ;
     }
     .formlabel{margin-left:0;
     }
+    .arca{
+        display: none;
+    }
+    .lagar{
+        display:none;
+    }
+    .curiosity{
+        margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            display:grid;
+            grid-template-columns: auto;
+          
+            margin-top: 3rem;
+       
+    }
  }
  
  
@@ -580,7 +691,7 @@ text-align:center ;
     }
       .doble{
        grid-template-columns:  1fr 1fr ;
-}
+}}
 
  
  @media screen and (min-width: 800px) {
