@@ -198,12 +198,15 @@ height: 100%;
 
 
 .slider {
-	width: 95%;
+   
+	width: 90%;
 	margin: auto;
     overflow: hidden;
-   
 }
-
+.slider div{
+ margin-left: 15%;
+    margin-right: 15%;
+}
 .slider ul {
 	display: flex;
 	padding: 0;
