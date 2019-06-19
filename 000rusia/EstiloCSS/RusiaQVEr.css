@@ -44,11 +44,6 @@ li:hover > ul {
 }
 
 
-
-
-
-
-
 .top_r{
     font-size: 1.7rem;
 }
@@ -74,22 +69,45 @@ li:hover > ul {
    .menu ul li a{
             text-decoration: none;
             font-family: 'Pragati Narrow', sans-serif;
-            /* color:rgb(146, 3, 3) */
             font-weight: bold;
             letter-spacing: 1.2px;
             color:rgb(146, 3, 3);
             }
-        .menu ul li ul {}
+           
+            .menu ul li ul li a.cha{
+                color:rgb(255, 255, 255);
+            }
+            .menu ul li ul li a.vi{
+                color:rgb(255, 255, 255);
+            }
+            .menu ul li ul li a.ma{
+                color:rgb(255, 255, 255);
+            }
+        .menu ul li ul li a {color:rgb(47, 1, 1);}
 .vertical{
     text-align: center;
-    background-color:  rgba(0, 0, 0, 0.712);
+    background-image: url(../Assets/russian\ flag\ 2.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-left:25%;
    
 }
 .vertical>li a{
     margin-right: 30px;
-     color:rgb(255, 255, 255);
+     
 } 
+ @media screen and (max-width: 1000px) {
+    .vertical{
+        margin-left:20%;}
+    }
+        
+        @media screen and (max-width: 800px) {
+            .vertical{
+                margin-left:15%;}}
+  @media screen and (max-width: 800px) {
+                    .vertical{
+                        margin-left:15%;}}
 .tittle{
            
     text-align: center;  
