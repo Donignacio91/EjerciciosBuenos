@@ -326,8 +326,8 @@
                                 <label for="Nombre" ><span id="formmm" class="formLabel">Nombre</span> </label>
                                 <input class="formInput" type="text" name="Nombre" size="25" placeholder="имя" required>
                     
-                                <label for="1º_Apellido" id="fomul" class="formLabel">1º Apellido</label>
-                                <input class="formInput" type="text" name="1º Apellido" size="25" placeholder="фамилия" required>
+                                <label for="1º_Apellido1" id="fomul" class="formLabel">1º Apellido</label>
+                                <input class="formInput" id="1º_Apellido" type="text" name="1º Apellido" size="25" placeholder="фамилия" required>
                     
                                 <label for="2º_Apellido"  id="formapem" class="formLabel">2º Apellido</label>
                                 <input class="formInput" type="text" name="2º Apellido" size="25" placeholder="вторая фамилия">
@@ -342,9 +342,10 @@
                                 <label for="Password"  id="forpassm" class="formLabel">Password</label>
                                 <input class="formInput" type="password" name="Password" size="25" placeholder="пароль" required minlength="5"  maxlength="16">
                     
-                                <label for="Sexo"  id="forsexm" class="formLabel">Sexo</label>
-                                     <input type="radio" name="Mujer" value="m" required> Mujer
-                                    <input type="radio" name="Hombre" value="h" required> Hombre
+                                <label for="Sexo" class="formLabelm">Sexo</label>
+                                             <input id="Sexo" type="radio" name="Mujer" value="m" > Mujer
+                                             <label for="Sexo1" class="formLabelm"></label>
+                                            <input id="Sexo1" type="radio" name="Hombre" value="h" > Hombre
                                   
                                 <label  for="Observaciones"  id="formob" class="formLabel">Observaciones</label>
                                     <textarea class="formArea" name="Info" id="Info" rows="4" cols="25"
@@ -393,30 +394,31 @@
                                     <div class="fomulariom">
                                      <form action="https://jsonplaceholder.typicode.com/users"  method="POST">
                                         <label class="formLabelm" for="Nombre" >Nombre</label>
-                                        <input class="formInput" type="text" name="Nombre" size="40" placeholder="имя" required>
+                                        <input class="formInput" type="text" id="Nombre" name="Nombre" size="40" placeholder="имя" required>
                             
                                         <label class="formLabelm" for="1º_Apellido" >1º Apellido</label>
-                                        <input class="formInput" type="text" name="1º Apellido" size="40" placeholder="фамилия" required>
+                                        <input class="formInput" type="text" id="1º_Apellido" name="1º Apellido" size="40" placeholder="фамилия" required>
                             
                                         <label class="formLabelm" for="2º_Apellido" >2º Apellido</label>
-                                        <input class="formInput" type="text" name="2º Apellido" size="40" placeholder="вторая фамилия">
+                                        <input class="formInput" type="text" id="2º_Apellido" name="2º Apellido" size="40" placeholder="вторая фамилия">
                             
                                         <label for="Fecha_de_nacimiento" class="formLabelm" >Fecha de nacimiento</label>
-                                        <input class="formInput" type="datetime-local" name="Fecha de nacimiento" size="40" >
+                                        <input class="formInput" id="Fecha_de_nacimiento" type="datetime-local" name="Fecha de nacimiento" size="40" >
                             
                                         <label for="Correo_electronico" class="formLabelm">Correo electronico</label>
-                                        <input class="formInput" type="email" name="Correo electronico" size="40" placeholder="Электронная почта" value="@gmail.com"
+                                        <input class="formInput" id="Correo_electronico" type="email" name="Correo electronico" size="40" placeholder="Электронная почта" value="@gmail.com"
                                         pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})" required>
                             
                                         <label for="Password" class="formLabelm">Password</label>
-                                        <input class="formInput" type="password" name="Password" size="40" placeholder="пароль" required minlength="5"  maxlength="16">
-                            
+                                        <input class="formInput" id="Password" type="password" name="Password" size="40" placeholder="пароль" required minlength="5"  maxlength="16">
+                                            
                                         <label for="Sexo" class="formLabelm">Sexo</label>
-                                             <input type="radio" name="Mujer" value="m" > Mujer
-                                            <input type="radio" name="Hombre" value="h" > Hombre
+                                             <input id="Sexo" type="radio" name="Mujer" value="m" > Mujer
+                                             <label for="Sexo11" class="formLabelm"></label>
+                                            <input id="Sexo11" type="radio" name="Hombre" value="h" > Hombre
                                           
                                         <label for="Observaciones" class="formLabelm">Observaciones</label>
-                                            <textarea class="formArea" name="Info" id="Infom" rows="6" cols="40"
+                                            <textarea id="Observaciones" class="formArea" name="Info" rows="6" cols="40"
                                                 placeholder="Спросите нас;"></textarea>
                                         <div class="formLabelm">
                                           <input type="submit" value="Enviar">
