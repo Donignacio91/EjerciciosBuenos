@@ -330,20 +330,10 @@ text-align:center;
                     color:rgb(146, 3, 3);
                 }
                 .menu ul li ul li a.ma{
-                    color:rgb(146, 3, 3);}}
+                    color:rgb(146, 3, 3);}
+                
+                }
 
-      @media screen and (min-width: 600px) {
-                    
-                       
-                    }
+     
 
-
-      /*  @media screen and (max-width: 1000px) {
-                .vertical{
-        margin-left:20%;}
-    }
-        
-        @media screen and (max-width: 800px) {
-            .vertical{
-                margin-left:15%;}}
-  */
+    
