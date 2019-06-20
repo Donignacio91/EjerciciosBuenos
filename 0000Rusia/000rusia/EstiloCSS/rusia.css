@@ -1,0 +1,733 @@
+*{
+    box-sizing: border-box;
+}
+/*  ************** *
+       --HEADER-- 
+*****************  */
+
+
+body{
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.topline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Pragati Narrow', sans-serif;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.432);
+    
+}   
+/* .inicio{
+    position: fixed;
+} */
+
+.top_l{
+    font-size: 1.2rem;
+}
+.top_l  a{
+            text-decoration: none;
+            color:rgb(146, 3, 3);
+            font-weight: bold;
+            letter-spacing: 1.7px;
+            margin-left:1rem;
+            
+}
+.top_r{
+    font-size: 1.7rem;
+}
+.top_r i{
+            color:rgb(146, 3, 3);
+            margin-right:1rem;
+        }
+.tittle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.527);
+    background-image: url(../Assets/russia-flag.jpg);
+    background-position: center;
+    background-size: contain;
+    
+    
+}
+.tittle1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:rgb(146, 3, 3);}
+.rus1{
+    margin-top:1.3rem;
+    font-family: 'Seymour One', sans-serif;
+    color:rgb(252, 252, 252);
+}
+.rus2{
+    margin-top:0.2rem;
+    font-family: 'Seymour One', sans-serif;
+    font-size: 1rem;
+    color:rgb(252, 252, 252);
+}
+ .return{
+     display:flex;
+     justify-content: center;
+ }
+ .return a{
+     color:rgb(146, 3, 3);
+     margin-top:1rem;
+ }
+
+
+
+
+/* *************************  *
+         ----MENU ----        
+***************************   */
+
+
+
+
+.menu{
+    border-top: 0.07em  solid rgba(0, 0, 0, 0.432);
+    border-bottom: 0.07em  solid rgba(0, 0, 0, 0.432);
+    
+}
+    .menu ul{
+    text-align: center;
+}
+    .menu ul li {
+    display: inline;
+    list-style: none;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    }
+    .menu ul li a{
+    text-decoration: none;
+    font-family: 'Pragati Narrow', sans-serif;
+    /* color:rgb(146, 3, 3) */
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color:rgb(146, 3, 3);
+    }
+    
+
+    /* ********************* *
+        ---SECCION FOTOS---
+    ***********************  */
+    .margin{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .fotos{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    .cubo{
+        display: flex;
+        margin-bottom:0.3rem; 
+         }
+        .fotos img{   
+            border-radius: 15px; 
+    }
+    .foto1{
+        
+        width: 96%;
+        max-width: 960px;
+        margin: 0 auto;
+     
+    }
+    .foto1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .foto2{
+       
+        width: 96%;
+        max-width: 960px;
+        margin: 0 auto;
+        margin-right: 0.3rem;
+    }
+    .foto2 img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .cubo2{
+        display: flex;
+       
+
+    }
+    .foto3{
+        
+        width: 96%;
+        max-width: 960px;
+        margin: 0 auto;
+        margin-right: 0.3rem;
+    }   
+    .foto3 img{
+        width: 100%;
+        height: 100%;
+    }
+    .foto4{
+        
+        width: 96%;
+        max-width: 960px;
+        margin: 0 auto;
+      
+    }
+    .foto4 img{
+        width: 100%;
+        height: 100%;
+    }
+    /**********************************
+    ------- ¿Qué ver?  --------------
+    *****************************/
+    .quever {
+        margin-top: 3rem;
+    }
+    .tittle{
+           
+            text-align: center;  
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            font-family: 'Pragati Narrow', sans-serif;
+            font-weight: bold;
+            letter-spacing: 1.2px;
+            color:rgb(146, 3, 3);
+            margin-bottom: 0;
+        }
+.sub_line{
+  
+    max-width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-bottom: 0.07em  solid rgba(0, 0, 0, 0.432);
+   }
+  
+   .subtittle{
+       margin-top: 0.3rem;
+           font-size: 1rem;
+    text-align: center;  
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-family: 'Pragati Narrow', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color:rgb(146, 3, 3);
+    margin-bottom: 0;
+} 
+.clearfix{
+    clear: both;
+}
+.sub_line2{
+  
+    max-width: 20%;
+    margin-right: 40%;
+    margin-left: 40%;
+    border-bottom: 0.07em  solid rgba(0, 0, 0, 0.432);
+    margin-bottom:1rem;
+   }
+   .subb{border-bottom: 0.07em  solid rgba(0, 0, 0, 0.432);}
+/******************************************
+-------------- GRID VER------------
+
+    ********************************/
+.gridver{
+    display: grid;
+    grid-template-columns:2fr 1fr 1fr 2fr ;
+    grid-column-gap:0.2rem; 
+    grid-row-gap:0.2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+   
+}
+
+.gridver div img{
+   
+        border-radius: 15px; 
+    width: 96%;
+    margin: 0 auto; 
+    
+}
+
+
+.titull h3{
+   margin-top: 40%;
+}
+.cinm{
+    max-width: 100%;
+    height: 100%;
+}
+
+btn-escalar:hover+div{
+
+    transform:scale(3);
+}
+.trans{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.34,1.84,1,-0.85);
+}
+
+/*****************************************
+---------- ¿Qué comer? -----------------
+**************************************/
+.qcomer{
+    margin-top: 3rem;
+}
+
+    .sutil{
+        text-align: center;
+        font-size: 1rem;
+        font-style: italic;
+    }
+/*************************************
+--------- GRID --------------------
+*********************************/
+
+div.gridfotos{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:0.2rem; 
+    grid-row-gap:0.2rem;
+}
+.gridparraf{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-column-gap:0.2rem; 
+    grid-row-gap:0.2rem;
+}
+div.gridfotos div{
+    display: flex;
+    align-items: center;
+}
+
+div.gridfotos div img{
+    border-radius: 15px; 
+    max-width: 96%;
+    margin: 0 auto;
+}
+div.gridfotos2  img{
+    border-radius: 15px; }
+
+    div.gridfotos2{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap:0.2rem; 
+        grid-row-gap:0.2rem;
+    }
+div.gridfotos2 div{
+        display: flex;
+        align-items: center;
+    }
+
+div.gridfotos2 div img:nth-of-type(1){
+    
+    width: 96%;
+    margin: 0 auto;
+ 
+ }
+div.gridfotos4{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    grid-column-gap:0.2rem; 
+    grid-row-gap:0.2rem;
+}
+div.gridfotos4 div{
+    display: flex;
+    align-items: center;
+}
+div.gridfotos4 div img:nth-of-type(1){
+    border-radius: 15px;
+    width: 96%;
+    margin: 0 auto;
+}
+.qvt{
+    font-size: 0.5rem;
+}
+/******************************
+-------tabla  --------
+******************************/
+.curio{
+    margin-bottom:2rem; 
+}
+
+.curiosity{
+    margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        display:grid;
+        grid-template-columns: 2fr auto 2fr;
+        grid-column-gap:0.2rem; 
+        grid-row-gap:0.2rem;
+        margin-top: 1rem;
+   
+}
+
+.arca img{
+    border-radius: 15px;
+    width: 100%;
+    margin: 0 auto;
+    margin-left:10%;
+    margin-top:8%;
+}
+.lagar img{
+    border-radius: 15px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top:8%;
+}
+
+
+table {
+    width: 100%;
+    text-align: center;
+    
+}
+.centrar {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main_table>tbody>tr{
+    padding-top: 1rem;
+    padding-bottom: 0.2rem;
+    background-color:rgba(111, 175, 235, 0.411);
+}
+.sin_borde {
+    border: 0px;
+}
+/*****************************
+------    PUBLI    ----------
+*******************************/
+.publi{
+    margin-top: 3rem;
+    text-align: center;
+  
+    
+}
+
+/******************************
+-------Dormir  --------
+******************************/
+.dormir{
+    margin-top:4rem;
+}
+.hotelgrid{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-column-gap:0.2rem; 
+    grid-row-gap:0.2rem;
+}
+.hotelgrid div img{
+    border-radius: 15px;
+    width: 96%;
+    margin: 0 auto;
+}
+.hotelgrid div p{
+    margin-left:0.2rem ;
+    margin-right:0.2rem ;
+}
+
+/* .hotimg{
+    max-width: 100%;
+    height: 100%;
+} */
+.book{
+    color: white;
+    font-size:25px;
+    background-image: url(../Assets/booking_logotype_blue_150x25.png);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+    margin-bottom: 2rem;
+}
+
+
+
+ div.trans{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.34,1.84,1,-0.85);
+}
+p.btn-escalar:hover+h3{
+
+    transform:scale(3);
+}
+
+/**********************************
+------------ FORMU ---------------
+**********************************/
+::-webkit-input-placeholder{
+    text-align: center;
+    font-size: 10px;
+}
+.textarea{
+    border: 0.5px solid rgba(146, 3, 3, 0.479);
+}
+.formInput{
+    border: 0.5px solid rgba(146, 3, 3, 0.479); 
+}
+.formLabel{
+    display:block;
+    margin-top: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Pragati Narrow', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color:rgb(146, 3, 3);
+}
+.doble{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display:grid; 
+}
+ 
+form{
+    text-align: center;
+}
+.doble1 div{
+    margin-top:1.2rem
+}
+/**********************************
+------------Formu movil ---------------
+**********************************/
+.return{
+    display:flex;
+    justify-content: center;
+}
+.return a{
+    color:rgb(146, 3, 3);
+    margin-top:1rem;
+}
+section .formum{
+    display: none;
+}
+.formLabelm{
+    display:block;
+    margin-top: 1.8rem;
+    margin-bottom: 0.5rem;
+   
+    font-family: 'Pragati Narrow', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color:rgb(146, 3, 3);
+}
+.doblem{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr ;
+    
+}
+.doble2m{
+    text-align: center;
+}
+
+.formulariom{
+    display: flex;
+}
+form{
+    text-align: center;
+}
+
+/******************************
+   ------- FOOTER   --------
+******************************/
+footer{
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 3rem;
+    background-color:rgba(146, 3, 3, 0.363);
+  
+}
+
+.icono a{
+    color: rgb(146, 3, 3);
+    font-size: 30px;
+}
+.mainfooter{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    grid-column-gap:0.2rem; 
+    grid-row-gap:0.2rem;
+}
+.logo img{
+    max-width: 100%; 
+}
+.logo{
+    display:flex;
+}
+.icono{
+text-align:center;
+}
+.icono ul {
+    padding:0;
+}
+.icono ul li{
+    list-style: none;
+}
+.vcard{
+   
+    color: rgb(5, 5, 5);
+    text-align: center;
+    text-decoration: none;
+}
+.vcard a{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    text-align: center;
+}
+
+.given-name{margin-top: 2rem;
+}
+.fex{
+    margin-top: 2rem;
+}
+/******************************
+------- MEDIAQUERIS   --------
+******************************/
+@media screen and (max-width: 600px) {
+    body{
+     margin-left: 5%;
+     margin-right: 5%;
+     }
+     .menu ul{
+        padding:0;
+     }
+     .menu a{
+         font-size: 0.8rem;
+       
+     }
+   h2 {
+       font-size: 0.8rem;
+   }
+   h3{
+       font-size: 0.7rem;
+   }
+   .hotelgrid blockquote {
+    margin:0 ; 
+   }
+    section.formu{
+         display:none;
+     }
+     section.formum{
+        display:initial;
+    }
+    .formlabel{margin-left:0;
+    }
+    .arca{
+        display: none;
+    }
+    .lagar{
+        display:none;
+    }
+    .curiosity{
+        margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            display:grid;
+            grid-template-columns: auto;
+          
+            margin-top: 3rem;
+       
+    }
+ }
+ 
+ 
+ @media screen and (min-width: 600px) {
+    
+    section.formu{
+        display:initial;
+    }
+    section.formum{
+       display:none;
+   }
+    .qvt{
+         font-size: 0.8rem;
+     }
+    .oculto{
+        display: none;
+    }
+      .doble{
+       grid-template-columns:  1fr 1fr ;
+}.hotelgrid  blockquote{
+    margin-left: 3%;
+    margin-right:3%;
+}
+}
+
+ 
+ @media screen and (min-width: 800px) {
+     .qvt{
+          font-size: 0.9rem;
+      }
+      .oculto{
+        display: none;
+    }
+      .doble{
+       grid-template-columns:  1fr 3fr ;
+}
+.hotelgrid  blockquote{
+    margin-left: 3%;
+    margin-right:3%;
+}
+  }
+  @media screen and (min-width: 1000px) {
+     .qvt{
+          font-size: 1.2rem;
+      }
+      .oculto{
+          display: none;
+      }
+        .doble{
+         grid-template-columns:  1fr 2fr ;
+  }.hotelgrid  blockquote{
+    margin-left: 3%;
+    margin-right:3%;
+}
+}
+  @media screen and (min-width: 1001px) {
+    .qvt{
+         font-size: 1.2rem;
+     }
+     .oculto{
+         display: initial;
+     }
+       .doble{
+        grid-template-columns:  1fr 2fr 1fr ;
+ }}
+
+
+  .top_r a :hover  {            
+    transform: scale(1.5);
+    transition-property:all ;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 2s;
+    }
+     span a :hover  {            
+        transform: scale(1.5);
+        transition-property:all ;
+        transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 2s;
+        }
+
+  .return a :hover  {            
+    transform: scale(2);
+    transition-property:all ;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 2s;
+    }

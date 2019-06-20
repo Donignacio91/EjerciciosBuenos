@@ -1,0 +1,339 @@
+/*COMUN*/
+body{
+    margin-right: 15%;
+    margin-left: 15%;
+}
+.return a :hover  {            
+    transform: scale(2);
+    transition-property:all ;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 2s;
+    }
+.topline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Pragati Narrow', sans-serif;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.432);
+    
+}   
+.top_l{
+    font-size: 1.2rem;
+}
+.top_l  a{
+            text-decoration: none;
+            color:rgb(146, 3, 3);
+            font-weight: bold;
+            letter-spacing: 1.7px;
+            margin-left:1rem;
+            
+}
+li ul {
+    display: none
+}
+li:hover > ul { 
+    display: block;
+    position: relative;
+}
+
+.sutil{
+    text-align: center;
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+
+.top_r{
+    font-size: 1.7rem;
+}
+.top_r i{
+            color:rgb(146, 3, 3);
+            margin-right:1rem;
+        }
+.menu{
+            border-top: 0.07em  solid rgba(0, 0, 0, 0.432);
+            border-bottom: 0.07em  solid rgba(0, 0, 0, 0.432);
+            
+        }
+     .menu ul{
+            text-align: center;
+        }
+     .menu ul li {
+            display: block;
+            list-style: none;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            
+            }
+   .menu ul li a{
+            text-decoration: none;
+            font-family: 'Pragati Narrow', sans-serif;
+            font-weight: bold;
+            letter-spacing: 1.2px;
+            color:rgb(146, 3, 3);
+            }
+           
+            .menu ul li ul li a.cha{
+                color:rgb(230, 222, 222);
+            }
+            .menu ul li ul li a.vi{
+                color:rgb(230, 222, 222);
+            }
+            .menu ul li ul li a.ma{
+                color:rgb(230, 222, 222);
+            }
+        .menu ul li ul li a {color:rgb(148, 3, 3);}
+.vertical{
+    text-align: center;
+    background-image: url(../Assets/russian\ flag\ 2.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:20%;
+    margin-right: 20%;
+   
+}
+.vertical>li a{
+    margin-right: 30px;
+     
+} 
+
+.tittle{
+           
+    text-align: center;  
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-family: 'Pragati Narrow', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color:rgb(146, 3, 3);
+    margin-bottom: 0;
+}
+.sub_line{
+
+max-width: 80%;
+margin-right: 10%;
+margin-left: 10%;
+border-bottom: 0.07em  solid rgba(0, 0, 0, 0.432);
+}
+.sub_line1{
+    margin-top: 5rem;
+    max-width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-bottom: 0.07em  solid rgba(0, 0, 0, 0.432);
+    }
+
+.subtittle{
+margin-top: 1rem;
+   font-size: 1rem;
+text-align: center;  
+margin-left: 0.5rem;
+margin-right: 0.5rem;
+font-family: 'Pragati Narrow', sans-serif;
+font-weight: bold;
+letter-spacing: 1.2px;
+color:rgb(146, 3, 3);
+margin-bottom: 0;
+} 
+.clearfix{
+clear: both;
+}
+.sub_line2{
+
+max-width: 20%;
+margin-right: 40%;
+margin-left: 40%;
+border-bottom: 0.07em  solid rgba(0, 0, 0, 0.432);
+margin-bottom:1rem;
+}
+.return{
+    display:flex;
+    justify-content: center;
+}
+.return a{
+    color:rgb(146, 3, 3);
+    margin-top:1rem;
+}
+/*video*/
+.video{
+    display:flex;
+justify-content: center;
+}
+.square li{
+    list-style-type: square;
+    
+}
+
+/******************************************
+-------------- Que ver ------------
+    ********************************/
+  section{
+margin-top: 2rem;
+  }
+ .flex {
+        display: flex;
+    
+         
+    }
+.resfot{
+        width: 96%;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+.resfot img{
+    width: 100%;
+    height: 100%;
+}
+.resfot1{
+    max-height: 60%;
+    width: 76%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.resfot1 img{
+width: 100%;
+height: 100%;
+}
+.resfot11{
+   display: grid;
+   grid-template-columns: 2fr 1.5fr;
+   grid-column-gap: 0.5rem;
+   grid-row-gap: 0.5rem;
+}
+.resfot11 img{
+    width: 100%;
+
+    }
+  
+
+.slider {
+   
+	width: 90%;
+	margin: auto;
+    overflow: hidden;
+}
+.slider div{
+ margin-left: 15%;
+    margin-right: 15%;
+}
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	max-width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+     /******************************
+   ------- FOOTER   --------
+******************************/
+footer{
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 3rem;
+    background-color:rgba(146, 3, 3, 0.363);
+    
+}
+
+
+.icono a{
+  
+    color: rgb(146, 3, 3);
+    font-size: 30px;
+}
+.mainfooter{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    grid-column-gap:0.2rem; 
+    grid-row-gap:0.2rem;
+}
+
+.logo img{
+    max-width: 100%;   
+}
+.logo{
+    display:flex;
+}
+.icono{
+   
+text-align:center;
+}
+.icono ul {
+    padding:0;
+}
+.icono ul li{
+    list-style: none;
+}
+.vcard{
+   
+    color: rgb(5, 5, 5);
+    text-align: center;
+    text-decoration: none;
+}
+.vcard a{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    text-align: center;
+}
+
+.given-name{margin-top: 2rem;
+}
+.fex{
+    margin-top: 2rem;
+}
+
+/********************
+      ----media-----   
+      *************/
+      
+
+@media screen and (max-width: 600px) {
+    body{
+     margin-left: 5%;
+     margin-right: 5%;
+     }
+     li > ul { 
+                
+        display:initial;
+                    } 
+                
+                .menu ul li ul li a.cha{
+                    color:rgb(146, 3, 3);
+                }
+                .menu ul li ul li a.vi{
+                    color:rgb(146, 3, 3);
+                }
+                .menu ul li ul li a.ma{
+                    color:rgb(146, 3, 3);}
+                
+                }
+
+     
+
+    
