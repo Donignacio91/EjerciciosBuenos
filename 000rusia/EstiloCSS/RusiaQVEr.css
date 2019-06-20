@@ -318,10 +318,20 @@ text-align:center;
      margin-left: 5%;
      margin-right: 5%;
      }
-     li:hover > ul { 
-                        display: none;
-                    } }
-      
+     li > ul { 
+                
+        display:initial;
+                    } 
+                
+                .menu ul li ul li a.cha{
+                    color:rgb(146, 3, 3);
+                }
+                .menu ul li ul li a.vi{
+                    color:rgb(146, 3, 3);
+                }
+                .menu ul li ul li a.ma{
+                    color:rgb(146, 3, 3);}}
+
       @media screen and (min-width: 600px) {
                     
                        
