@@ -1,3 +1,13 @@
+function isValidNumber(p){
+     let r = true
+    if(
+        typeof p == 'boolean' ||
+        typeof b == 'object' ||
+        isNaN(p) 
+    ) {r = false}
+    return r
+    
+
 /** Función sumar
  * @description recibe dos parámetros y devuelve la suma de ambos
  * @param {number}
@@ -7,9 +17,13 @@
  */
 
 function sumar (a = 0, b = 0) {
-    /* let c = a + b 
+    if( !isValidNumber (a) ||
+        !isVAlidNumber (b) ||
+        {
+      throw new Error('parametros incompletos')}
+    /* let c  a + b 
     return c */
-    return a + b
+    return +a + +b
 }
 
 /** Función restar
