@@ -1,9 +1,14 @@
+/* @import url(./reset.css); */
 *{
     box-sizing: border-box;
 }
 /*  ************** *
        --HEADER-- 
 *****************  */
+:root {
+    --color-acento:rgb(146, 3, 3);;
+    }
+
 
 
 body{
@@ -20,26 +25,21 @@ body{
     background-color: rgba(0, 0, 0, 0.432);
     
 }   
-/* .inicio{
-    position: fixed;
-} */
-
 .top_l{
     font-size: 1.2rem;
 }
 .top_l  a{
             text-decoration: none;
-            color:rgb(146, 3, 3);
+            color: var(--color-acento);
             font-weight: bold;
             letter-spacing: 1.7px;
             margin-left:1rem;
-            
 }
 .top_r{
     font-size: 1.7rem;
 }
 .top_r i{
-            color:rgb(146, 3, 3);
+            color: var(--color-acento);
             margin-right:1rem;
         }
 .tittle{
@@ -59,7 +59,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color:rgb(146, 3, 3);}
+    color: var(--color-acento);}
 .rus1{
     margin-top:1.3rem;
     font-family: 'Seymour One', sans-serif;
@@ -76,7 +76,7 @@ body{
      justify-content: center;
  }
  .return a{
-     color:rgb(146, 3, 3);
+    color: var(--color-acento);;
      margin-top:1rem;
  }
 
@@ -110,7 +110,7 @@ body{
     /* color:rgb(146, 3, 3) */
     font-weight: bold;
     letter-spacing: 1.2px;
-    color:rgb(146, 3, 3);
+    color: var(--color-acento);
     }
     
 
