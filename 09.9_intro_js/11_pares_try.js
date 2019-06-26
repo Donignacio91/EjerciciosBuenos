@@ -19,8 +19,11 @@ function isValidNumber(n) {
         r = false
     }
     return r
+    
 }
-
+aDatos = [50 , 25]
+console.log(isValidNumber(aDatos))//False
+console.log(isValidNumber(50 , 25))//true
 /**
  * 
  * @param {number} n 
