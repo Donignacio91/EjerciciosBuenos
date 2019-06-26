@@ -29,7 +29,7 @@ function sumar (a = 0, b = 0) {
 /** Función restar
 * @description recibe dos parámetros y devuelve la restar de ambos
 * @param {number} a 
-* @param {number} b 
+* @param {number} b z
 * @returns {number}
 */
 
