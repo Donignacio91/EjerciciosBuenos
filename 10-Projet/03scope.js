@@ -18,7 +18,7 @@ function prueba() {
             let w = 7
             var z = 4 //* si pongo var lo reconoce tanto dentro del if como en la función, que recoge al if si es un let solo dentro de las llaves  si es un var dentro de la funcion independientemente de los bloques de código. Mejor no usarlo es código antiguo
 
-            console.log('es verdad')
+            console.log('es vegrdad')
             console.log('desde el if', a)
             console.log('desde el if', b)
             console.log('desde el if', w)
