@@ -70,7 +70,7 @@ recorrido(aNumeros)
 /**
  * @description Funcion reciba un valor x en kilometros por hora y lo devuelva en mph  
  */
-let aKm = [30, 50, 80, 100, 130 ,160]
+let aKm = [30, 50, 80, 100, 130, 160]
 
 function pasarAMillas() {
     for (let i = 0; i < aKm.length; i++) {
@@ -99,7 +99,7 @@ function miValidNumber(n) {
     }
     aDatos = [50 , 25]
 console.log(miValidNumber(aDatos))//False
-//xk????
+
 console.log(miValidNumber(25))//true
 
 /*
@@ -116,3 +116,75 @@ function isEntero( n = 0) {
 console.log(isEntero(25))//true
 console.log(isEntero(30))//true
 console.log(isEntero(25.1))//false
+
+/** 
+ *      OBJETOS &  FORIN
+*/
+
+
+let coche1 = {
+    marca: 'audi',
+    modelo:  's3',
+    año: '1999',
+    motor: {
+        cilindrada: '1800cc',
+        potencia: '210cv',
+        parMotor: '270nm'},
+    peso:'1460kg',
+    extras: ['A/C', 'QUATTRO', 'turbo',]
+}
+let coche2 = {
+    marca: 'Alfa Romeo',
+    modelo:  '33',
+    año: '1994',
+    motor: {
+        cilindrada: '1400cc',
+        potencia: '88cv',
+        parMotor: '116nm'},
+    peso:'960kg',
+    extras: 00,
+}
+let prop='peso'
+console.log(coche2['motor']) //lo pongo entre corchets para que no se piense que llamo a ninguna funcion 
+console.log(coche2[prop])/* [] es una notación especial para acceder a una porpiedad de nombre desconocido (dentro de una variable) el corchete hace que INTERPOLE la variable */
+console.log(coche2.extras)
+console.log(`**********************`)
+
+//El comportamiento del forin es similar al del for key actua como el index i  del for recorriendo el objeto en este caso las key son marca, modelo, año... Los nombres de los valores de la propiedades
+for (const key in coche1) { 
+    if (coche1.hasOwnProperty(key)) {
+        const value = coche1[key];
+        console.log(` EL ${key} de este vehiculo es: ${value}`)
+    }
+}  
+
+for (const key in coche2) { 
+    if (coche1.hasOwnProperty(key)) {
+        const value = coche2[key];
+        console.log(` EL ${key} de este vehiculo es: ${value}`)
+    }
+    else if (value = 00) {
+        value = 'de este vehiculo no esta disponible.' 
+    }//Pork no me hace ni caso
+}
+
+/** 
+ * @description Función que recorre un objeto a tantos niveles como contenga y crea un String con la información
+ * @param {Objeto}
+ * @returns {String}
+ */
+function objectToString(object={}) {
+    let cadena=``
+    for (const key in object) {
+        if (object.hasOwnProperty(key)) {
+            const value = object[key];
+            if(typeof value == 'object' && !Array.isArray(value)){
+                cadena+= `${key}: ${objectToString(value)}`  
+            }else {
+                cadena+= `${key}: ${value}` 
+            }
+        }
+    }return `${cadena} `
+}
+
+console.log(objectToString(coche2))
