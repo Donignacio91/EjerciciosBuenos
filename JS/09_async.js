@@ -2,6 +2,7 @@
 // en otros leguajes es multithread hay muchos hilos para hacer muchas cosas
 //dandose una concurrencia real 
 //en java hay un solo hilo para hacerlo todo que gestiona el bucle de eventos
+//todas las lecturas de datos de un server son asincronas 
 setTimeout( () => {
     console.log('pasaron dos segundos')
 },2000)//espera dos parametros 2º timeout y es un number en milisegundos 

@@ -1,4 +1,8 @@
-function calcular(a, b, operacion, callback) {
+/* function calcular(a, b, operacion, callback) {
+    let msj = ` El resultado de una ${operacion} con los ${a} y ${b} es `;
+    return msj + callback(a , b)
+} */
+const calcular=(a, b, operacion, callback) => {
     let msj = ` El resultado de una ${operacion} con los ${a} y ${b} es `;
     return msj + callback(a , b)
 }

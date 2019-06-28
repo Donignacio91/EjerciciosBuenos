@@ -131,7 +131,7 @@ let coche1 = {
         potencia: '210cv',
         parMotor: '270nm'},
     peso:'1460kg',
-    extras: ['A/C', 'QUATTRO', 'turbo',]
+    extras: ['A/C', 'QUATTRO', 'turbo']
 }
 let coche2 = {
     marca: 'Alfa Romeo',
@@ -142,7 +142,7 @@ let coche2 = {
         potencia: '88cv',
         parMotor: '116nm'},
     peso:'960kg',
-    extras: 00,
+    extras: [],
 }
 let prop='peso'
 console.log(coche2['motor']) //lo pongo entre corchets para que no se piense que llamo a ninguna funcion 
@@ -159,13 +159,14 @@ for (const key in coche1) {
 }  
 
 for (const key in coche2) { 
-    if (coche1.hasOwnProperty(key)) {
-        const value = coche2[key];
-        console.log(` EL ${key} de este vehiculo es: ${value}`)
-    }
-    else if (value = 00) {
+
+    const value = coche2[key];
+    console.log(` EL ${key} de este vehiculo es: ${value}`)
+    
+    if ((key == 'extras' || key =="super") && !coche2[key])
+     {
         value = 'de este vehiculo no esta disponible.' 
-    }//Pork no me hace ni caso
+    } //Pork no me hace ni caso
 }
 
 /** 
@@ -199,7 +200,7 @@ function isentero( n = 0) {
     return (parseInt(n) === parseFloat(n)) }
 //nueva usanza 
 let resultado = (n = 0) => parseInt(n) === parseFloat(n)
-    // para utilizar la flecha necesito siempre declarar una variable??????????
+    // para utilizar la arrow necesito siempre declarar una variable??????????
 console.log(resultado(6))
 console.log(resultado('8'))
 console.log(resultado('pepe'))
