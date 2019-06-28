@@ -22,7 +22,7 @@
         1 === "1" // falso
         '' == 0 // verdadero
         '' === 0 // falso
-
+ //Math.sqrt(a) realiza la raiz cuadrada de a
 // FOR 
 
 let aDatos = ['BMW','audi','seat','skoda','vw' ]
@@ -188,3 +188,43 @@ function objectToString(object={}) {
 }
 
 console.log(objectToString(coche2))
+
+/************** */
+//   Funciones Flecha 
+//         =>
+//usado en emcs6 la flecha hace las veces de funcion y los parametros traseros tras funcion invierten el orden ahora se ponen por delante. solo se usa en funcionces cortas de una linea  podremos ahorrarnos los parentesis
+
+//a la vieja usanza
+function isentero( n = 0) {
+    return (parseInt(n) === parseFloat(n)) }
+//nueva usanza 
+let resultado = (n = 0) => parseInt(n) === parseFloat(n)
+    // para utilizar la flecha necesito siempre declarar una variable??????????
+console.log(resultado(6))
+console.log(resultado('8'))
+console.log(resultado('pepe'))
+
+//////////////////////////////////////////
+        //CALLBACK
+/**Un callback es una función. Esta función se la das como parámetro a otra función para que cuando termine de ejecutarse llame a tu callback.
+
+Normalmente tu función callback hace algo con el resultado de la función a la que fue pasada. Así no tienes que esperar a que la función que llamas termine para continuar haciendo otras cosas, porque sabés que te va a "llamar de vuelta" cuando tenga los resultados.
+
+Le dices a una función:
+
+Función, toma estos parámetros y esta función callback, haz tu trabajo y cuando termines me avisas ejecutando esta función callback.
+Un callback puede ser cualquier función, generalmente se usan funciones anónimas o lambdas pero no es necesario */
+ 
+function hazAlgo(x, y, algo, callback){ 
+    let quéHago = `El resultado de ${algo} con los numeros ${x} y ${y} es igual a: `;
+    return quéHago + callback(x,y)
+} 
+console.log(hazAlgo(4,6,'sumar',(x,y) => x+y))
+
+/*
+tambien funciona con tres parametros incluso con dos a y callback para despues operar sobre a  
+function hazAlgo(x, y, callback){ 
+    let quéHago = `El resultado de operar con los numeros ${x} y ${y} es igual a: `;
+    return quéHago + callback(x,y)
+}
+console.log(hazAlgo(4,6,(x,y) => x+y)) */
