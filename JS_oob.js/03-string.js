@@ -1,4 +1,5 @@
 'use strict'
+
 let version = 'emsc6'
 
 let cadena = "Esto no es buena practica"
@@ -47,4 +48,4 @@ console.log(numero.toString())
 console.log(numero.toFixed(4)) // le estoy diciendo que tega 4 decimalesafecta al formato de salida 
 console.log(numero.toPrecision(4)) // me saca cuatro per no distingue entre enteros y parte decimal si le doy 1000.19 no me mostraria la parte decimal y si es un numero muy grande me sacaria solo una parte 
 console.log(numero.toExponential()) // cocg el num y lo devuelve multiplicado por 10 eleveado a 1 NOTACION CIENTIFICA 
-console.log(numero.toLocaleString('es'))
+console.log(numero.toLocaleString('es',{style:'currency', currency: 'EUR'}))

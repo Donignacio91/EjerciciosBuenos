@@ -4,12 +4,15 @@
   "description": "",
   "main": "00_media.js",
   "scripts": {
-    "test": "jasmine" 
+    "test": "jasmine"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "jasmine": "^3.4.0"
+  },
+  "dependencies": {
+    "intl": "^1.2.5"
   }
 }
