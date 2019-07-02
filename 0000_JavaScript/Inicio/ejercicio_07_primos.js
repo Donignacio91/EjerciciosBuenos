@@ -7,8 +7,8 @@
     
        
     
-         function isPrimo(n) {
-          for (let i = 2  ; i < n; i++) { // como podria poner i > 1 para wque no me coma el dos 
+        function isPrimo(n) {
+         let i = 9  ; i < n  // como podria poner i > 1 para wque no me coma el dos 
             if (n % i === 0) {
                 r = `  El número ${n} NO es un número primo`
               return false + r
@@ -17,17 +17,50 @@
               return true + r
             } 
         }
-        }
+        
+        console.log(isPrimo(47))
+        console.log(isPrimo(23))
+        console.log(isPrimo(53))
+        console.log(isPrimo(59)) 
+        console.log(isPrimo(73))
+        console.log(isPrimo(67))
+        console.log(isPrimo(2))
+        console.log(isPrimo(1))// Como lo corrijo
+        console.log(isPrimo(0))// Como lo corrijo
+        console.log(isPrimo(12))
+        console.log(isPrimo(9))
+        console.log(isPrimo(0))
+        console.log(isPrimo(1))
+        console.log(isPrimo(25))
+        console.log(isPrimo(33))
+        console.log(isPrimo(20))
+
+       
+
+            /* for (let i = 0; i < 100; i++) 
+           
+               console.log([i]) */
+                
+        
+            
+      
+       
+
+        /* function isPrimo(n) {
+            let x = 0; x < 101; x++
+            for (let i = x  ; x < n; x++) { // como podria poner i > 1 para wque no me coma el dos 
+              if (n % x === 0) {
+                  r = `  El número ${n} NO es un número primo`
+                return false + r
+              }else if (n % x < x) {
+                 r = `   El número ${n} es un número primo`
+                return true + r
+              }
+            }
+         } */
+         
           
-          console.log(isPrimo(23))
-          console.log(isPrimo(10))
-          console.log(isPrimo(72))
-          console.log(isPrimo(73))
-          console.log(isPrimo(47))
-          console.log(isPrimo(2))
-          console.log(isPrimo(1))// Como lo corrijo
-          console.log(isPrimo(0))// Como lo corrijo
-          console.log(isPrimo(12))
+          
 
 
                 
