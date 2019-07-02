@@ -28,8 +28,7 @@ console.log(x[3] + ' ' + x[4])
 
 
 
-
-/* cadena.slice(inicio ,final) 
+ cadena.slice(inicio ,final) 
 cadena.substring(inicio, final)
 cadena.substr(inicio, desplazamiento)
 
@@ -41,7 +40,7 @@ cadena.lastIndexOf() // lo mismo pero por detras detecta la ultima clave
 cadena.charAt(posicion) // cadena[3] hace ki musmi  // le paso la posicion en number y me deuelve lo que haya alli  
 cadena.charCodeAt(posicion) // me devuelve el codifo del caracter buscar codigos utf por que con esto distingo acentuadas y cosas de esas 
 String.fromCharCode(num) // yo le paso un number y lo combierte a codigo  // tiene que cver con cadenas pero no con una concreta
- */
+ 
 let numero = 23.75897
 console.log(numero)
 console.log(numero.toString())

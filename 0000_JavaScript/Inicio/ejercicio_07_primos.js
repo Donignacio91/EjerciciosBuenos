@@ -10,17 +10,21 @@
        
     
         function isPrimo(n) {
-        for (let i = 2; i < n; i++) 
-        
-            if (n % i === 0) {
-                r = `  El número ${n} NO es un número primo`
-              return false + r
-            } 
-            r = `   El número ${n} es un número primo`
-            return true + r
+
+          if (n == 0 || n == 1) {
+            return false
+          } 
+          let r = true 
+          for (let i = 2; i < n; i++)  {       
+              if (n % i === 0) {
+                r = false 
+                break;
+              } 
+          }
+          return r
         }
-        console.log(isPrimo(0))
-        console.log(isPrimo(1))
+
+
         console.log(isPrimo(2))
         console.log(isPrimo(3))
         console.log(isPrimo(47))
@@ -29,6 +33,9 @@
         console.log(isPrimo(59)) 
         console.log(isPrimo(73))
         console.log(isPrimo(67))
+        console.log('No primos')
+        console.log(isPrimo(0))
+        console.log(isPrimo(1))
         console.log(isPrimo(12))
         console.log(isPrimo(9))
         console.log(isPrimo(25))
