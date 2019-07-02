@@ -10,7 +10,7 @@ function media(...aDatos){
     let x = 0
     for (let i = 0; i < aDatos.length; i++) {
         const item = aDatos[i];
-        x += item //r = r + item (item el valor del elemento en cada posion ) 1º item 2 r 2 2º vuelta item 4 r 6 3º vuelta item 7 r 13 y asi... 
+        x += item //x = x + item (item el valor del elemento en cada posion ) 1º item 2 r 2 2º vuelta item 4 r 6 3º vuelta item 7 r 13 y asi... 
         r = x / aDatos.length
     }
     return r
@@ -52,7 +52,7 @@ function mediaTotal(...aDatos) {//rest operator
     }}
    console.log(mediaTotal(5, 7, 5, 8, 9, 4[5, 7, 5, 8, 9, 4, 6])) //esta nos funcionaba mal por que no era capaz de calcular bien los arrays
    
-
+/*La BUENA*/
    function mediaTotal1(...aDatos) { /* rest operator */
     let r = 0;
     let n = 0;

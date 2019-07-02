@@ -33,7 +33,7 @@ function mostrarMeses(id1, id2){
     for (const key in oMeses) {
     
             const item = oMeses[key];
-          cadena += ` el mes ${key} en ruso se dice ${item} \n`
+          cadena += ` el mes ${key} en ruso se dice ${item} \n` //sato de linea terminal
             
         }
         console.log(cadena)
