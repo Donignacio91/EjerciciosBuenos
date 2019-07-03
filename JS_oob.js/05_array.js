@@ -1,6 +1,7 @@
 let obj = {} //newObject()
 let aDatos = [5, 7, 9,]//newArray()
-aDatos[aDatos.length] = 87 //forma de hacer crecer un array //esto situa lo que quiero al final del array en la primera posicion vacia
+//aDatos[aDatos.length] = 87 //forma de hacer crecer un array //esto situa lo que quiero al final del array en la primera posicion vacia
+aDatos.push(87) //lo mismito
 aDatos[0] = 9 //me cambia el valor 5 por el 9 por que le digo que me cambie la posicion 0 
 aDatos[100] = 9 // me hace crecer el array hasta 101 pero con un monton vacias
 console.log(aDatos)
