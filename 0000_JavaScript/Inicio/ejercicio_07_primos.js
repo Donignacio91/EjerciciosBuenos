@@ -7,7 +7,16 @@
    * @param {Number} n 
    * @returns {Boolean} //{String} 
    */
-       
+  /* function isPrimo(n) {
+    let i = 9  ; i < n  // como podria poner i > 1 para wque no me coma el dos 
+       if (n % i === 0) {
+           r = `  El número ${n} NO es un número primo`
+         return false + r
+       }else if (n % i !== 0  ) {
+          r = `   El número ${n} es un número primo`
+         return true + r
+       } 
+   } */
     
         function isPrimo(n) {
 
