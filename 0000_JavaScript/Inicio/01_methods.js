@@ -5,7 +5,7 @@ console.log(nombre.charAt(0).toUpperCase())
 /**
  *@description funcion que me permita pasar a mayusculas la primera letra de una cadena 
  * @param {String} s
- * @returns {String} sS
+ * @returns {String} mayus
 */
 
 function firstMayus( s = '') {
@@ -34,20 +34,18 @@ console.log(firstMayusArray(sNombres))
  * @param {number} n
  * @return {Array} fib
  */
-// n = n +1 ...n veces
+//numero1 = [el n en (i-1) + el numero en (i-2)]
+//                     +
+//numero2= [el n en (i-1) + el numero en (i-2)]
 
 
 
-let n = 0
-let x = 1 
-let f = n + x 
-
-// interneteada mas yo pero no es lo que me piden aunque funciona
-function fibonacci2(n) {
+//  no es lo que me piden aunque funciona
+function fib(n) {
     let fibArray = [0,1];
     for (let i = 2; i <= n; i++) {
       fibArray.push(fibArray[i-1] + fibArray[i-2]);
     }
     return fibArray;
   }
-  console.log(fibonacci2(3))
+  console.log(fib(4))
