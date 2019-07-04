@@ -15,17 +15,19 @@ function firstMayus( s = '') {
 console.log(firstMayus('juanita'))
 
 //lo mismo con array
+let aNombres = ['audi', 'alfa', 'bmw', 'honda']
 
-function firstMayusArray(a= []) {
-    for (let i = 0; i < sNombres.length; i++) {
-        let item = sNombres[i];
-         item =  item.charAt(0).toUpperCase()+item.slice(1)
-        
+function firstMayusArray(aNombres) {
+   let nombres = [] //decalro la variable donde quiero que me guarde los cambios realizdos por el for 
+    for (let i = 1; i < aNombres.length; i++) {
+        let item = aNombres[i];
+        item =  item.charAt(0).toUpperCase()+item.slice(1)
+        nombre.push(item)
        
-    } return sNombres
+    } return nombres
 }
-//let sNombres = ['audi', 'alfa', 'bmw', 'honda']
-console.log(firstMayusArray(sNombres))
+//let aNombres = ['audi', 'alfa', 'bmw', 'honda']
+console.log(firstMayusArray(aNombres))
 
 
 // FIBONACCI
@@ -38,7 +40,7 @@ console.log(firstMayusArray(sNombres))
 //                     +
 //numero2= [el n en (i-1) + el numero en (i-2)]
 
-
+//0 1 1 2 3 5 8 13
 
 //  no es lo que me piden aunque funciona
 function fib(n) {
@@ -48,4 +50,5 @@ function fib(n) {
     }
     return fibArray;
   }
-  console.log(fib(4))
+
+  console.log(fib(7))
