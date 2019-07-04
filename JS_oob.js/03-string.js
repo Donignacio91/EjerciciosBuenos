@@ -22,13 +22,13 @@ console.log(cadena[0])
         const item = cadena[i];
         console.log(item)}
     
-let x = cadena.split(' ').join // convierte una cadena en un array y en el split pongo el tipo de separador que euiero (' ')  dentro del array si viene con guiones lo elgio si viene con comas las elijo si quiero que separe por la a por el espacio por lo que yo quiere dentro del array 
+let x = cadena.split(' ').join('') // convierte una cadena en un array y en el split pongo el tipo de separador que euiero (' ')  dentro del array si viene con guiones lo elgio si viene con comas las elijo si quiero que separe por la a por el espacio por lo que yo quiere dentro del array 
 console.log(x[3] + ' ' + x[4])
 //let x = cadena.split(' ').join('').toUpperCase //  con el punto añado más metodos disponibles JOIN Une arrais en string 
 
 
 
- cadena.slice(inicio ,final) 
+cadena.slice(inicio ,final) 
 cadena.substring(inicio, final)
 cadena.substr(inicio, desplazamiento)
 
