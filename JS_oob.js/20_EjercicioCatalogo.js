@@ -33,23 +33,36 @@
      `
      Neumatico ${this.descripcion} ${this.codigo}
 
-     - ${this.precio}€  ....................Precio sin iva sin unidad;|
-     - ${precioTotal}€  .......................Unidad iva incluido;|
-     - ${iva}% .................................IVA aplicado;|
-     - ${precioJuego}€ ........Precio juego completo iva incluido;| 
-     - ${precioPareja}€ ................Precio pareja iva incluido;|
+    |  - ${this.precio} €  ......................Precio sin iva sin unidad;   |
+    |  - ${precioTotal} €  .......................Unidad iva incluido;      |
+    |  - ${iva}% .............................IVA aplicado;           |
+    |  - ${precioPareja} € ................Precio pareja iva incluido;      |
+    |  - ${precioJuego} € .......Precio juego completo iva incluido;       |
      `
      return recibo
  } 
 
 
- const art1 =new Articulo('Michellin', 'ps4', 98)
- const art2 = new Articulo('Pirelli', 'p7', 80.5)
+ const art1 =new Articulo('Michelin', 'ps4', 99)
+ const art2 = new Articulo('Pirelli', 'p7', 70)
+ const art3 =new Articulo('Dunlop', 'sport maxx', 86)
+ const art4 = new Articulo('Nankang', 'NS-2', 70)
+
  console.log(art1)
  console.log(art1.calcularImporteUnitario())
  console.log(art1.mostrarTodo())
+console.log('***************************************************************')
  console.log(art2)
  console.log(art2.calcularImporteUnitario())
  console.log(art2.mostrarTodo())
+ console.log('***************************************************************')
+ console.log(art3)
+ console.log(art3.calcularImporteUnitario())
+ console.log(art3.mostrarTodo())
+ console.log('***************************************************************')
+ console.log(art4)
+ console.log(art4.calcularImporteUnitario())
+ console.log(art4.mostrarTodo())
+ console.log('***************************************************************')
 
  
