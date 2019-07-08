@@ -8,6 +8,6 @@ Array.prototype.saludar =function() {
 Array.prototype.saludar =function() {//todos mis arrays saludan Afecta a todos los array porque estoy tocando el prototipo de todos los Array 
     console.log('allo soy un argay')
 } 
-Array.prototype.push =function() { //esto afecta a todos los array y ya me ha jodido el push del resto 
+Array.prototype.push =function() { //esto afecta a todos los array y ya me ha jodido el push del resto esto no se ha de usar
     console.log('hola'+ nombre)
 }
