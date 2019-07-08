@@ -199,11 +199,11 @@ console.log(objectToString(coche2))
 function isentero( n = 0) {
     return (parseInt(n) === parseFloat(n)) }
 //nueva usanza 
-let resultado = (n = 0) => parseInt(n) === parseFloat(n)
+let isEnteroArrow = (n = 0) => parseInt(n) === parseFloat(n)
     // para utilizar la arrow necesito siempre declarar una variable??????????
-console.log(resultado(6))
-console.log(resultado('8'))
-console.log(resultado('pepe'))
+console.log(isEntero(6))
+console.log(isEnteroArrow('8'))
+console.log(isEnteroArrow('pepe'))
 
 //////////////////////////////////////////
         //CALLBACK
