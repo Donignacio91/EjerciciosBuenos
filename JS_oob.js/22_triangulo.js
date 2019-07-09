@@ -48,10 +48,11 @@ Triangulo.prototype.getTipo = function () {
     return r
 }
 Triangulo.prototype.verTodo= function () {
-    let a = this.getTipo()
+    /* let a = this.getTipo()
     let b = this.getLados()
     let c = this.getPerimetro()
-    return a + b + c
+    return a + b + c */
+    return  this.getTipo() + this.getLados() + this.getPerimetro()
 }
 
 /* console.log(tri1)
