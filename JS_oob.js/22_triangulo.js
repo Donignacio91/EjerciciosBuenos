@@ -1,6 +1,6 @@
 
 
-function Triangulo(lado1, lado2,lado3) {
+function Triangulo(lado1,lado2,lado3) {
     this._lado1=lado1
     this._lado2=lado2
     this._lado3=lado3
@@ -24,7 +24,7 @@ Triangulo.prototype.getLados= function () {
     return mostrarLados
   
 }
-Triangulo.prototype.getperimetro= function() {
+Triangulo.prototype.getPerimetro= function() {
     let perimetro = this._lado1 + this._lado2 + this._lado3
     let re = 
     `
@@ -47,31 +47,31 @@ Triangulo.prototype.getTipo = function () {
     }
     return r
 }
-Triangulo.prototype.Todo= function () {
+Triangulo.prototype.verTodo= function () {
     let a = this.getTipo()
     let b = this.getLados()
-    let c = this.getperimetro()
+    let c = this.getPerimetro()
     return a + b + c
 }
 
 /* console.log(tri1)
 console.log(tri1.getLados())
-console.log(tri1.getperimetro())
+console.log(tri1.getPerimetro())
 console.log(tri1.getTipo())
 console.log('***************************************************')
 console.log(tri2)
 console.log(tri2.getLados())
-console.log(tri2.getperimetro())
+console.log(tri2.getPerimetro())
 console.log(tri2.getTipo())
 console.log('***************************************************')
 console.log(tri3)
 console.log(tri3.getLados())
-console.log(tri3.getperimetro())
+console.log(tri3.getPerimetro())
  console.log(tri3.getTipo())*/
 console.log('***************************************************')
-console.log(tri1.Todo())
+console.log(tri1.verTodo())
 console.log('***************************************************')
-console.log(tri2.Todo())
+console.log(tri2.verTodo())
 console.log('***************************************************')
-console.log(tri3.Todo())
+console.log(tri3.verTodo())
 console.log('***************************************************')
