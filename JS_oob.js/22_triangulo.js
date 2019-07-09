@@ -8,7 +8,10 @@ function Triangulo(lado1, lado2,lado3) {
 
 const tri1 = new Triangulo(5,10,15)
 const tri2 = new Triangulo(10,10,15)
+const tri4 = new Triangulo(5,10,10)
+const tri5 = new Triangulo(10,5,10)
 const tri3 = new Triangulo(10,10,10)
+
 
 Triangulo.prototype.getLados= function () {
     let mostrarLados = `
@@ -37,9 +40,9 @@ Triangulo.prototype.getTipo = function () {
         let x = `Este triangulo es equilatero. `
         return x
     }
-    if(this._lado1 == this._lado2 && this._lado1 != this._lado3){
+    if(this._lado1 == this._lado2 && this._lado1 != this._lado3 || this._lado1 != this._lado2){
         let y =
-    `Este triangulo es isosceles`
+    `Este triangulo es isosceles.`
         return y
     }
     return r
@@ -51,7 +54,7 @@ Triangulo.prototype.Todo= function () {
     return a + b + c
 }
 
-console.log(tri1)
+/* console.log(tri1)
 console.log(tri1.getLados())
 console.log(tri1.getperimetro())
 console.log(tri1.getTipo())
@@ -64,6 +67,11 @@ console.log('***************************************************')
 console.log(tri3)
 console.log(tri3.getLados())
 console.log(tri3.getperimetro())
-console.log(tri3.getTipo())
+ console.log(tri3.getTipo())*/
 console.log('***************************************************')
 console.log(tri1.Todo())
+console.log('***************************************************')
+console.log(tri2.Todo())
+console.log('***************************************************')
+console.log(tri3.Todo())
+console.log('***************************************************')
