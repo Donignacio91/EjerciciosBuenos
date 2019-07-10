@@ -1,0 +1,19 @@
+body{
+    margin-right: 15%;
+    margin-left: 15%;
+    
+}
+.grid1{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; 
+    grid-template-rows: 1fr 6fr 1fr;
+}
+.grid1 div {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+}
+.fOpel {
+    background-image: url(./Assets/IMG-20190710-WA0015.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
