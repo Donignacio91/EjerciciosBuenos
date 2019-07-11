@@ -18,7 +18,6 @@ function Persona(nombre, edad, direccion,) {
 function Mascota(nombre, especie) {
     this.nombre = nombre
     this.especie = especie 
-    
 }
 Persona.prototype.comprarMascota = function(mascota) {
     this.mascotas.push(mascota)

@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+/*  ************** *
+       --HEADER-- 
+*****************  */
+
+
+body{
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.topline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Pragati Narrow', sans-serif;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.432);
+    
+}   
+/* .inicio{
+    position: fixed;
+} */
+
+.top_l{
+    font-size: 1.2rem;
+}
+.top_l  a{
+            text-decoration: none;
+            color:rgb(146, 3, 3);
+            font-weight: bold;
+            letter-spacing: 1.7px;
+            margin-left:1rem;
+            
+}
+.top_r{
+    font-size: 1.7rem;
+}
+.top_r i{
+            color:rgb(146, 3, 3);
+            margin-right:1rem;
+        }
+.tittle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.527);
+    background-image: url(../Assets/russia-flag.jpg);
+    background-position: center;
+    background-size: contain;
+    
+    
+}
+.tittle1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:rgb(146, 3, 3);}
+.rus1{
+    margin-top:1.3rem;
+    font-family: 'Seymour One', sans-serif;
+    color:rgb(252, 252, 252);
+}
+.rus2{
+    margin-top:0.2rem;
+    font-family: 'Seymour One', sans-serif;
+    font-size: 1rem;
+    color:rgb(252, 252, 252);
+}
+ .return{
+     display:flex;
+     justify-content: center;
+ }
+ .return a{
+     color:rgb(146, 3, 3);
+     margin-top:1rem;
+ }
+
