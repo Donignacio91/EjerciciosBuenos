@@ -1,3 +1,25 @@
+//no sabemos lo que vale algo hasta drentro de un tiempo. Pueden tener dos caminos: si se cumple la respuesta tiene que ser completamente distinta de si no
+
+function asincrona() { //es un patron de crear objetos es un factory no es constructor 
+    return new Promise((resolve,rejet)=>{//tiene como parametro dos ejecutor resol y rejet (callbacks ) // la primera es para cunado se cumpre y el segundo para cuando no 
+        let i = Math.random()
+        setTimeout(()=>{
+                if (i < 0.7) {
+                    resolve('Ole!!' + i)
+                } else {//error
+                   
+                    rejet(new Error('error nº' + i))
+                }
+        },1000)
+    }) 
+        
+}
+
+
+asincrona()
+.then((datoResponse) => {console.log(datoResponse)}) // DR viene de resolve UNA FUNCION resolve la que QUE DICE QUE HAGO CUANDO TODO  VA BIEN 
+.catch((error) => {console.log(error.message)}) //QUE HAGO CUANDO TODO  VA MAL viene de reject
+
 let datos
 
 function leerDatosAsinc(i, timer = 1000, callback){//el indice de la operacion
