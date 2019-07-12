@@ -5,14 +5,15 @@
 
     *operadores de incremento o decremento muy importante  += o -= https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=796:ejemplos-javascript-operadores-incremento-y-decremento-asignacion-y-asignacion-compuesta-cu01118e&catid=78&Itemid=206
 
+    2**3 =8 elevado
 
     /*COMPARACION https://es.stackoverflow.com/questions/331/diferencias-entre-y-comparaciones-en-javascript/402*/
 
     /*Los operadores === y !== son los operadores de comparación estricta. Esto significa que si los operandos tienen tipos diferentes, no son iguales. Por ejemplo*/
     1 === "1" // false
-    1 !== "1"  // true
+    1 !== "1"  // true 
     null === undefined // false 
-
+    1 == '1' 
     /*Los operadores == y != son los operadores de comparación relajada. Es decir, si los operandos tienen tipos diferentes, JavaScript trata de convertirlos para que fueran comparables. Por ejemplo, */
     1 == "1" // true
     1 != "1" // false

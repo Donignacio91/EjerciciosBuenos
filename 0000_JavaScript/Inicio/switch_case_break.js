@@ -160,6 +160,9 @@ let msjs = [
     'ya te cuesta mear de pie',
     'Vuelves a mear sentado'
 ]
+if (isNumber(e)) {
+    
+
 let i = 4
 if (e < 8) {
     i = 0 
@@ -173,7 +176,7 @@ i = 2
     i = 4
 }  */
 console.log(`Con ${e} años; ${msjs[i]}`) // el mesj en la posicion x del array 
-} 
+} }
 dimeEdad(9)
 dimeEdad(19)
 dimeEdad(39)
@@ -184,6 +187,6 @@ function isNumber(n){
     if(isNaN(n)||  typeof n=='boolean'|| Array.isArray(n) || n===''|| n===null){ //== COMPARACIÓN
         r=false
     }
-    return [n + r];
+    return [n , r];
 }
-dimeEdad(isNumber(24)) // me dice que con 25 le suma uno por el true??
+dimeEdad(24) // me dice que con 25 le suma uno por el true??
