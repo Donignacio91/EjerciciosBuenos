@@ -190,6 +190,9 @@ function objectToString(object={}) {
 
 console.log(objectToString(coche2))
 
+
+
+
 /************** */
 //   Funciones Flecha 
 //         =>

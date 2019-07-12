@@ -5,8 +5,12 @@ aDatos.push(87) //lo mismito
 aDatos[0] = 9 //me cambia el valor 5 por el 9 por que le digo que me cambie la posicion 0 
 aDatos[100] = 9 // me hace crecer el array hasta 101 pero con un monton vacias
 console.log(aDatos)
-
-console.log(aDatos)
+let aADatos = [6,3,0]
+aADatos[aADatos.length]=3 //Añade al final
+aADatos.push(6) //Añade al final
+aADatos.unshift(9) //Añade al principio
+console.log(aADatos)//[9 6 3 0 3 6]
+console.log('aADatos =' + aADatos)
 
 // funcion que me devuelve un array de n numeros aleatorios  enteros y psotivos menores o iguales a 100
 /**
