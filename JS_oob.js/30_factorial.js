@@ -16,7 +16,7 @@ function convertirNumeroValido(n) {
     function factorial(n) {
         let fact = 1
        // let error ='Error no ha introducido un valor numérico correcto'
-        if (isValidNumber(n) && convertirNumeroValido(n))  {
+        if (isValidNumber(n) && convertirNumeroValido(n) )  {
 
             for (let i = 1; i <= n; i++) {
                 fact = fact * i
@@ -40,9 +40,9 @@ function mostrarFactorial(x) {
 console.log('1')
     console.log(mostrarFactorial(6))
     console.log('2')
-    console.log(mostrarFactorial(-5))
+    console.log(mostrarFactorial(-5))//si pasa por numero valido pero no lo hace bien ver porque
     console.log('3')
-    console.log(factorial(5.2))
+    console.log(mostrarFactorial(5.2))//Math trun si lo coge
     console.log('4')
     console.log(factorial('pepe'))
  
