@@ -17,7 +17,7 @@ function media(...aDatos){
      }
 console.log(media(2, 4, 7, 2, 4, 4))
 console.log(media(5, 7, 5, 8, 9, 4, 6))
-
+//hol
 
 
 
