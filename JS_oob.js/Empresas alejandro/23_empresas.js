@@ -9,7 +9,7 @@ module.exports.tuata = new Empresa(
     'T-34761234',)
 
 module.exports.boracai = new Empresa(
-        'Librería Boracai',
+        'Librería Borvacai',
         new Direccion ('c/ Carranza', '5', 'Cádiz', 'España'),
         '625493421',
         'F-76521743')
