@@ -42,6 +42,12 @@ function Item(articulo,precio,unidades ) {
     this.precio = precio
     this.unidades = unidades
 }
+Item.prototype.getImporte = function () {
+    let importe=
+    this.precio * this.unidades
+    return importe
+    
+}
 function Factura(empresa = {}, cliente = {}, item = [{}] , nume,iva,way,date=new Date()) {
     this.empresa = empresa
     this.cliente = cliente
@@ -53,6 +59,7 @@ function Factura(empresa = {}, cliente = {}, item = [{}] , nume,iva,way,date=new
 }
 
 
+
 let dir1 = new Direccion('recta','3','españa' )
 let dir2 = new Direccion('corner','2','UK' )
 let emp1 = new Empresa('SPCustom',dir1,'676870441','y5512598')
@@ -62,6 +69,13 @@ const itm = [new Item('ref/0022','25','3'),
 const fact1 = new Factura(emp1,cli1,itm,'001','0,4','tranferencia',new Date() )
 
 
-
+Factura.prototype.getFact = function () {
+   let importe = itm[0].getImporte()
+   let impIva = importe * this.iva
+   
+    
+    return  impIva // POrque me devuelve nan si sabe importe y sabe iva??
+} 
 console.log(fact1)
+console.log(itm[0].getImporte())
 console.log(fact1.getFact())
