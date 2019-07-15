@@ -64,4 +64,3 @@ describe('El factorial de un número (factorial) ', () => {
         }); 
     })
  */
-})
