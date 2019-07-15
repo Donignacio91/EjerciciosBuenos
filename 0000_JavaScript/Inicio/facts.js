@@ -66,7 +66,7 @@ let emp1 = new Empresa('SPCustom',dir1,'676870441','y5512598')
 let cli1= new Empresa('MTSport',dir2,'69878588','license-5351332')
 const itm = [new Item('ref/0022','25','3'),
             new Item('ref/0143','32','3')]
-const fact1 = new Factura(emp1,cli1,itm,'001','0,4','tranferencia',new Date() )
+const fact1 = new Factura(emp1,cli1,itm,'001','0.04','tranferencia',new Date() ) //aquí tengo que pasarle el num 
 
 
 Factura.prototype.getFact = function () {
@@ -74,7 +74,7 @@ Factura.prototype.getFact = function () {
    let impIva = importe * this.iva
    
     
-    return  impIva // POrque me devuelve nan si sabe importe y sabe iva??
+    return  impIva // POrque me devuelve nan si sabe importe y sabe iva?? le pasaba el iva como string de 0,4 y en tal caso como string tendria que ser .4 o u nunmber 0.4
 } 
 console.log(fact1)
 console.log(itm[0].getImporte())
