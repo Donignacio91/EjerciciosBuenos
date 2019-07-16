@@ -9,16 +9,16 @@ aDatos.forEach((item, i, array)=> { } ) RECORRIDO o PROCESADO del Array, hace lo
 
 aDatos.map((item, i, array) => { } ) //Crea un array nuevo de las mismas posciones donde cada elemnto se contruye aplicando una funcion determindada al elemnto correspondiente del array aterior  // es importante que map tenga un return // te devuelve una proyeccion array mismo largo mismo todo pero en este caso ya realizada la operacion
 
-aDatos.filter((item, i, array)=> { } )
+array.filter((item, i, array)=> { } )
 
-aDatos.some((item, i, array)=> { } )
+array.some((item, i, array)=> { } )
 
-aDatos.every((item, i, array)=> { } )
+array.every((item, i, array)=> { } )
 
 
-aDatos.reduce((item, i, array)=> { } )
+array.reduce((item, i, array)=> { } )
 
-aDatos.reduceRight((item, i, array)=> { } )
+array.reduceRight((item, i, array)=> { } )
  */
 
 aDatos.forEach(

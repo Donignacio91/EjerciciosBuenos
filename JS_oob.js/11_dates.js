@@ -72,7 +72,7 @@ function algo() {} //new function
      * @copyright
      * @returns {string} 
      */  
-        let aDias = ['domingo',' lunes', 'martes', 'miercoles', 'jueves', 'sabado',  ]
+ /*        let aDias = ['domingo',' lunes', 'martes', 'miercoles', 'jueves', 'sabado',  ]
         let aMeses = ['Enero', 'Febrero', 'marzo', 'Abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'nobiembre', 'y diciembre']
 
     const capitalize = cadena =>
@@ -102,4 +102,4 @@ if (typeOf fecha === 'String') {}
            + ', ' + fecha.gerDate()
            + 'de' + capitalize(aMeses[fecha.getMonth()])
             + 'del ' + fecha.getFullYear()
-      
+       */

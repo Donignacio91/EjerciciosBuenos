@@ -16,7 +16,7 @@ function limpiarArray(letra = '' , aNombres = []) {
     }
 }
 
-let
+
 let aUsuarios = ['rosa','raquel','elena','mario'] 
 console.log(limpiarArray(aUsuarios, 'r'))
 console.log(aUsuarios)

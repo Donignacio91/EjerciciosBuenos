@@ -16,7 +16,7 @@ function convertirNumeroValido(n) {
     function factorial(n) {
         let fact = 1
         let error = ''
-        if (isValidNumber(n) && convertirNumeroValido(n))  {
+        if (isValidNumber(n))  {
 
             for (let i = 1; i <= n; i++) {
                 fact = fact * i
@@ -24,12 +24,16 @@ function convertirNumeroValido(n) {
         }
         
         else {
-            fact = new Error('Error no ha introducido un valor numérico correcto')
+            throw new Error('Error no ha introducido un valor numérico correcto')
 
         }
        return fact
     }
-
+try {
+   console.log(factorial())
+} catch (error) {
+    console.log(error.message)
+}
 
 
 
