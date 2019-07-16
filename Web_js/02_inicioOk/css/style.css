@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+main h2 {
+    margin-bottom: 0;
+}
+header {
+    color: rgb(8, 99, 13);
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    margin:2rem;
+    max-height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display:flex;
+    flex-wrap: wrap;
+}
+.btn:hover{
+cursor: pointer; /*poner el pinterito */
+}
+.btn-super{
+    background-color: rgb(5, 2, 19);
+    color: red;
+    padding: 2rem 2.5rem;
+    border: 2px solid red;
+    font-size: 4rem;
+}
+
+output {
+    background-color: rgb(27, 131, 131);
+    color:black;
+}
+
+footer {
+    min-height: 10vh;
+    background-color:rgb(8, 99, 13);
+    color: rgb(179, 101, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

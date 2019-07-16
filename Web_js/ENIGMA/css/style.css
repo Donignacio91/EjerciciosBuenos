@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+header {
+    color: rgb(8, 99, 13);
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    margin:2rem;
+    max-height: 60vh;
+}
+
+
+h1 {
+    width: fit-content;
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
+    
+    
+}
+
+.content-wrapper {
+    margin-left: 0.8rem;
+    margin-right: 0.5rem;
+}
+
+nav.footer {
+    color: brown;
+    background-color: rgba(200,200,200,0.5);	
+    border: 1px solid #ba89a8; /*violeta*/
+    width: 80%;
+    margin: 1rem auto;
+    padding-left: 2rem; 
+
+}
+
+nav.footer>ul>li {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+nav.footer>ul>li>ul>li {
+    font-size: 1rem;
+    font-weight: normal;
+
+}
+
+footer {
+    min-height: 10vh;
+    background-color:rgb(8, 99, 13);
+    color: rgb(179, 101, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 500px) {
+
+    .content-wrapper {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }    
+}
+
+@media screen and (min-width: 650px) {
+    
+    .content-wrapper {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    nav.icon,
+    nav.footer
+    {
+         display: none;
+    }
+
+    div.superior nav.horizontal {
+       display: initial;
+    }
+
+    nav li { /* Los li son contenedores, para poder fijar desde ellos posiciones absolutas */
+		position: relative;
+		}
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        background-color: rgba(200,200,200,0.2);
+        display: flex;
+    }
+
+    nav a { /* Cualquier a dentro de nav */
+		display: block;
+		padding: 0.3rem 0.7rem;
+		/* margin: 0.25em;
+        border-radius: .5em;
+        border: 1px solid #ba89a8;
+        background-color: rgba(200,200,200,0.5);
+        */
+        text-align: center; 
+        font-weight: bold;
+    }
+
+    nav a {
+        transition: 
+            color 1s, 
+            background-color 1s;
+    }
+
+    nav > ul a:focus,
+	nav > ul a:hover
+	{ /* Cualquier a dentro de nav */
+		background-color: brown;
+		color: #fc6;
+	}
+    
+    nav.horizontal>ul>li{
+        display: flex;
+        flex-wrap: wrap; 
+        align-items: center;
+    }
+
+    nav.horizontal>ul>li:not(:last-of-type)::after{
+        content: "|";
+        font-weight: bold;
+    }
+
+    /* =================== */
+    /* = submenús        = */
+    /* =================== */
+                
+    li ul { /* El segundo nivel del menú oculto*/
+        display: none;
+    }
+    nav>ul>li:hover > ul { /* El segundo nivel del menú se muestra */
+        display: block;
+        position: absolute;
+        top: 1.7rem
+    }
+
+    /* =============================== */
+    /* = submenús segundos	         = */
+    /* =============================== */
+    /* El segundo nivel del menú se muestra */
+
+    nav>ul>li:nth-of-type(1)>ul>li:hover > ul { 
+        display: block;
+        position: absolute;
+        top: 0rem;
+        left: 7rem;
+    }
+
+    nav>ul>li:nth-of-type(2)>ul>li:hover > ul { 
+        display: block;
+        position: absolute;
+        top: 0rem;
+        left: 5rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .content-wrapper {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section {
+        width: 50%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    nav a { /* Cualquier a dentro de nav */
+        padding: 0.3rem 2rem;
+    }
+
+
+}
