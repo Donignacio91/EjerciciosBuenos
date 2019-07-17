@@ -1,7 +1,11 @@
 
-console.log('app on') //prueba de que todo esta
+console.log('app on') //prueba de que todo esta ok
 //console.dir() //apy de quierry selector no permite hacer selecciones de objetos gracias a los de csss 
 //document.querySelector('#btn-normal').onclick =  saludar // le paso el nombre de la function sin () 
+
+                //  1º ESTABLECER NODOS
+                //  2º ESTABLECER EVENTOS
+
 //nodos del dom
 const btnNormal = document.querySelector('#btn-normal')
 const btnSuper = document.querySelector('#btn-super')
@@ -25,12 +29,12 @@ inNombre2.addEventListener('input', escribirContinuo)
 
 function saludar() {
     
-outSaludo.value=`hola, ${inNombre.value} desde una función`
+outSaludo.value=`Hola amigo, ${inNombre.value} desdemi funcion saludar JS `
     
 }
 
 function protestar() {
-   outSaludo.value = 'Te he dicho que no tques'
+   outSaludo.value = 'Te he dicho que no tocaras'
 }
 /* document.querySelector('#btn-super').onclick = protestar
 document.querySelector('#nombre').value  // Le pido el value que hay en el id nombre input luuego arriba lo guardo en user  */

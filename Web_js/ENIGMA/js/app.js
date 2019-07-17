@@ -1,6 +1,6 @@
 let x = 'Las comunicaciones estan cerradas. '
 
-function code(x) {
+function decode(x) {
 let arrayTotal = x.split(' ').join('')
 arrayTotal = arrayTotal.split('')
 for (let index = 0; index < array.length; index++) {
