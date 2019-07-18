@@ -10,10 +10,14 @@ console.dir()//cuando haga un cosole log de un nodo siempre dir u objetos del do
                 //  2º ESTABLECER EVENTOS
 
 //nodos del dom 
-const btnNormal = document.querySelector('#btn-normal')
+const btnNormal = document.querySelector('#btn-normal') //DECLARO UNA CONSTATEN QUE ES IGUAL A REQUERIR ID O CLASS CON document.querySelector().CLASS #id
 const btnSuper = document.querySelector('#btn-super')
- // esto es para coger todos piedo crear una clase para todos .clase o id #id
-
+ // esto es para coger todos piedo crear UN OBJEETO QUE AUNE TODOS LOS NODOS   
+ /* const oNo2={ 
+    btnNormal = document.querySelector('#btn-normal'), 
+    btnSuper : document.querySelector('#btn-super')
+}
+y los llamaria oNo2.btnNormal */
 
 const inNombre = document.querySelector('#in-nombre')
 const outSaludo  = document.querySelector('#out-saludo') 

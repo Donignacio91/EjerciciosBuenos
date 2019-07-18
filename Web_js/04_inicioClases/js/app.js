@@ -1,20 +1,30 @@
 
 export class App {
+
     constructor(){
        console.log('app on')
+
+       /*  Nodos DOM  */
+
 this.aBtn = document.querySelectorAll('.btn') 
 this. inNombre = document.querySelector('#in-nombre')
 this. outSaludo  = document.querySelector('#out-saludo') 
 this. inNombre2 = document.querySelector('#in-nombre2')
 this. outSaludo2  = document.querySelector('#out-saludo2') 
 
+/* Manejadores de eventos  */
 
-this.inNombre2.addEventListener('input', this.escribirContinuo.bind(this)) //SIEMTE UE ADDEVEN LISTENER TIENE THIS ACABA EN bind(this)!!!!!!
+this.inNombre2.addEventListener('input', this.escribirContinuo.bind(this)) //SIEMPRE QUE ADDEVEN LISTENER TIENE THIS ACABA EN bind(this)!!!!!! //ES COMO FIJAR EL FOCO ARRIBA
+ /* ponemos bind(this después de un método) para que a la hora de sacarnos el this no nos de problemas, y elemento que dispara el evento, el event target, por eso abajo hemos fijado el even.atget para fijar el this. Si el manejador empieza por this, el método acaba por bing(this) */ 
+
+                            //ojo sara[ ^ ]
+
+
 this.aBtn.forEach( (btn) => { btn.addEventListener('click', this.onBtnClick.bind(this))})
 
     }
-    onBtnClick(event) {// al  
-        console.dir(event.target.id)
+    onBtnClick(event) {
+        console.dir(event.target.id)// PORQUE??
         let msj = ''
         switch (event.target.id) {
             case 'btn-normal':
