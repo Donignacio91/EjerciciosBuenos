@@ -1,63 +1,45 @@
 
-
-/**web que permita calcular el area de un circulo un triangulo y un cuadrado 
-triangulo base por altura 
-circulo =A = π r²
-_figuras
-cuadrado lado por lado  */
-
 export class App {
 
-    
+    constructor() {
+        //DOM
+        this.aBtn = document.querySelectorAll('.btn') //si agrupo todos lo botnes formo un array en orden de html agrupo todos los botontones porque todos van a hacer lo mismo
+        this.outTri = document.querySelector('#out-tri') // asigno outputs e inputs 
+        this.outCuad = document.querySelector('#out-cua') // asigno outputs e inputs 
+        this.outCirc = document.querySelector('#out-circ')// asigno outputs e inputs 
+        this.inTri1 = document.querySelector('#in-medidaTri1')// asigno outputs e inputs 
+        this.inTri2 = document.querySelector('#in-medidaTri2')// asigno outputs e inputs 
+        this.inCua1 = document.querySelector('#in-cua1')// asigno outputs e inputs 
+        this.inCua2 = document.querySelector('#in-cua2')// asigno outputs e inputs 
+        this.inCirc = document.querySelector('#in-circ')// asigno outputs e inputs 
 
-    constructor(){
-    this.aBtn = document.querySelectorAll('.btn') 
-    this.outTri = document.querySelector('#out-tri')
-    this.outCuad = document.querySelector('#out-cuad')
-    this.outCirc = document.querySelector('#out-circ')
-    this.inTri1 = document.querySelector('#in-medidaTri1')
-    this.inTri2 = document.querySelector('#in-medidaTri2')
-    this.inCua1 = document.querySelector('#in-medidaCua1')
-    this.inCua2 = document.querySelector('#in-medidaCua2')
-    this.inCirc = document.querySelector('#in-circ')
+        this.aBtn.forEach((btn) => { btn.addEventListener('click', this.onBtnClick.bind(this)) }) //asigno el evento
 
-    this.aBtn.forEach( (btn) => { btn.addEventListener('click', this.onBtnClick.bind(this))})
- console.log(this.inTri1)
- console.log('app runs')
-} 
- onBtnClick(event) {
-    console.dir(event.target.id)
-    let msj = ''
-    switch (event.target.id) {
-        case 'btn-tri':
-            
-            this.outTri.value.triangulo(inTri1, inTri2)
-            break;
-    case 'btn-cua':
-        this.outCuad.value.cuadrado(inCua1,inCua2)
-            break;
-            default:
-               
-                this.outCirc.value.circulo(inCirc)
+        console.log('app runs')
+    }
+    onBtnClick(event) { //la funcion del evento 
 
-    } 
-}
+        switch (event.target.id) {
+            case 'btn-tri':
+                this.triangulo()
+                break;
+            case 'btn-cua':
+                this.cuadrado()
+                break;
+            case 'btn-cir':
+                this.circulo()
+                break;
+        }
+    }
 
-triangulo(inTri1, inTri2){
-    this.inTri1 = inTri1
-    this.inTri2 = inTri2
-    this.outTri = this.inTri1 * this.inTri2
-}
-Cuadrado(inCua1, inCua2){
-    this.inCua1 = inCua1
-    this.inCua2 = inCua2
-    this.outCuad = this.inCua1 * this.inCua2
-}
-
-
-circulo(inCirc) {
-    this.inCirc = inCirc
-    this.outCircl = this.inCirc^2 * Math.PI 
-}
+    triangulo() {
+        this.outTri.value = (this.inTri1.value * this.inTri2.value) // qui le digo guarda el calor del resultado de operar con los valores in tal y cuañl que arriba le digo desde que intpur le entrarn 
+    }
+    cuadrado() {
+        this.outCuad.value = this.inCua1.value * this.inCua2.value
+    }
+    circulo() {
+        this.outCirc.value = (this.inCirc.value * this.inCirc.value * Math.PI**2).toFixed(2)
+    }
 
 }

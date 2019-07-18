@@ -66,10 +66,19 @@ cursor: pointer; /*poner el pinterito al pasar sobre los botones*/
 output {
     background-color: rgba(141, 141, 141, 0.623);
     color:black;
-    padding-top: 0.5rem;
+    padding: 0.5rem;
     margin: 1rem;
 }
+dialog {
+    background-color: rgba(8, 99, 13, 0.322);
+    color: rgb(68, 56, 0)
+}
 
+.ctr {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 footer {
    
     min-height: 10vh;
