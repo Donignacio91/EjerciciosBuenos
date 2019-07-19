@@ -1,6 +1,6 @@
-export function App(){
+export class App(){
     console.log('app runs')
-    
+
       constructor()  {
    this.aBtn = document.querySelectorAll('#btn')
    this.aInp = document.querySelectorAll('#input')
@@ -11,7 +11,7 @@ export function App(){
 }
 
 
-function onBtnClick (ev) {
+ onBtnClick (ev) {
     switch (ev.target.id) {
         case 'bnt[0]':
             this.nPalabras()
@@ -51,3 +51,9 @@ function onBtnClick (ev) {
     this.out[1].value = r
    
    }
+function cadaLetra(frase) {
+    const letras = {
+        A: 0, b: 0 , c:
+    }
+    
+}
