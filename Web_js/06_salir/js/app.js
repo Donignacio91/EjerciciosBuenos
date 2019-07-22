@@ -12,6 +12,57 @@ export function app() {
     btnSalir.addEventListener('click', onClick)
     btnCancel.addEventListener('click', onClick2)
     btnPlay.addEventListener('click', run)
+    let handlerSalir
+    let handlerInterval 
+  
+
+
+    let btnPP = document.querySelector('#p-p')
+    let btnR = document.querySelector('#reset')
+    let outH = document.querySelector('#h')
+    let outM = document.querySelector('#m')
+    let outS = document.querySelector('#s')
+    btnPP.addEventListener('click', play)
+    btnR.addEventListener('click', reset)
+    let handlerIntervalH
+    let handlerIntervalM 
+    let handlerIntervalS 
+
+
+
+    function play () {
+    
+    let y =0
+
+    setTimeout(()=>{
+        handlerIntervalH = setInterval( () => {
+            outH.textContent = ++y 
+        },10)
+    },60000)
+
+ let i =0
+    handlerIntervalM = setInterval( () => {
+        outM.textContent = ++i 
+    },1000)
+
+   let u =0
+
+   handlerIntervalS = setInterval( () => {
+        outS.textContent = ++u
+    },10)
+
+    
+}
+function reset ( ) {
+    clearInterval(handlerIntervalH)
+    clearInterval(handlerIntervalM)
+    clearInterval(handlerIntervalS)
+    outH.value = 0
+    outM.value = 0
+    outS.value = 0
+}
+
+
 // no les paso eventono se por que ni como lo definiria
     function run(ev) { 
         let msj = 'Mis coches de ensueño:'
@@ -48,8 +99,6 @@ export function app() {
 
         setTimeout(time,1000)
 
-
-       // outRun.textContent
         
     }
 
@@ -58,10 +107,10 @@ export function app() {
         let url = 'https://github.com/'
         handler = setTimeout(() => {
             location.assign(url)
-        }, 5000)
-        let i = 5
-        setInterval( () => {
-            backTime.textContent = --i
+        }, 4200)
+        backTime.value = 5
+        handlerInterval = setInterval( () => {
+            backTime.textContent -= 1
         },1000)
         dlgCancelar.showModal()//para ver el dialogo
     
@@ -72,6 +121,8 @@ export function app() {
     }
     function onClick2() {
         clearTimeout(handler)
+        clearInterval(handlerInterval)// esto es para poder aularlos con el botton cancel 
         dlgCancelar.close() 
 }
 }
+
