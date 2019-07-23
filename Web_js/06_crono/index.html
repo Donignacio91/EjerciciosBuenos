@@ -4,17 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS en la Web</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./favicon.ico">
     <script src="./js/bootstrap.js" type="module"></script>
-    <title>Curso </title>
 </head>
 <body>
-    <header><h1>JS en la Web</h1></header>
+    <header>
+        <h1>JS en la Web</h1>
+    </header>
     <main>
-        
+        <section>
+            <button id="btn-salir">Gogle</button>
+
+            <dialog id='dlg-cancelar'>
+                <div>
+                    <p>Nos vamos a Google</p>
+                    <div class="out-wrapper">
+                        <output id="dlg-time"></output>
+                    </div>
+                    <div>
+                        <button id='btn-cancelar'>Cancelar</button>   
+                    </div>          
+                </div>
+            </dialog>            
+        </section>
+        <section class="jugadores ">
+            <label for="jugadores"> Nombre del jugador o jugadora </label>
+            <input type="text" id="in-player" class="in-player">
+            <button id="btn-ins">Inscribir</button>
+        </section>
+        <section class="wrapper-cronos">
+        </section>
     </main>
     <footer>
-        <address>Ignacio Caballero Ruiz</address>
+        <address>
+            Alejandro Cerezo
+        </address>
     </footer>
 </body>
 </html>
