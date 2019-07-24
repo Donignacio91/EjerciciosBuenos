@@ -23,9 +23,10 @@ export class App{
     setCookie('Click´s', ++clickk, 5);
 } */
  sumaClick(ev) {
-     let count = 0
+     let count = 1
      
-    this.out2.textContent += count
+     
+    this.out2.value += count 
     
 }
 }   
