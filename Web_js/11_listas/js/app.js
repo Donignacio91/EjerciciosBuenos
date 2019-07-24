@@ -13,7 +13,7 @@ export function app(){
       
         let x = inn.value
         out.textContent = x
-            localStorage.setItem('jota', x)
+            localStorage.setItem("jota", 0)
     }
 
 } 
