@@ -8,19 +8,24 @@ export class App{
          this.out2 = document.querySelector('#out2')
          this.in = document.querySelector('#in')
          this.btnS = document.querySelector('#btn')
-         this.main= document.querySelector('main')
+         this.total= document.querySelector('#total')
          this.clickk = ''
         this.btnS.addEventListener('click', this.iniciar.bind(this))
-        this.main.addEventListener('click', this.sumaClick.bind(this))
+        this.total.addEventListener('click', this.sumaClick.bind(this))
 
  }
 
  iniciar(ev){
-   clickk = setCookie('Click´s', 0 , 2)
+   /* clickk = */ setCookie('Click´s', 'cookie' , 2)
   this.out.value = getCookie('Click´s')
  }
+ /* if (clickk !== '') {
+    setCookie('Click´s', ++clickk, 5);
+} */
  sumaClick(ev) {
-   
+     let count = 0
+     
+    this.out2.textContent += count
     
 }
 }   
