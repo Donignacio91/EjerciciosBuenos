@@ -1,37 +1,40 @@
-import { ArrayStorage } from './storage.js'
+function app (){
 
-export class App {
+        //existe un input que se llama #in-item
+        //existe un #out 
+                //Nodo 
+//cuando arracamos la app preguntamos  
+            // trae algo del storage y tiene una key como yo queira
+            
+        let items = [ ]  
+            if(localStorage.getItem('item')){//esto pregunta si existe un item en el localstrage
+                items=JSON.parse(localStorage.getItem('item')) //si no existe lo guardas  
+            }//convierte algo que esta serializado en string y darel forma de objeto
+   
 
-    constructor() {
-        console.log('Cargada app') 
-        this.setAnimales = new Set()
-
-        this.store = new ArrayStorage('animales')
-
-        this.inNew = document.querySelector('#in-new')
-        this.outLista = document.querySelector('#out-lista')
-
-        this.inNew.addEventListener('change',
-            this.onChange.bind(this))
-
+  
+    let inItem = document.querySelector('#in-item')
+    let outItem = document.querySelector('#out-item')
+    item = inItem.value
+        // asignar el manejador de eventos 
+        inItem.addEventListener('change', addItem) // este enveto es darle a enter y tabulador  
+    
+    function addItem(){
+        items.push(inItem.value)
+        localStorage.setItem('item', JSON.stringify(animales)
+        )
+        inItem.value =''
+        render()
+    
+    }
+    function render() {
+    let html = outItem.innerHTML// aqui creamos la ul y ahora hago un bucle y añando las cosas a la lista desdel bucle para 
+    html += '<ul>'
+    items.forEach( item => html += `<li> ${item} </li>`) //+= con mas igual añado al arry 
+    
+    html += '</ul>'
+    
+    }
     }
     
-    render() {
-        let txtHtml = ''
-        this.setAnimales.forEach( animal =>
-            txtHtml += `<li>${animal}</li>`)
-        console.log(txtHtml)    
-        let nodoLista = document.createElement('ul')
-        nodoLista.innerHTML = txtHtml
-        this.outLista.innerHTML = ''
-        this.outLista.appendChild(nodoLista)
-    }
-
-    onChange() {
-        if (this.inNew) {
-            this.setAnimales.add(this.inNew.value)
-            this.inNew.value = ''
-            this.render()
-        }
-    }
- }
+    
