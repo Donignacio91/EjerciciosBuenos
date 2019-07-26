@@ -1,0 +1,46 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+header {
+    background-color: brown;
+    color: bisque;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin: 2rem;
+    min-height: 60vh;
+}
+.botonarrio{
+    background-color: gold;
+    color: purple;
+    border: 1cm solid salmon;
+    height: 2%;
+    max-width: 15%; 
+}
+.oculto {
+    display: none;
+}
+
+.btn {
+    cursor: pointer;
+    color: brown;
+    font-family: cursive;
+}
+
+footer {
+    min-height: 10vh;
+    background-color: brown;
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
