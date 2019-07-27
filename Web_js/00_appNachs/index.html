@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/bootstrap.js" type="module"></script>
+    <title>Curso </title>
+</head>
+<body>
+    <header class="maestro"><h1>JS en la Web</h1>
+        <nav>
+            <ul>
+                <li><a class="navA" href="">Crono</a></li>
+                <li><a class="navA" href="">App 2</a></li>
+                <li><a class="navA" href="">App 3</a></li>
+                <li><a class="navA" href="">App 4</a></li>
+                <li><a class="navA" href="">App 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+           <div class="top"> </div> <!--este div ocupará en vacio el espacio de header contraido por la clas stiki y asi no se me oculta la app 1 bajo él -->
+        <section>
+            <h2>App1 Botones</h2>
+            <div class="stst">
+               <p><button id="btn1" class="btn" >1</button>
+               <button id="btn2" class="btn">2</button>
+               <button id="btn3" class="btn">3</button></p> 
+               <button id="btn0" class="btn">Otros</button></p> 
+                <output class="outApp1"></output>
+                <button id="btnR" class="btn" >RESET</button>
+            </div>
+            
+        </section>
+        <section>
+           <h2>App2 Preguntas/respuestas</h2>
+           <h3 class="pregunta">Curiosidades JS <span class="close cursor"> 🔙 </span></h3>
+        
+           <div class="oculto respuesta">
+              <ol>
+                   <li>Null es un objeto (desde luego, paradójico) </li>
+                   <li>  NaN es un número (otra paradoja más y el universo implosiona) </li>
+                   <li> array() ‘==’ False es True </li>
+                   <li> La función replace() acepta como parámetro funciones callback </li>
+                   <li> Las expresiones regulares se pueden testear con test() además de con match() </li>
+                   <li> Puedes falsear el alcance de una variable o función (algo muy útil la verdad) </li>
+                   <li> Las funciones se pueden ejecutar a si mismas... y al parecer sin caer en un bucle infinito ni nada </li>
+                   <li> Firefox no lee y devuelve los colores en hexadecimal sino en RGB </li>
+                   <li> 0.1 + 0.2 ‘!==’ 0.3 (¿otra paradoja? Boooooommm!!!) </li>
+                   <li>  Undefined puede ser definido, es decir, que no es una palabra reservada (fail!) </li>
+               </ol>
+           </div>
+           <h3 class="pregunta">¿Por que la nariz de los varones es mas grande? <span class="close cursor"> 🔙 </span> </h3>
+           <p class="oculto respuesta">
+               Según un estudio publicado en la revista Journal of Physical Anthropology, los hombres tienen la nariz un 10 por ciento más grande que las mujeres porque son más musculosos. Los investigadores apuntan que ellos precisan unas fosas nasales más generosas para cubrir la mayor demanda de oxígeno que les pide su superior masa muscular. Los autores del interesante trabajo monitorizaron los cambios faciales de 38 voluntarios desde que tenían tres años hasta bien entrada la veintena. De su meticuloso registro de datos concluyeron que las narices masculinas se desmadran alrededor de los 11 años y pegan un estirón que no tiene equivalente en los apéndices femeninos. Incluso se animaron a lanzar a la comunidad científica un valioso apunte sobre la anatomía neandertal: puede que la mayor masa muscular de esta especie desaparecida fuera el motivo por el que tuvieran más narices que nosotros.</p>
+           <h3 class="pregunta">¿Sabias que no tengo acentos en el teclado? <span class="close cursor"> 🔙 </span> </h3>
+           <p class="oculto respuesta"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti totam voluptatum est, placeat at accusantium fuga laudantium nemo eligendi recusandae culpa, ut beatae, rem maxime aut. Necessitatibus quae provident debitis!Doloremque officiis excepturi repellendus inventore pariatur itaque omnis harum nemo nostrum quod. Reprehenderit maiores nulla itaque ab, culpa nobis, libero dolores odit praesentium voluptatibus nisi perferendis nesciunt, laudantium distinctio modi.</p>
+           <h3 class="pregunta"> Aqu{i} podre poner una imagen??? <span class="close cursor"> 🔙 </span>  </h3>
+         
+        <div class="oculto respuesta jaguarazo">
+      <!--   <img src="./Assets/IMG-20190626-WA0005.jpg" alt="jaguarazo" >   -->  
+        </div>
+
+        </section>
+        <section>
+            <h2>App 3 </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti totam voluptatum est, placeat at accusantium fuga laudantium nemo eligendi recusandae culpa, ut beatae, rem maxime aut. Necessitatibus quae provident debitis!</p>
+            <p>Doloremque officiis excepturi repellendus inventore pariatur itaque omnis harum nemo nostrum quod. Reprehenderit maiores nulla itaque ab, culpa nobis, libero dolores odit praesentium voluptatibus nisi perferendis nesciunt, laudantium distinctio modi.</p>
+
+        </section>
+        <section>
+            <h2>App 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti totam voluptatum est, placeat at accusantium fuga laudantium nemo eligendi recusandae culpa, ut beatae, rem maxime aut. Necessitatibus quae provident debitis!</p>
+            <p>Doloremque officiis excepturi repellendus inventore pariatur itaque omnis harum nemo nostrum quod. Reprehenderit maiores nulla itaque ab, culpa nobis, libero dolores odit praesentium voluptatibus nisi perferendis nesciunt, laudantium distinctio modi.</p>
+        </section>
+        <section>
+            <h2>App 5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti totam voluptatum est, placeat at accusantium fuga laudantium nemo eligendi recusandae culpa, ut beatae, rem maxime aut. Necessitatibus quae provident debitis!</p>
+            <p>Doloremque officiis excepturi repellendus inventore pariatur itaque omnis harum nemo nostrum quod. Reprehenderit maiores nulla itaque ab, culpa nobis, libero dolores odit praesentium voluptatibus nisi perferendis nesciunt, laudantium distinctio modi.</p>
+
+        </section>
+   
+   
+        </main>
+    <footer>
+        <address>Ignacio Caballero Ruiz</address>
+    </footer>
+</body>
+</html>

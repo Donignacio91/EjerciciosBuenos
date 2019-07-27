@@ -15,34 +15,27 @@
     </header>
     <main>
         <section>
-            <h2>Lista de animales</h2>
+            <h2 contenteditable>Lista de animales</h2>
             <div>
                 <label for="in-new">Añade un animal</label>
-                <input type="text" name="in-new" id="in-item">
+                <input type="text" name="in-new" id="in-new">
             </div>
             <div>
                 <h3>Lista de animales</h3>
-                <div id="out-item"></div>
+                <div id="out-lista"></div>
             </div>
-            <dialog id="confirmacion">
-                    <div class="ctr">
-                            <p>¿Está seguro?</p>
-                            <p>Borrará el animal de la lista</p>
-                            <button  id="btn-acep">ACEPTAR</button>
-                       <button  id="btn-cancel">CANCELAR</button>
-
-                   </div>
-                </dialog>      
+            <dialog class="confirmacion">
+                <p>Seguro que deseas borrar el animalillo</p>
+                <button>SI</button> 
+                <button>NO</button>
+            </dialog>
         </section>
     </main>
     <footer>
         <address>
             Alejandro Cerezo
         </address>
-    </footer>
-
-    <footer>
-        <address>Ignacio Caballero Ruiz</address>
+            <address>Ignacio Caballero Ruiz</address>
     </footer>
 </body>
 </html>

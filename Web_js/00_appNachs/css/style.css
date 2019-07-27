@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+/* header */
+.maestro{
+    color:rgb(219, 179, 0);
+    font-size: 7vh;
+    text-shadow: 0.1em 0.1em  rgb(8, 99, 13)  ;
+    position: relative;
+    min-height: 100vh;
+     display: flex; 
+    flex-wrap: wrap;
+    margin:0;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../Assets/image.jpg);
+    background-repeat: no-repeat;
+    background-position: top
+ 
+
+}
+h2{
+    color:rgb(219, 179, 0);
+    font-size: 3vh;
+    
+}
+
+header h1{
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+nav{
+    width: 100%;
+}
+nav ul{
+    padding: 0;
+     margin-right: 10%;
+    margin-left: 10%;
+
+   list-style: none;
+   display: flex;
+   justify-content:space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color:rgb(219, 179, 0);;
+    font-weight: bold;
+    font-size: 4vh;
+    text-shadow: none;
+    
+}
+.sticky {
+    min-height:0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0,0,0,0;
+    font-size: 4vh;
+}
+
+.top-sticky {
+    height: 60vh;
+}
+main {
+    min-height:30vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    justify-content: center;
+}
+main h2 {
+    margin-bottom: 0;
+    margin-left: 10%;
+    color: rgb(8, 99, 13);
+    text-decoration-line: underline;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container div {
+    margin: 1rem;
+}
+.btn:hover{
+cursor: pointer; /*poner el pinterito al pasar sobre los botones*/
+}
+.btn-super {
+        background-color: rgb(8, 99, 13);
+        display: inline-block;
+        padding: 0.5em 3em;
+        border: 0.16em solid rgb(219, 179, 0);
+        margin: 0 0.3em 0.3em 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        text-transform: uppercase;
+        
+        font-weight: bold;
+        color :rgb(219, 179, 0);
+        text-align: center;
+        transition: all 0.15s;
+        }
+        .btn-super:hover{
+        color: rgb(248, 29, 29);
+        border-color:rgb(219, 179, 0);
+        }
+.input {
+    margin-left: 3%;
+}
+output {
+background-color: rgba(70, 131, 180, 0.356);    
+    color:black;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+/* app 1 */
+ .stst{
+     display: flex;
+    align-items: center;
+    margin-left: 10%;
+     margin-top: 2%;
+ }
+ /* app2 preguntas respuestas */
+ .pregunta{
+     cursor: pointer;
+ }
+.oculto{
+    display: none;
+}
+.jaguarazo{
+    min-height: 100vh;
+    background-image: url(../Assets/314326d22.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+
+footer {
+    min-height: 10vh;
+    background-color:rgb(8, 99, 13);
+    color: rgb(219, 179, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}

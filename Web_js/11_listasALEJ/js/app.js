@@ -1,40 +1,98 @@
-function app (){
+export function app() {
 
-        //existe un input que se llama #in-item
-        //existe un #out 
-                //Nodo 
-//cuando arracamos la app preguntamos  
-            // trae algo del storage y tiene una key como yo queira
-            
-        let items = [ ]  
-            if(localStorage.getItem('item')){//esto pregunta si existe un item en el localstrage
-                items=JSON.parse(localStorage.getItem('item')) //si no existe lo guardas  
-            }//convierte algo que esta serializado en string y darel forma de objeto
-   
+    // Existe un input #in-new
+    // Existe un elemento #out-lista
+      
+    // Nodos
+    let inAnimal = document.querySelector('#in-new')
+    let outAnimal = document.querySelector('#out-lista')
+    let dlgConfirmar = document.querySelector('.confirmacion')
+    let aDlgBotones = document.querySelectorAll('.confirmacion button')
 
-  
-    let inItem = document.querySelector('#in-item')
-    let outItem = document.querySelector('#out-item')
-    item = inItem.value
-        // asignar el manejador de eventos 
-        inItem.addEventListener('change', addItem) // este enveto es darle a enter y tabulador  
-    
-    function addItem(){
-        items.push(inItem.value)
-        localStorage.setItem('item', JSON.stringify(animales)
-        )
-        inItem.value =''
+    // Asignar manejador de eventos
+    inAnimal.addEventListener('change', addAnimal)
+    aDlgBotones.forEach(btn => 
+        btn.addEventListener('click', onClickDlg))
+
+
+    // Crear e inicializar el array
+    let animales = [] 
+    // ¿Existe storage?
+    if(localStorage.getItem('zoo')) {
+        animales = JSON.parse(localStorage.getItem('zoo'))
         render()
-    
     }
+    
+    // Elemento a Bornar
+    let numBorrar
+
+    // let animales = (localStorage.getItem(animales)) ?
+    //        localStorage.getItem(animales) : [] 
+
+    // Funciones
+    function addAnimal() {
+        animales.push(inAnimal.value)
+        inAnimal.value = ''
+        save()
+        render()
+    }
+
+    function save() {
+        localStorage.setItem('zoo', JSON.stringify(animales))
+    }
+    
     function render() {
-    let html = outItem.innerHTML// aqui creamos la ul y ahora hago un bucle y añando las cosas a la lista desdel bucle para 
-    html += '<ul>'
-    items.forEach( item => html += `<li> ${item} </li>`) //+= con mas igual añado al arry 
-    
-    html += '</ul>'
-    
+        let html = '' 
+        html += '<ul>'
+        animales.forEach((item, i) => html += 
+            `<li>
+                <span class="texto" data-id="${i}">${item}</span>
+                <span class="btn btn-editar" data-id="${i}">️✍️</span>  
+                <span class="btn btn-borrar" data-id="${i}">🗑️</span>
+            </li>`)
+        html += '</ul>'
+        outAnimal.innerHTML = html
+
+        let aBtnBorrar = document.querySelectorAll('.btn-borrar')
+        let aBtnEditar = document.querySelectorAll('.btn-editar')
+        let aTextos = document.querySelectorAll('.texto')
+
+        aBtnBorrar.forEach(btn => btn.addEventListener('click', onBorrar))
+        aBtnEditar.forEach(btn => btn.addEventListener('click', onEditar))
+        aTextos.forEach(txt => txt.addEventListener('blur', onChange))
     }
+
+    function onBorrar(ev) {
+        numBorrar = ev.target.dataset.id
+        m 
+        dlgConfirmar.showModal()
     }
-    
-    
+
+   function onClickDlg (ev) {
+       if (ev.target.textContent === 'SI') {
+        animales.splice(numBorrar, 1)
+        
+        save()
+        render()     
+       }
+       dlgConfirmar.close()
+   }   
+
+   function onEditar(ev) {
+    console.log(ev.target.dataset.id)
+    ev.target.previousElementSibling.contentEditable = true
+    console.dir(ev.target.parentNode)
+   }
+
+   function onChange(ev) {
+    ev.target.contentEditable = false
+    animales.splice(
+        ev.target.dataset.id, 1, ev.target.textContent)
+    save()
+    render()
+   }
+
+
+
+}
+

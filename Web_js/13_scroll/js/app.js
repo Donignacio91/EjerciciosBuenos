@@ -13,7 +13,7 @@ export function app(){
        aTops.push(itemoffsetTop)
     });
     }
-       /*  let aTops = sections.map(//map se paarece a dforeace pero me devuleve lo que le pido 
+       /*  let aTops = sections.map(//map se paarece a dforeaech pero me devuleve lo que le pido 
             item =>item.offsetTop
         ) */
 
