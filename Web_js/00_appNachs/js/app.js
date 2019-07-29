@@ -77,10 +77,11 @@ export function app(){
 function areaZone() {
     out1.textContent = 'Indique su posicion de llegada'
     area.classList.add('bordes')
+    out1.classList.add('gold')
 
 }
 function areaZone2() {
-  
+    out1.classList.remove('gold')
     area.classList.toggle('bordes')
 
 }

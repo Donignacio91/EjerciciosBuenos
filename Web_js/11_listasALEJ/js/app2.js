@@ -13,6 +13,10 @@ export class App {
 
         this.inNew.addEventListener('change',
             this.onChange.bind(this))
+            /*  this.inNew.addEventListener('change',
+        ()=>{
+             this.onChange()
+        } */
 
     }
     
