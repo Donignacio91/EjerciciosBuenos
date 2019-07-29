@@ -30,6 +30,7 @@ export function app(){
     aBtn.forEach(btn =>btn.addEventListener(
         'click', onClick1));
     area.addEventListener('mouseenter', areaZone)
+    area.addEventListener('mouseleave', areaZone2)
     btnR.addEventListener('click',reset)
 
     //app2
@@ -75,11 +76,17 @@ export function app(){
    
 function areaZone() {
     out1.textContent = 'Indique su posicion de llegada'
+    area.classList.add('bordes')
+
+}
+function areaZone2() {
+  
+    area.classList.toggle('bordes')
 
 }
 function reset(){
 
-    out1.textContent= ''
+    out1.textContent= '¿?'
 }
 function quest(ev) {
     aResponse.forEach(res => res.classList.add('oculto')) //no entiendo bien esta parte!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -88,6 +95,7 @@ function quest(ev) {
 }
 function cerrar(ev) {
     ev.target.nextElementSibling.classList.add('oculto') // Meda mucho error pero me lo permire el cerrar con la crucecita
+    ev.target.previusElementSibling.classList.add('oculto')
 }
 
 
