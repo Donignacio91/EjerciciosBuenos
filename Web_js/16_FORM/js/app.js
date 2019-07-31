@@ -1,15 +1,16 @@
 export function app(){
     console.log('app runs')
 let oDatos = {
-        userName: '',
-        userPasswd: '',
-        email: '',
-        cv: '',
-        birthDate: '',
-        info: '',
-        isOk: 'on',
-        curso: '',
-        sitio: '',
+        userName:'',
+        userPasswd:'',
+        email:'',
+        dni:'',
+        cv:'',
+        birthDate:'',
+        info:'',
+        isOk:'on',
+        curso:'',
+        sitio:'',
       }
      
     //nodos del dom
@@ -19,14 +20,14 @@ let oDatos = {
    let aSElects = document.querySelectorAll('select')
    let aRadioSitio = document.querySelectorAll('[name="sitio"]') //o tiene  value
    let btnReset = document.querySelectorAll('#btn-resert')
-    let dlgConfirm = document.querySelector('#dlgConfir')
-    let aDlgBtn = document.querySelectorAll('dlgConfir button')
+   let dlgConfirm = document.querySelector('#dlgConfir')
+   let aDlgBtn = document.querySelectorAll('dlgConfir button')
 
 
-     // definir manejadores
-     form.addEventListener('submit', onSubmit) //evnto que dispara el boton submit del formulario el que inicia el evento del form 
+    // definir manejadores
+    form.addEventListener('submit', onSubmit) //evnto que dispara el boton submit del formulario el que inicia el evento del form 
     btnReset.addEventListener('click', onReset)
-      aDlgBtn.forEach(btn => btn.addEventListener('click', onClickDlg))
+    aDlgBtn.forEach(btn => btn.addEventListener('click', onClickDlg))
 
     //funciones manejadoras 
     function onSubmit(ev) {
@@ -47,8 +48,8 @@ let oDatos = {
             
         }
     
- /*    function onReset(ev) {
-        
+ /* function onReset(ev) {
+    
     } */
     function getRadio (aNodos){ //los radios vienen juntos todos por el name los busco y compruebo el atributo cheked y si es tru veo el value solo el true es el selecionado
         for (let i = 0; i < aNodos.length; i++) {

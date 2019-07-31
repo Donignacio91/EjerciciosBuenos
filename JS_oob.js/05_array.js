@@ -50,7 +50,7 @@ function darFormatoDNi(dni) {
     if(typeof dni === 'number') {
         return dni
     }
-    let cadenaDni = ''  //String(dni).split('')  convierte en string
+    let cadenaDni = ''  //String(dni).split('') convierte en string
     for (let i = 0; i < dni; i++) {
         const caracter = dni[i];
         if (caracter != ' ' && isNaN(caracter)) {
