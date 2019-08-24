@@ -19,8 +19,8 @@ header .overlay{
 	height: 100%;
 	padding: 50px;
 	color: rgb(156, 9, 9);
-	text-shadow: 1px 1px 1px rgb(196, 195, 195);
-  background-image: url(../assets/opelsportada.jpg);
+	text-shadow: 1px 1px 1px rgb(49, 49, 49);
+  background-image: url(../assets/jag_jhr_images_08_120312.jpg);
   background-repeat: no-repeat;
   background-position: center;
 	
@@ -35,7 +35,7 @@ h1 {
     font-family: 'Orbitron', sans-serif;
 }
 h3{
-    margin-top: 19rem;
+    margin-top: 26rem;
 	font-family: 'Open Sans', sans-serif;
     margin-bottom: 1rem;
     font-size: 2rem;
