@@ -34,11 +34,12 @@ h1 {
 .font{
     font-family: 'Orbitron', sans-serif;
 }
-h3{
+.h3header{
     margin-top: 26rem;
 	font-family: 'Open Sans', sans-serif;
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    text-shadow: 1px 1px 1px rgb(197, 196, 196);
 }
 
 .topline{
@@ -80,6 +81,11 @@ h3{
             color:rgb(156, 9, 9);
             margin-right:1rem;
         }
+        .top_r a{
+            color:rgb(156, 9, 9);
+            margin-right:1rem;
+            font-weight: bold;
+        }
  .menu{
              border-top: 0.07em  solid rgba(0, 0, 0, 0.432); 
             border-bottom: 0.07em  solid rgba(0, 0, 0, 0.432);
@@ -113,12 +119,37 @@ h3{
                
             }
             
-            .subM{
-                display:none;
-                }
-                .subM:hover>ul{
-                display:block;
-                position:absolute;
-                top:30px;
-                left:0px;
-          }
+            .menu li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+            }
+            .menu nav li:hover > ul {
+				display:block;
+			}
+			
+			.menu nav li ul li {
+                position:relative;
+                display: block;
+                padding-left: 22rem;
+               
+			}
+			
+			.menu nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+h3 {
+    margin-top: 4rem;
+    font-family: 'Orbitron', sans-serif;
+    color:rgb(156, 9, 9);
+    margin-bottom: 1rem;
+    padding-left: 1%;
+    padding-right: 1%;
+   
+}
+.subline{
+     border-bottom: 0.07em solid rgba(0, 0, 0, 0.432);
+}
+
+
