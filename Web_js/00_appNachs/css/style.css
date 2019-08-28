@@ -167,6 +167,28 @@ background-color: rgba(70, 131, 180, 0.356);
     background-repeat: no-repeat;
 
 }
+/* App 3 */
+.initial{
+    background-color: lightgray
+}
+.salidaColor{
+    background-color: lightgray
+}
+.black{
+    background-color: black;
+} 
+.red{
+    background-color: red;
+} 
+.yellow{
+    background-color: yellowgreen;
+} 
+.green{
+    background-color: green;
+} 
+ .gold{
+background-color: gold;
+} 
 
 footer {
     min-height: 10vh;

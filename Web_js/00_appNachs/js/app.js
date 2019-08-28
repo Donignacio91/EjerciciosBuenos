@@ -20,6 +20,9 @@ export function app(){
     let aResponse = document.querySelectorAll('.respuesta')
     let aCloss = document.querySelectorAll('.close')
 
+    //App 3 salidaColor
+    let imp = document.querySelector('#importe')
+    let color = document.querySelector('#salidaColor')
 
 
                      // MANEJADORES EVENTOS
@@ -38,7 +41,9 @@ export function app(){
         'click',quest ));
         aCloss.forEach(closs =>closs.addEventListener(
             'click', cerrar));
-       
+    
+    // App3
+    imp.addEventListener('change',onInput)
 
 
     //Funciones
@@ -98,7 +103,18 @@ function cerrar(ev) {
     ev.target.nextElementSibling.classList.add('oculto') // Meda mucho error pero me lo permire el cerrar con la crucecita
     ev.target.previusElementSibling.classList.add('oculto')
 }
+function onInput() {
+     color.classList.add('initial')
 
+    switch (imp.value) {
+        case imp.value < 500:
+            color.classList.add('black')
+            break;
+    
+        default:
+            break;
+    }
+}
 
 
 } 
