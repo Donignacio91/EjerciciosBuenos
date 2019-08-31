@@ -291,7 +291,7 @@ background-color: rgb(156, 9, 9);
 .menu2 a{
 color:white;
 }
-@media screen and (max-width: 1217px) {
+/* @media screen and (max-width: 1217px) {
     body{
         background-color: rgb(200, 200, 200);
         margin-right: 10%;
@@ -391,10 +391,10 @@ color:white;
    .menu ul li a{
     text-decoration: none;
     font-family: 'Pragati Narrow', sans-serif;
-    /* color:rgb(156, 9, 9) */
+    /* color:rgb(156, 9, 9) 
     font-weight: bold;
     letter-spacing: 0.7px;
     color:rgb(156, 9, 9);
     }
 
-}
+} */
