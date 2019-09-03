@@ -1,6 +1,6 @@
 export function app() {
 
-    const userURL= 'https://jsonplaceholder.typic5ode.com/users'
+    const userURL= 'https://jsonplaceholder.typicode.com/users'
     const http = new XMLHttpRequest()
     //Nodos del DOM
 
@@ -59,14 +59,24 @@ function ajax (metodo , url , callback) {
 //funcion del evento AJAX 
 function leerDatos(http) {
 
-    if (http.readyState == 4 && http.status == 200) {
+  /*   if (http.readyState == 4 && http.status == 200) {
     let data = JSON.parse(http.responseText) // es lo que manda el server en string si es en json text si es en xml responsexml 
     //readistate 4 me dice si ha terminado y el status me dice como a ido el 200 es todo bien 404 sertia un fallo  
  console.log(http.responseText)// los datos enviados por el servidor(api)
 
  outputNombre.innerHTML = data.username
-} else {
+} else if (http.readyState == 4 ) {
     //outputNombre.innerHTML ='liada parda problemon'
-    location.assign('./error.html')//redireccion desde java
+     location.assign('./error.html') //redireccion desde java 
+} */
+if (http.readyState == 4){
+    if(http.status == 200){
+        let data = JSON.parse(http.responseText)
+        outputNombre.innerHTML = data.username
+    } else {
+        //outputNombre.innerHTML ='liada parda problemon'
+        location.assign('./error.html') //redireccion desde java 
+    }
 }
-}}
+}
+}
