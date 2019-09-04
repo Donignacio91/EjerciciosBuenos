@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso de JS</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    
+    <script src="./js/bootstrap.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <h1>JS en la Web</h1>
+    </header>
+    <main>
+        <div class="altas">
+<h2>Nuevo usuario</h2>
+        <div>
+<input type="text" name="in-nombre" id="in-nombre" 
+            placeholder="Escriba su nombre" value=''> 
+        </div>
+          
+        <div>
+<input type="text" name="in-Edad" id="in-Edad" 
+            placeholder="Escriba su edad " value=''> 
+        </div>
+           
+        <button id="btn-add" type="button">Añadir <i class="fas fa-ad"></i> </button> 
+        <button id="btn-borrar" type="button"> Borrar </button>
+        <button d="btn-edit" type="button"> Editar </button>
+        </div>
+        
+        <dialog id="dlg-editar" open="true">
+                <h3>Editar registro</h3>
+                <div>
+                    <label for="in-nombre-edit">Nombre</label>
+                    <input type="text" name="in-nombre" id="in-nombre-edit">
+                </div>
+                <div>
+                    <label for="in-edad-edit">Edad</label>
+                    <input type="text" name="in-edad" id="in-edad-edit">
+                </div>
+                <div>
+                    <button id="btnEditar" type="button"><i class="fas fa-check-circle modify">Modificar</i> </button>
+                    <button id="btn-cancel" type="button"><i class="fas fa-times-circle cancel">Cancelar</i></button>
+                </div>
+    
+                <div class="usuarios">
+                    <table id="tb-usuarios"></table>
+                    <p id="p-error"></p>
+                </div>
+            </dialog>
+
+        <div class="usuarios">
+
+            <table id="tb-usuarios"></table>
+            <p id="p-error"></p>
+        </div>
+        
+    </main>
+
+    <footer>
+        
+        <address>
+            DonIgnacio91
+        </address>
+    </footer>   
+</body>
+</html>
