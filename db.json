@@ -11,29 +11,19 @@
       "edad": 35
     },
     {
-      "id": 3,
-      "nombre": "Paco",
-      "edad": 38
-    },
-    {
       "nombre": "Paca",
       "edad": "56",
       "id": 4
     },
     {
-      "nombre": "Nach",
+      "nombre": "Don Ignacio",
       "edad": "28",
       "id": 5
     },
     {
-      "nombre": "John",
+      "nombre": "Johnny",
       "edad": "32",
       "id": 6
-    },
-    {
-      "nombre": "",
-      "edad": "",
-      "id": 7
     }
   ],
   "posts": [

@@ -1,5 +1,7 @@
-import { USERS } from './api.js'
 
+
+import { USERS } from './api.js'
+import dialogPolyfill from '../js/node_modules/dialog-polyfill/index.js';
 export function app() {
     console.log('Cargada app')
     let aUsers = []
@@ -12,8 +14,11 @@ export function app() {
     let tbUsuarios = document.querySelector('#tb-usuarios')
     let aBtnEditar = [] // Toman valor tras renderizar la tabla
     let aBtnBorrar = [] // Toman valor tras renderizar la tabla
-    let dlgBorrar = document.querySelector('#dlg-borrar') 
+   
+     let dlgBorrar = document.querySelector('#dlg-borrar') 
+    dialogPolyfill.registerDialog(dlgBorrar)
     let dlgEditar = document.querySelector('#dlg-editar') 
+    dialogPolyfill.registerDialog(dlgEditar)
 
     let nodosBorrar = {
         nombre: document.querySelector('#out-nombre-editar'),
@@ -87,14 +92,36 @@ export function app() {
 
     function onDlgBorrar(ev) {
         if(ev.target.id == 'btn-borrar') {
-            // Borrar
+           //aquí ya borro
+           let url = USERS+'/'+userActual.id
+            fetch(url,{ method:'delete'})
+            .then(response => response.json()) 
+            .then(() => getDatos()) //vuelvo a llmar para recargar
+            
         }
         dlgBorrar.close()
     }
 
     function onDlgEditar(ev) {
         if(ev.target.id == 'btn-update') {
-            // Actualizar
+            // Actualizar /put o PATCH
+            let oUser = {
+                nombre: nodosEditar.nombre.value, 
+                edad:  nodosEditar.edad.value
+            }
+            let url = USERS+'/'+ userActual.id
+            let cabecera = new Headers({ //las cabeceras las podemos hacer globales puesto que estamos trabajando todo en json
+                'Content-Type':  'application/json'
+            })
+
+            fetch(url,{
+                method: 'put',
+                headers: cabecera, 
+                body: JSON.stringify(oUser) })
+            .then(response => response.json())
+            .then(data=> {console.log(data)
+            getDatos()
+            })
         }
         dlgEditar.close()
     }
@@ -109,6 +136,15 @@ export function app() {
             renderData()
         })
     }
+
+    async function getDatosAwait() {
+       let response = await fetch(USERS)
+         aUsers = await response.json()
+            renderData()
+        }
+
+
+
 
     function renderData() {
         let html = `

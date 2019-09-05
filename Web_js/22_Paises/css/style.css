@@ -7,7 +7,7 @@ body {
 }
 header {
     background-color: brown;
-    color: rgb(43, 42, 42);
+    color: bisque;
     min-height: 20vh;
     display: flex;
     justify-content: center;
@@ -26,12 +26,7 @@ main {
     align-items: center;
 }
 
-.altas {
-    margin: 1rem 0rem;
-    padding: 1rem;
-    font-size: 1.2rem;
-}
-.usuarios {
+.libros {
     margin: 1rem 0rem;
     padding: 1rem;
     font-size: 1.2rem;
@@ -47,12 +42,6 @@ main {
     text-decoration: underline;
 }
 
-.boton {
-    color: rgba(165, 42, 42, 0.575);
-    cursor: pointer;
-    padding: 0 0.5rem;
-}
-
 footer {
     min-height: 10vh;
     background-color: brown;
@@ -60,13 +49,4 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-dialog {
-    background-color: brown;
-    color: bisque;
-}
-
-dialog div {
-    margin: 0.8rem 0rem;
 }
