@@ -6,17 +6,48 @@ export function app() {
    // Nodos del DOM
    let selecContinente = document.querySelector('#select')
    let showPais = document.querySelector('#selectPaises') 
+   let continentes = document.querySelector('#continentes')
    let paisActual= []
    let showFlag = document.querySelector('.flag')
+   let refresh = document.querySelector('#actualizar')
    //manejadoras ev
    selecContinente.addEventListener('change', getDataTotal)
    showPais.addEventListener('change',getPaisesInfo)
+   refresh.addEventListener('click', onRefresh)
 
+   function onRefresh (){
+    location.reload(true)
+   }
 function  getDataTotal(){
     console.log(event.target.value)
+     console.dir(continentes)
+    switch (event.target.value) {
+       
+        case 'Americas':
+
+            continentes.classList.add("ame")
+            break;
+            case 'Europe':
+            continentes.classList.add("eur")
+            break;
+            case 'Asia':
+            continentes.classList.add("asi")
+            break;
+            case 'Oceania':
+            continentes.classList.add("oce")
+            break;
+            case 'Africa':
+            continentes.classList.add("afr")
+            break;
+    
+        default:
+            
+    }
+    
+
     let firstUrl='https://restcountries.eu/rest/v2/region/'
     let seleccion = event.target.value
-    let secondUrl='?fields=name;capital;currencies;subregion;population;area;flag;languages%27'
+    let secondUrl='?fields=name;capital;currencies;subregion;population;area;flag;languages;'
     let url = firstUrl+ seleccion + secondUrl
     fetch(url)
     .then(response => {
@@ -26,16 +57,23 @@ function  getDataTotal(){
         throw(new Error(response.status))
     })
     .then( (data) => {
+        console.log(data)
        aPaises = data.map(item =>{
            return {
                pais : item.name,
                capital: item.capital,
                subregion: item.subregion,
                poblacion: item.population,
-               idioma: item.currencies.name,
+               /* .map(ittem=>{return ittem.name}), */
                superficie: item.area,
-               moneda: item.currencies.name,
-               bandera: item.flag
+               moneda: item.currencies.map(cash =>{
+                   return cash.name  
+               }),
+               bandera: item.flag,
+               idioma: item.languages.map(lang =>{
+                   return lang.name
+                   }
+               ) , 
            } 
        }) 
     console.log(aPaises)
@@ -85,29 +123,18 @@ function getPaisesInfo(){
 }
 function renderOpais(){
     let html = `
-    <h3>Pais</h3>
-    <span>Pais</span> <span> ${oPaisActual.pais}</span>
-   
-    <h3>Capital</h3><span>  ${oPaisActual.capital}</span>
     
-    <h3>Region</h3><span>  ${oPaisActual.subregion}</span>
-    <h3>Poblacion</h3><span>  ${oPaisActual.poblacion}</span>
-    <h3>Superficie</h3><span>  ${oPaisActual.superficie}</span>
-    <h3>Idioma</h3>
-    <span>  ${oPaisActual.idioma}</span>
+    <span class="title">Pais    </span>  <span class="info"> ${oPaisActual.pais}</span><br>
+    <span class="title">Capital    </span>    <span class="info">  ${oPaisActual.capital}</span>  <br>
+    <span class="title">Region    </span>   <span class="info">  ${oPaisActual.subregion}</span><br>
+    <span class="title">Poblacion    </span>   <span class="info">  ${oPaisActual.poblacion}</span><br>
+    <span class="title">Superficie    </span>   <span class="info">  ${oPaisActual.superficie}</span><br>
+    <span class="title">Idioma    </span>   <span class="info">  ${oPaisActual.idioma}</span><br>
+    <span class="title">Moneda    </span>    <span class="info">  ${oPaisActual.moneda[0]}</span><br>
     `
     
        ulInfo.innerHTML = html  
 } 
 
-/* function renderData(data) { //hay que usar find 
-    let html = ''
-    data.forEach(item => html += `
-    <select name="Continentes" id="select" >
-    <option value=""></option>
-    <option value="Americas" id="1" >América</option>`;
-    ulLibros.innerHTML = html
-
-}  */
 
 }

@@ -13,30 +13,111 @@ header {
     justify-content: center;
     align-items: center;
 }
-
+.select1{
+    justify-content: center;
+    text-align: center;
+}
+.select2{
+    justify-content: center;
+    text-align: center;
+}
 main {
     margin: 2rem;
     min-height: 60vh;
 }
 .showInfoPlus{
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns:1fr 1fr ;
     text-align: center;
     justify-content: center;
 
 }
-.showInfoPlus div{
-    border: 1px solid rgba(0, 0, 0, 0.342);
+.showInfoPlus {
     justify-content: center;
     text-align: center;
 }
+.flag1{
+    border: 1px solid rgba(0, 0, 0, 0.342);
+}
+.titulin{
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+.actualizar{
+    justify-content: center;
+    text-align: center;
+    margin-left:43%;
+}
+.btn{  
+    margin-top: 1%;
+    justify-content: center;
+    text-align: center;
+}
+.info1{
+    border: 1px solid rgba(0, 0, 0, 0.342);
+}
 .flag img{
    max-width: 250px;
-   height: 100px;
+   height: 125px;
 }
-.ulInfo h3{
-    color: red;
+.title{
+    font-weight: bold;
+    margin: 0
 }
+.world{
+    display: block;
+    max-width: 250px;
+    height: 125px;
+    background-image: url(../assetes/Mundo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left:43%;
+    padding-bottom: 15%;
+    margin-top: 3%;
+}
+.ame{
+    background-image: url(../assetes/americas.svg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left:43%;
+    padding-bottom: 15%;
+    margin-top: 3%;
+}
+.eur{
+    background-image: url(../assetes/europe.svg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left:43%;
+    padding-bottom: 15%;
+    margin-top: 3%;
+ }
+.asi{
+    background-image: url(../assetes/1200px_Asia_orthographic_projection.svg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left:43%;
+    padding-bottom: 15%;
+    margin-top: 3%;
+}
+.afr{
+    background-image: url(../assetes/550pxAfricaorthographicprojection.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left:43%;
+    padding-bottom: 15%;
+    margin-top: 3%;
+}
+.oce{
+    background-image: url(../assetes/oceania.svg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left:43%;
+    padding-bottom: 15%;
+    margin-top: 3%;
+}
+
+
 
 
 footer {
