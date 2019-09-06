@@ -18,10 +18,11 @@ main {
     margin: 2rem;
     min-height: 60vh;
 }
-.infoPlus{
+.showInfoPlus{
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-   
+    grid-template-columns: 0.5fr 1fr;
+    text-align: center;
+    justify-content: center;
 
 }
 .showInfoPlus div{
@@ -29,7 +30,13 @@ main {
     justify-content: center;
     text-align: center;
 }
-
+.flag img{
+   max-width: 250px;
+   height: 100px;
+}
+.ulInfo h3{
+    color: red;
+}
 
 
 footer {

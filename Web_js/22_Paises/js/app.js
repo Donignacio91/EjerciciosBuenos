@@ -7,7 +7,7 @@ export function app() {
    let selecContinente = document.querySelector('#select')
    let showPais = document.querySelector('#selectPaises') 
    let paisActual= []
-   
+   let showFlag = document.querySelector('.flag')
    //manejadoras ev
    selecContinente.addEventListener('change', getDataTotal)
    showPais.addEventListener('change',getPaisesInfo)
@@ -41,7 +41,6 @@ function  getDataTotal(){
     console.log(aPaises)
     
     renderPaises()
-
     
 
 })}
@@ -53,12 +52,19 @@ function renderPaises() {
          showPais.innerHTML = html
          actualizarNodos()
 }
+function renderFlag(){
+    let html =`
+    
+    <img src="${oPaisActual.bandera}" alt="Bandera de ${oPaisActual.pais}" >
+    `
+    showFlag.innerHTML=html
 
+}
 function actualizarNodos() {
     console.log('nodos actualizados')
     //nodos
     paisActual = document.querySelector('.aqui')
-    let ulInfo = document.querySelector('#ulIfo') 
+     
     // MAnejadores
     paisActual.addEventListener('change',getPaisesInfo)
         
@@ -73,24 +79,22 @@ function getPaisesInfo(){
     
     console.log(oPaisActual)
     renderOpais()
+    renderFlag()
 
      
 }
 function renderOpais(){
     let html = `
     <h3>Pais</h3>
-    <span>Pais</span>
-    <li> ${oPaisActual.pais}</li>
-    <h3>Capital</h3>
-    <li>  ${oPaisActual.capital}</li>
-    <h3>Region</h3>
-    <li>  ${oPaisActual.subregion}</li>
-    <h3>Poblacion</h3>
-    <li>  ${oPaisActual.poblacion}</li>
-    <h3>Superficie</h3>
-    <li>  ${oPaisActual.superficie}</li>
+    <span>Pais</span> <span> ${oPaisActual.pais}</span>
+   
+    <h3>Capital</h3><span>  ${oPaisActual.capital}</span>
+    
+    <h3>Region</h3><span>  ${oPaisActual.subregion}</span>
+    <h3>Poblacion</h3><span>  ${oPaisActual.poblacion}</span>
+    <h3>Superficie</h3><span>  ${oPaisActual.superficie}</span>
     <h3>Idioma</h3>
-    <li>  ${oPaisActual.idioma}</li>
+    <span>  ${oPaisActual.idioma}</span>
     `
     
        ulInfo.innerHTML = html  
