@@ -18,29 +18,19 @@ main {
     margin: 2rem;
     min-height: 60vh;
 }
+.infoPlus{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+   
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
+}
+.showInfoPlus div{
+    border: 1px solid rgba(0, 0, 0, 0.342);
     justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
-.libros {
-    margin: 1rem 0rem;
-    padding: 1rem;
-    font-size: 1.2rem;
-    background-color: bisque
-}
 
-.autor {
-    color: brown;
-}
-
-.title {
-    font-style: italic;
-    text-decoration: underline;
-}
 
 footer {
     min-height: 10vh;

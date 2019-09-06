@@ -14,15 +14,8 @@
         <h1>Paises del Mundo</h1>
     </header>
     <main>
-        <h2>Continentes</h2>  
-        <button id="Americas">América</button>
-        <button id="Europe">Europa</button>
-        <button id="Asia">asia</button>
-        <button id="Africa">africa</button>
-        <button id="Oceania" >oceania</button>
-
-
-
+        <div class="select1">
+             <h2>Seleccione Continentes</h2>
          <select name="Continentes" id="select" >
         <option value=""></option>
         <option value="Americas" id="1" >América</option>
@@ -30,14 +23,33 @@
         <option value="	Africa" id="3">África</option>
         <option value="Asia" id="4">Asia</option>
         <option value="Oceania" id="5">Oceanía</option></select>
-        <h2>Paises</h2> 
+        </div>
 
-        <span id="paises"></span>
+        <div class="select2">
+              <h2>Seleccione Pais</h2> 
+        <select name="paises"id="selectPaises" >
+                
+        </select>
+
+
+        </div>
+        <div class="showInfoPlus" id="showInfoPlus">
+            <div id="flag" class="flag">
+                <p>Flag</p>
+            </div>
+            <div id="info" class="info">
+                <p>Info</p>
+                <ul id="ulInfo"></ul>
+            </div> 
+        </div>
+        <div class="mapa">
+                <p>Mapa</p>
+            </div>
         
     </main>
     <footer>
         <address>
-            Alejandro Cerezo
+            Ignacio Caballero Ruiz
         </address>
     </footer>   
 </body>
