@@ -20,29 +20,8 @@ export function app() {
    }
 function  getDataTotal(){
     console.log(event.target.value)
-     console.dir(continentes)
-    switch (event.target.value) {
-       
-        case 'Americas':
-
-            continentes.classList.add("ame")
-            break;
-            case 'Europe':
-            continentes.classList.add("eur")
-            break;
-            case 'Asia':
-            continentes.classList.add("asi")
-            break;
-            case 'Oceania':
-            continentes.classList.add("oce")
-            break;
-            case 'Africa':
-            continentes.classList.add("afr")
-            break;
+    switchGlobe()
     
-        default:
-            
-    }
     
 
     let firstUrl='https://restcountries.eu/rest/v2/region/'
@@ -82,6 +61,31 @@ function  getDataTotal(){
     
 
 })}
+function switchGlobe(){
+    console.dir(continentes)
+    switch (event.target.value) {
+       
+        case 'Americas':
+
+            continentes.classList.add("ame")
+            break;
+            case 'Europe':
+            continentes.classList.add("eur")
+            break;
+            case 'Asia':
+            continentes.classList.add("asi")
+            break;
+            case 'Oceania':
+            continentes.classList.add("oce")
+            break;
+            case 'Africa':
+            continentes.classList.add("afr")
+            break;
+    
+        default:
+            
+    }
+}
 
 function renderPaises() {
     let html = ''

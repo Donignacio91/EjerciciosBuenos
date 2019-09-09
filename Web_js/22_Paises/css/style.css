@@ -3,33 +3,45 @@
 }
 
 body {
-    margin: 0;
+    margin:0;
+    background-image: url(../assetes/Imagen_Satelital_del_Mundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 header {
     background-color: brown;
     color: bisque;
-    min-height: 20vh;
+    min-height: 13vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
+.fondo{
+    color: bisque;
+    background-color: rgba(26, 25, 25, 0.514)
+}
+
 .select1{
     justify-content: center;
     text-align: center;
-}
+} 
 .select2{
     justify-content: center;
     text-align: center;
+   
 }
 main {
     margin: 2rem;
     min-height: 60vh;
+    color: bisque;
 }
 .showInfoPlus{
     display: grid;
     grid-template-columns:1fr 1fr ;
     text-align: center;
     justify-content: center;
+    background-color: rgba(240, 248, 255, 0.568)
 
 }
 .showInfoPlus {
@@ -40,9 +52,12 @@ main {
     border: 1px solid rgba(0, 0, 0, 0.342);
 }
 .titulin{
-    font-size: 1rem;
+    font-size: 1.7rem;
     font-weight: bold;
-    
+    background-color: rgba(0, 0, 0, 0.521)
+}
+.ulInfo{
+    color:rgba(0, 0, 0, 0.767)
 }
 .actualizar{
     justify-content: center;
@@ -65,14 +80,18 @@ main {
     font-weight: bold;
     margin: 0
 }
+.select .select1{
+    
+    width: 300px;
+}
 .world{
     display: block;
-    max-width: 250px;
-    height: 125px;
-    background-image: url(../assetes/Mundo.jpg);
+    max-width: 300px;
+    height: 250px;
+    background-image: url(../assetes/BlankMap-World-Continentsred2.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    margin-left:43%;
+    margin-left:42%;
     padding-bottom: 15%;
     margin-top: 3%;
 }
@@ -121,10 +140,11 @@ main {
 
 
 footer {
-    min-height: 10vh;
+    min-height: 15vh;
     background-color: brown;
     color: bisque;
     display: flex;
     justify-content: center;
     align-items: center;
+    bottom: 0;
 }
