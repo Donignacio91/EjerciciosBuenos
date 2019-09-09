@@ -15,9 +15,12 @@
         <h1>Paises del Mundo</h1>
     </header>
     <main>
+        <div class="grid1">
+
+
         <div class="select1">
              <h2> <span class="fondo">Seleccione un continente</span> </h2>
-         <select name="Continentes" id="select" >
+         <select name="Continentes" id="select" style="width: 100px">
         <option value=""></option>
         <option value="Americas" id="1" >América</option>
         <option value="Europe" id="2">Europa</option>
@@ -29,17 +32,22 @@
 
         <div class="select2">
               <h2> <span class="fondo">Seleccione Pais</span> </h2> 
-        <select name="paises"id="selectPaises" >       
+        <select name="paises"id="selectPaises" style="width: 100px">       
         </select>
         
         </div>
+
+        </div>
+
         <div class="btn"><button id="actualizar">ACTUALIZAR</button></div>
         
         
-        
-        <div id="continentes" class="world">
+        <div class="content">
+            <div id="continentes" class="world">
                 
             </div>
+        </div>
+        
 
 
         <div class="showInfoPlus" id="showInfoPlus">
@@ -62,9 +70,10 @@
         
     </main>
     <footer>
-        <address>
+        <div>
+           <address>
             Ignacio Caballero Ruiz
-        </address>
+        </address> 
     </footer>   
 </body>
 </html>

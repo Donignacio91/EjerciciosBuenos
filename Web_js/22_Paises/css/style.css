@@ -16,10 +16,16 @@ header {
     justify-content: center;
     align-items: center;
     
+    
 }
 .fondo{
+    font-size: 1.7rem;
     color: bisque;
     background-color: rgba(26, 25, 25, 0.514)
+}
+.grid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .select1{
@@ -80,58 +86,61 @@ main {
     font-weight: bold;
     margin: 0
 }
-.select .select1{
-    
-    width: 300px;
-}
+
+
 .world{
     display: block;
     max-width: 300px;
     height: 250px;
-    background-image: url(../assetes/BlankMap-World-Continentsred2.png);
-    background-size: 100%;
+    background-image: url(../assetes/BlankMap-World-Continents.png);
+    background-size: 70%;
     background-repeat: no-repeat;
-    margin-left:42%;
-    padding-bottom: 15%;
+    background-position: center;
+     margin-left:38%;
     margin-top: 3%;
-}
+ }
 .ame{
     background-image: url(../assetes/americas.svg.png);
-    background-size: 100%;
+    background-size: 70%;
     background-repeat: no-repeat;
-    margin-left:43%;
+    background-position: center;
+    margin-left:37%;
     padding-bottom: 15%;
     margin-top: 3%;
 }
 .eur{
     background-image: url(../assetes/europe.svg.png);
-    background-size: 100%;
+    background-size: 70%;
     background-repeat: no-repeat;
-    margin-left:43%;
+    background-position: center;
+    margin-left:37%;
     padding-bottom: 15%;
     margin-top: 3%;
  }
 .asi{
     background-image: url(../assetes/1200px_Asia_orthographic_projection.svg.png);
-    background-size: 100%;
+    background-size: 70%;
     background-repeat: no-repeat;
-    margin-left:43%;
+    background-position: center;
+    margin-left:37%;
     padding-bottom: 15%;
     margin-top: 3%;
 }
 .afr{
     background-image: url(../assetes/550pxAfricaorthographicprojection.png);
-    background-size: 100%;
+    background-size: 70%;
     background-repeat: no-repeat;
-    margin-left:43%;
+    background-position: center;
+    margin-left:37%;
     padding-bottom: 15%;
     margin-top: 3%;
 }
 .oce{
     background-image: url(../assetes/oceania.svg.png);
-    background-size: 100%;
+    background-size: 70%;
     background-repeat: no-repeat;
-    margin-left:43%;
+    background-position: center;
+    margin-left:37%;
     padding-bottom: 15%;
     margin-top: 3%;
 }

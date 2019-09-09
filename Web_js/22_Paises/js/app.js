@@ -1,13 +1,18 @@
 
 export function app() {
     console.log('Cargada app')
+    // Url
+    let firstUrl='https://restcountries.eu/rest/v2/region/'
+    let secondUrl='?fields=name;capital;currencies;subregion;population;area;flag;languages;'
+
     let aPaises = []
     let oPaisActual = {}
+    let paisActual= []
    // Nodos del DOM
    let selecContinente = document.querySelector('#select')
    let showPais = document.querySelector('#selectPaises') 
    let continentes = document.querySelector('#continentes')
-   let paisActual= []
+   
    let showFlag = document.querySelector('.flag')
    let refresh = document.querySelector('#actualizar')
    //manejadoras ev
@@ -15,18 +20,12 @@ export function app() {
    showPais.addEventListener('change',getPaisesInfo)
    refresh.addEventListener('click', onRefresh)
 
-   function onRefresh (){
-    location.reload(true)
-   }
-function  getDataTotal(){
-    console.log(event.target.value)
-    switchGlobe()
-    
-    
 
-    let firstUrl='https://restcountries.eu/rest/v2/region/'
+
+function  getDataTotal(){
+    // console.log(event.target.value)
+    switchGlobe()
     let seleccion = event.target.value
-    let secondUrl='?fields=name;capital;currencies;subregion;population;area;flag;languages;'
     let url = firstUrl+ seleccion + secondUrl
     fetch(url)
     .then(response => {
@@ -43,7 +42,6 @@ function  getDataTotal(){
                capital: item.capital,
                subregion: item.subregion,
                poblacion: item.population,
-               /* .map(ittem=>{return ittem.name}), */
                superficie: item.area,
                moneda: item.currencies.map(cash =>{
                    return cash.name  
@@ -55,14 +53,20 @@ function  getDataTotal(){
                ) , 
            } 
        }) 
-    console.log(aPaises)
-    
+    //console.log(aPaises)
     renderPaises()
     
 
 })}
+
+/**
+ * @description  
+ *Función capaz de dectectar en que continente pulsamos y añada la case correspondiente a la imagen deseada
+ * @param {event} 
+ * @returns 
+ */
 function switchGlobe(){
-    console.dir(continentes)
+    //console.dir(continentes)
     switch (event.target.value) {
        
         case 'Americas':
@@ -87,6 +91,10 @@ function switchGlobe(){
     }
 }
 
+function onRefresh (){
+    location.reload(true)
+}
+
 function renderPaises() {
     let html = ''
     aPaises.forEach(item => html +=`
@@ -94,6 +102,7 @@ function renderPaises() {
          showPais.innerHTML = html
          actualizarNodos()
 }
+
 function renderFlag(){
     let html =`
     
@@ -102,43 +111,43 @@ function renderFlag(){
     showFlag.innerHTML=html
 
 }
+
 function actualizarNodos() {
-    console.log('nodos actualizados')
+    //console.log('nodos actualizados')
     //nodos
     paisActual = document.querySelector('.aqui')
-     
     // MAnejadores
-    paisActual.addEventListener('change',getPaisesInfo)
-        
+    paisActual.addEventListener('change',getPaisesInfo) 
 }
-function getPaisesInfo(){
-   
-    console.log('pepe')
-   
-    console.log(event.target.value) 
-    console.log(aPaises)
-   oPaisActual = aPaises.find(item => item.pais === event.target.value)
-    
-    console.log(oPaisActual)
-    renderOpais()
-    renderFlag()
 
-     
+function getPaisesInfo(){
+   //console.log(event.target.value) 
+    //console.log(aPaises)
+   oPaisActual = aPaises.find(item => item.pais === event.target.value) 
+    //console.log(oPaisActual)
+    renderOpais()
+    renderFlag()     
 }
+
 function renderOpais(){
     let html = `
     
-    <span class="title">Pais    </span>  <span class="info"> ${oPaisActual.pais}</span><br>
-    <span class="title">Capital    </span>    <span class="info">  ${oPaisActual.capital}</span>  <br>
-    <span class="title">Region    </span>   <span class="info">  ${oPaisActual.subregion}</span><br>
-    <span class="title">Poblacion    </span>   <span class="info">  ${oPaisActual.poblacion}</span><br>
-    <span class="title">Superficie    </span>   <span class="info">  ${oPaisActual.superficie}</span><br>
-    <span class="title">Idioma    </span>   <span class="info">  ${oPaisActual.idioma}</span><br>
-    <span class="title">Moneda    </span>    <span class="info">  ${oPaisActual.moneda[0]}</span><br>
+    <span class="title">Pais:    </span> 
+     <span class="info"> ${oPaisActual.pais}</span><br>
+    <span class="title">Capital:    </span>  
+      <span class="info">  ${oPaisActual.capital}</span>  <br>
+    <span class="title">Región:    </span>   
+    <span class="info">  ${oPaisActual.subregion}</span><br>
+    <span class="title">Población:    </span>   
+    <span class="info">  ${oPaisActual.poblacion}</span><br>
+    <span class="title">Superficie:    </span>   
+    <span class="info">  ${oPaisActual.superficie}</span><br>
+    <span class="title">Idioma:   </span>   
+    <span class="info">  ${oPaisActual.idioma}</span><br>
+    <span class="title">Moneda:    </span>    
+    <span class="info">  ${oPaisActual.moneda[0]}</span><br>
     `
-    
-       ulInfo.innerHTML = html  
+    ulInfo.innerHTML = html  
 } 
-
 
 }
