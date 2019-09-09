@@ -76,16 +76,19 @@ function switchGlobe(){
             case 'Europe':
             continentes.classList.add("eur")
             break;
+            case 'Africa':
+            continentes.classList.add("afr")
+            break;
+    
+
             case 'Asia':
             continentes.classList.add("asi")
             break;
             case 'Oceania':
             continentes.classList.add("oce")
             break;
-            case 'Africa':
-            continentes.classList.add("afr")
-            break;
-    
+
+            
         default:
             
     }

@@ -30,7 +30,7 @@ header {
 
 .grid2{
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: 2.5fr 1fr 2.5fr;
 }
 .select1{
     justify-content: center;
