@@ -88,6 +88,14 @@ h1 {
     
 }   
 
+.top_c{
+    font-size: 1rem;
+}
+.top_c:hover{
+    font-weight: bold;
+}
+
+
 .top_l{
     font-size: 1rem;
 }
@@ -238,7 +246,7 @@ h1 {
     margin-top: 1rem;
 }
     .c {
-        background-image: url(../assets/IMG-20190214-WA0001.jpg);
+        background-image: url(../assets/911Blanco3.jpg);
         background-position: center;
         background-size: 90%;
         background-repeat: no-repeat;
@@ -247,6 +255,17 @@ h1 {
         .down{ text-align: center;
         font-size: 0.7rem;
         }
+        h2 {
+            margin-top: 2rem;
+            font-family: 'Orbitron', sans-serif;
+            color:rgb(156, 9, 9);
+            margin-bottom: 1rem;
+            padding-left: 1%;
+            padding-right: 1%;
+           
+        }
+       
+        
 h3 {
     margin-top: 2rem;
     font-family: 'Orbitron', sans-serif;
@@ -288,6 +307,10 @@ background-color: rgb(156, 9, 9);
 }
 .menu2 a{
 color:white;
+}
+
+.content{
+    margin-top: 5rem;
 }
 /* @media screen and (max-width: 1217px) {
     body{
