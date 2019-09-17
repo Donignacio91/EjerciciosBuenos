@@ -34,6 +34,10 @@ h1 {
     
   
 }
+
+.cursor{
+    cursor: pointer;
+}
 .logo{
     background-image: url(../assets/big_0logoemilio.jpg)
 }
