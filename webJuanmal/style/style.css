@@ -20,7 +20,8 @@ header .overlay{
 	height: 90%;
 	padding: 50px;
 	color: rgb(156, 9, 9);
-	text-shadow: 1px 3px 3px rgb(49, 49, 49);
+    text-shadow: 1px 3px 3px rgb(49, 49, 49);
+    background-color:rgb(156, 9, 9);
   background-image: url(../assets/imagerecor.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -49,22 +50,13 @@ h1 {
     margin-top:  20.4rem;
 	font-family: 'Orbitron', sans-serif;
     
-    font-size: 1rem;
+   /*  font-size: 1rem; */
     font-weight:900; 
     text-shadow: none;
     color: rgb(156, 9, 9);
-    /* transform-origin:left;
-    transform: rotate(-16deg); */
+   
 }
-/* .blanco{background-color: rgba(255, 255, 255, 0.585);
-    padding-left: 3px;
-    padding-right: 3px;
-   color: rgb(6, 7, 6);
-} */
-/* .logoemilio{
-    position:absolute;
-    top:35%;
-} */
+
 .sticky {
     min-height:0;
     position: fixed;
