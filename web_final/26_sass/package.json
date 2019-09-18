@@ -6,15 +6,19 @@
   "scripts": {
     "start": "sass sass/:css/ --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass sass/:css/ --watch --no-source-map",
-    "pug": "pug -w -P -p ./pug/partials -O ./pug/options.json ./pug/templates -o ./"
+    "sass": "sass sass/:dist/css/ --watch --no-source-map",
+    "pug": "pug -w -P -p ./pug/partials -O ./pug/options.json ./pug/templates -o ./dist ./",
+    "pug:sass": "parallelshell \"npm run pug\" , \"npm run sass\"",
+     "ugly": "uglifyjs js/app.js/ -o dist/js/app.js -c -m"
   },
   "keywords": [],
   "author": "Alejandro Cerezo",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "parallelshell": "3.0.1",
     "pug": "^2.0.4",
-    "sass": "^1.22.12"
+    "sass": "^1.22.12",
+    "uglify-js": "^3.6.0"
   }
 }

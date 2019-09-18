@@ -1,0 +1,1 @@
+function funcio(){console.log("cargada app")}document.addEventListener("DOMContentLoaded",funcio);

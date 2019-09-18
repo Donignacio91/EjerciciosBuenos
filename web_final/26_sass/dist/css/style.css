@@ -1,9 +1,8 @@
 /* Esto es un comentario CSS */
-/* Esto es un comentario CSS */
 body {
   margin: 0rem;
   display: grid;
-  grid-template-rows: 2fr auto auto 1fr;
+  grid-template-rows: 1fr auto auto 1fr;
 }
 
 .main, .main-footer, .main-header {
@@ -13,6 +12,7 @@ body {
 }
 
 .main-header {
+  flex-wrap: wrap;
   justify-content: center;
   text-align: center;
 }
@@ -21,6 +21,7 @@ body {
   margin-bottom: 0;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  width: 100%;
 }
 
 main {
