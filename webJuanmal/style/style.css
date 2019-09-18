@@ -326,6 +326,11 @@ color:white;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     margin-top: 1.5rem;}
+
+    .gridMeCo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr    }
     .cubo{
         display: flex;
         margin-bottom:0.3rem; 
