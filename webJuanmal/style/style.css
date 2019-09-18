@@ -213,6 +213,14 @@ h1 {
      .intro p {
                 font-size: 0.9rem;
             }
+    .ctro{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .ctro1{
+        text-align: center;
+        margin-top: 6rem;
+    }
     .grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
