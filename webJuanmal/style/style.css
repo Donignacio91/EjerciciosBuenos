@@ -334,6 +334,16 @@ color:white;
         border-left: 0.5px solid rgba(156, 9, 9, 0.527);
         border-right: 0.5px solid rgba(156, 9, 9, 0.527);
     }
+ .meCo p {
+    text-align: justify;
+ }
+ .meCla p {
+    text-align: justify;
+ }
+ .meGe p {
+    text-align: justify;
+ }
+
     .cubo{
         display: flex;
         
