@@ -4,7 +4,7 @@
 body{
     margin:0;
 }
-header footer{
+header, footer{
     color: chocolate;
     background-color: lightgray;
     padding: 2rem;
