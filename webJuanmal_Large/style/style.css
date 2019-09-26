@@ -215,7 +215,7 @@ h1 {
             }
     .ctro{
         text-align: center;
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
     .ctro1{
         text-align: center;
@@ -296,7 +296,7 @@ h3 {
 }
 
 .legal{
-    background-color: rgb(156, 9, 9);
+    background-color: rgba(172, 172, 172, 0.98);
     justify-content: center;
     text-align: center;
 font-size: 1.3rem;
@@ -305,13 +305,19 @@ color:white;
 }
 .legal a{
     list-style: none;
-    color:white;;
+    color:rgb(156, 9, 9);
 }
-
-
+.foot{color:rgba(172, 172, 172, 0.98);
+padding-bottom: 1.3rem}
+.footr{
+    font-weight: 600;
+}
+.subb{
+    border-bottom: 1px solid rgba(172, 172, 172, 0.98);
+}
 .noUp{
-    background-color: rgba(172, 172, 172, 0.98);
-    border-right: 1px solid rgb(156, 9, 9);
+    background-color:rgb(156, 9, 9) ;
+    border-right: 1px solid rgba(172, 172, 172, 0.98) ;
 
 }
 .gridFooter{
@@ -323,15 +329,11 @@ color:white;
 
 
 .gridFooter div{
-    /* border:1px solid black; */
+    
     justify-content: center;
     text-align: center;
 }
-h4{
-    color:rgb(156, 9, 9);
-    margin-top: 1rem;
-    margin-bottom: 1rem
-}
+
 .menu2{
     border-top: 0.07em  solid rgba(0, 0, 0, 0.432); 
    border-bottom: 0.07em  solid rgba(0, 0, 0, 0.432);
@@ -345,17 +347,11 @@ background-color: rgb(156, 9, 9);
 color:white;
 }
 
-.content{
-    margin-top: 5rem;
-}
+
 /* -------------------------- SERVIVIOS -------------------------------------*/
 
 
 .meCo{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin-top: 1.5rem;} */
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     margin-top: 1.5rem;}
@@ -370,76 +366,36 @@ color:white;
  .meCo p {
     text-align: justify;
  }
- .meCla p {
-    text-align: justify;
- }
- .meGe p {
-    text-align: justify;
- }
-
-    .cubo{
+ .gridMeCo div{
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+     .cubo{
         display: flex;
-        
          }
     .aa{
-        
         width: 80%;
         max-width: 960px;
         margin: 0 auto;
         margin-right: 0.3rem;
-     
     }
     .aa img{
         width: 100%;
-        
-       
-}
-.bb{
-        
-    width: 80%;
-    max-width: 960px;
-    margin: 0 auto;
- 
-}
-.bb img{
-    width: 100%;
-   
-}
+    }
+    .bb{ width: 80%;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+    .bb img{
+            width: 100%;
+        }
 
-.cubo2{
-    display: flex;
-    /* margin-top: 0.rem; */
-   
-
-}
-.cc{
-    
-    width: 80%;
-    max-width: 960px;
-    margin: 0 auto;
-    margin-right: 0.3rem;
-}   
-.cc img{
-    width: 100%;
-    
-}
-.dd{
-    
-    width: 80%;
-    max-width: 960px;
-    margin: 0 auto;
-  
-}
-.dd img{
-    width: 100%;
-    height: 100%;
-}
 
 h4{
-   
     color:  rgb(156, 9, 9);
     font-weight: 700;
     font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
     margin-top: 1rem;
     margin-bottom: 0,3rem;
     margin-left: 1.5rem;
@@ -449,139 +405,7 @@ h4{
 .h4sub{
     border-bottom: 1px solid rgba(0, 0, 0, 0.301);
 }
-.gridMeCo div{
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-}
-/* .gridMeCo div p{
-    margin-right: 2.5rem;
-    margin-left: 2.5rem;
-} */
 
-.meGe{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin-top: 1.5rem;} */
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    margin-top: 1.5rem;}
-
-    .meGe  li{
-        list-style: none;
-        color:  rgb(156, 9, 9);
-        font-weight: 500;
-        font-family: 'Orbitron', sans-serif;
-        margin-top: 1rem;
-        margin-bottom: 0,3rem;
-        margin-left: 1.5rem
-    }
-
-    .cubo3{
-        display: flex;
-        margin-bottom:0.3rem; 
-         }
-    .aaa{
-        
-        width: 80%;
-        max-width: 960px;
-        margin: 0 auto;
-        margin-right: 0.3rem;
-     
-    }
-    .aaa img{
-        width: 100%;
-        height: 100%;
-       
-}
-.bbb{
-        
-    width: 80%;
-    max-width: 960px;
-    margin: 0 auto;
- 
-}
-.bbb img{
-    width: 100%;
-    height: 100%;
-}
-
-
-.meCla{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin-top: 1.5rem;} */
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    margin-top: 1.5rem;}
-
-    .meCla  li{
-        list-style: none;
-        color:  rgb(156, 9, 9);
-        font-weight: 500;
-        font-family: 'Orbitron', sans-serif;
-        margin-top: 1rem;
-        margin-bottom: 0,3rem;
-        margin-left: 1.5rem
-    }
-
-    .cubo5{
-        display: flex;
-        
-         }
-    .aaaa{
-        
-        width: 80%;
-        max-width: 960px;
-        margin: 0 auto;
-        margin-right: 0.3rem;
-     
-    }
-    .aaaa img{
-        width: 100%;
-       
-       
-}
-.bbbb{
-        
-    width: 80%;
-    max-width: 960px;
-    margin: 0 auto;
- 
-}
-.bbbb img{
-    width: 100%;
-    height: 100%;
-}
-
-.cubo6{
-    display: flex;
-   
-
-}
-.cccc{
-    
-    width: 80%;
-    max-width: 960px;
-    margin: 0 auto;
-    margin-right: 0.3rem;
-}   
-.cccc img{
-    width: 100%;
-    height: 100%;
-}
-.dddd{
-    
-    width: 80%;
-    max-width: 960px;
-    margin: 0 auto;
-  
-}
-.dddd img{
-    width: 100%;
-  
-}
 
 /* ---------------------- Galeria  ---------------------------------- */
 
@@ -599,7 +423,8 @@ main{
     margin-top: 55px;
     padding: 0 0 5px;
     text-align: center;
-    width: 100%
+    width: 90%;
+   
 }
 .seccionContenido .divImagenGaleria img{
 height: 80px;
