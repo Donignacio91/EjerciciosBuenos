@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <script >
+    function calcularFecha() {
+        var diaPre = document.getElementById('inDia')
+        var mesPre = document.getElementById('inMes')
+        var añoPre = document.getElementById('inAño')
+        var res = document.getElementById('outRes')
+        var dia1 = parseInt(diaPre.value) 
+        var mes1 = parseInt(mesPre.value)
+        var año1 = parseInt(añoPre.value)
+        var año2 = Math.trunc(año1 / 4);
+        var año3 = Math.trunc(año1 / 100);
+        var año4 = Math.trunc(año1 / 400);
+        // var anne = Math.trunc(año1 / 100);
+        //console.log(anne)
+     
+
+        if (mes1 === 1) {
+              console.log('ESTAMOS EN 1')
+            
+            var mesR = mes1 
+            mesR = 13
+           
+            año1 = año1 - 1;
+            console.log(mesR)
+          
+            var op1 = Math.trunc(dia1 + (mesR * 2) + año1 + mes1  + año2 - año3 + año4 + 2);
+            console.log(dia1, mesR, año1, mes1, año4,  año2, año3,'2' )
+            var op2 = Math.trunc(op1 / 7)
+            var result = op1 - (op2 * 7)
+            
+            console.log(result)
+
+        } else if (mes1 === 2) {
+            console.log('ESTAMOS EN 2')
+            var mesR = mes1 
+            mesR = 14
+           
+            año1 = año1 - 1;
+            console.log(mesR)
+          
+            var op1 = Math.trunc(dia1 + (mesR * 2) + año1 + mes1 + año2 - año3 + año4 + 2);
+            console.log(dia1, mesR, año1, mes1, año2, año3, año4, '2' )
+            var op2 = Math.trunc(op1 / 7)
+            var result = op1 - (op2 * 7)
+            
+            console.log(result)
+
+        } else if (mes1 > 2) {
+            console.log('ESTAMOS EN >2')
+            var mesR = mes1
+            mes1 = (mes1 + 1) * 3;
+            mes1 = Math.trunc(mes1 / 5);
+            console.log(año1, año2, año3, año4);
+
+            var op1 =  Math.trunc(dia1 + (mesR * 2) + año1 + mes1 + año2 - año3 + año4 + 2);
+            console.log(dia1, mesR, año1, mes1, año2, año3, año4, '2' )
+
+
+            console.log(op1, ' <op1')
+
+           
+            var op2 = parseInt(op1 / 7)
+            console.log(op2)
+            var result = op1 -(op2 * 7 )
+            console.log(result, ' result')
+            
+        };}</script>
+    <title>Curso </title>
+</head>
+<body>
+    <header><h1>JS en la Web</h1></header>
+    <main>
+        <h1>Calcular día de la semana</h1>
+        <form>
+            <label> Día </label>
+            <input type="number" id="inDia" />
+            <br />
+            <label> Mes </label>
+            <input type="number" id="inMes" />
+            <br />
+            <label> Año </label>
+            <input type="number" id="inAño"  />
+    
+        </form> <button type="button" onclick="calcularFecha()"> Enviar datos </button>
+            
+                <div>
+                    <h2>
+                        Ese día fue <span id="outRes">  </span>
+                    </h2>
+                </div>
+    
+    </main>
+    <footer>
+        <address>Ignacio Caballero Ruiz</address>
+    </footer>
+</body>
+</html>
